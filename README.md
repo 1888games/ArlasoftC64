@@ -6,7 +6,7 @@ Therefore I am putting all of my unfinished projects here in case any of them ma
 
 The 'Complete' folder contains all games released on itch.io and considered finished, bar minor tweaks and bug fixes. 
 
-The 'Partially Complete' folder contains games that are in various states of completion, anywhere from just displaying an initial map and a few sprites, to games that are just a few features or bug fixes away from being finished. I have split this folder into four progress categories.
+The 'Partially Complete' folder contains 20+ games that are in various states of completion, anywhere from just displaying an initial map and a few sprites, to games that are just a few features or bug fixes away from being finished. I have split this folder into four progress categories.
 
 The 'Graphics Only' folder contains Charpad and/or Spritepad files for 50+ games I have at some point over the past few years drawn some graphics for but never got round to actually starting any programming. Again, these range from 'never going to happen' projects such as Alex Kidd where I just drew up a level for the hell of it, to stuff that could be interesting C64 projects such as Zookeeper, Overcooked, or Pirate Ship Higemaru. 
 
