@@ -1,0 +1,66 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Robotron 2064/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$002e Temp vars zero page
+  *$002f-$0032 Collision
+  *$0033-$0032 Sprite Data
+  *$0033-$0050 X
+  *$0051-$00ca Y
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$1076 IRQ
+  $1077-$10c2 Main IRQ
+  $10c3-$1115 Utility
+  $1116-$1132 Input
+  $1133-$11ce Joystick
+  $11cf-$130a Maploader
+  $130b-$13bf -Plot
+  $13c0-$1407 -Random
+  $1408-$168f Score
+  $2000-$1fff Unnamed
+  $2000-$23a6 Player
+  $23a7-$2bae Grunt
+  $2baf-$2f45 Bullet
+  $3000-$335e sid
+  $4000-$4408 SFX
+  $5000-$4fff Unnamed
+  $5000-$5208 Mine
+  $5209-$52bd Shared
+  $52be-$52ff Plexor
+  $5300-$53ba VicSpriteTable
+  $53bb-$57c4 Plexor
+  $57c5-$5c96 Humans
+  $5c97-$60e9 Hulks
+  $60ea-$6421 Brains
+  $6422-$64fa Grunt Piece
+  $64fb-$68d7 Spheroid
+  $68d8-$6d02 Level Data
+  $6d03-$6d73 Enforcer
+  $6d74-$6f7e Enforcer Num Remaining
+  $6f7f-$7095 EnforcerFrameUpdatwe
+  $7096-$70ea Sound
+  $70eb-$71d5 Complete
+  $71d6-$72d3 -Sound
+  $72d4-$74f5 Title
+  $74f6-$7a5e Spark
+  $7a5f-$7a7c SpriteType
+  $7a7d-$7c9a LocalSpriteID
+  $7c9b-$7d20 SpriteManager
+  $9000-$9103 Game Map
+  $9104-$92ff Game Tiles
+  $9300-$93ff Game Colours
+  $9400-$9503 Full Map
+  $9504-$9607 Title Map
+  $c400-$e5ff Sprites
+  $f000-$f7ff Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Robotron 2064/Scripts/bin/main.vs
+Writing Symbol file: main.sym

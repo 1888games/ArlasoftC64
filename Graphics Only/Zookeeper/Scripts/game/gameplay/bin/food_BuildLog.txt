@@ -1,0 +1,18 @@
+parsing
+Got 28 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Fast Food/Scripts/game/gameplay/food.asm 68:8) Error: Unknown symbol 'RANDOM'
+  (/Users/nick/Dropbox/C64/Projects/Fast Food/Scripts/game/gameplay/food.asm 74:9) Error: Unknown symbol 'MOUTH'
+  (/Users/nick/Dropbox/C64/Projects/Fast Food/Scripts/game/gameplay/food.asm 75:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Fast Food/Scripts/game/gameplay/food.asm 77:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Fast Food/Scripts/game/gameplay/food.asm 82:9) Error: Unknown symbol 'ZP'
+  ...
+
+
+   Again:
+
+   jsr RANDOM.Get
+       ^
+
+Error: Unknown symbol 'RANDOM'
+
+

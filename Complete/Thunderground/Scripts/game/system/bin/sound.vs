@@ -1,0 +1,14 @@
+al C:3 .SFX_EAT
+al C:2019 .Pickle
+al C:201f .GameOver
+al C:2000 .SoundCooldown
+al C:2007 .Fatter
+al C:2 .SFX_SCORE
+al C:1 .SFX_FATTER
+al C:4 .SFX_PICKLE
+al C:2010 .Score
+al C:5 .SFX_TICK
+al C:7 .SFX_GAME_OVER
+al C:2000 .SOUND
+al C:2001 .Eat
+al C:2028 .Tick

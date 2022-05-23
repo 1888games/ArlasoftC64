@@ -1,0 +1,31 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/Dr Mario/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0032 Temp vars zero page
+  *$0033-$004e LPAX
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $0880-$08c1 Modules
+  $08c2-$0936 IRQ
+  $0937-$0948 Utility
+  $0949-$0967 Input
+  $0968-$0a08 Joystick
+  $0a09-$0b3b Maploader
+  $0b3c-$0b8d -Random
+  $0b8e-$0be2 -Plot
+  $0be3-$0c57 -Sound
+  $0c58-$0d5a Main
+  $5a04-$5b07 Game Map
+  $5b08-$5c67 Game Tiles
+  $5d50-$5da8 Game Colours
+  $f000-$f2c7 Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/Dr Mario/Scripts/bin/main.vs
+Writing Symbol file: main.sym

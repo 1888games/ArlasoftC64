@@ -1,0 +1,38 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Taz/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0029 Temp vars zero page
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$120e IRQ
+  $120f-$123d Utility
+  $123e-$125a Input
+  $125b-$12f6 Joystick
+  $12f7-$1432 Maploader
+  $1433-$14eb -Plot
+  $14ec-$1b91 -Random
+  $1b92-$1e52 Score
+  $1e53-$1e74 Sound
+  $3000-$3408 SFX
+  $7000-$7103 Game Map
+  $7104-$7193 Game Tiles
+  $7300-$73ff Game Colours
+  $7500-$7603 Title Map
+  $7604-$7703 Title Tiles
+  $7800-$78fe Title Colours
+  $9000-$8fff Unnamed
+  $9000-$91f7 -Sound
+  $91f8-$933b Main
+  $c400-$c93f Sprites
+  $f000-$f7ff Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Taz/Scripts/bin/main.vs
+Writing Symbol file: main.sym

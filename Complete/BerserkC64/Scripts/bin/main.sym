@@ -1,0 +1,2017 @@
+.label TOP_LEFT=$3
+.label SMP_Like=$77ba
+.label PointerCopy=$db
+.label W_ESCAPE=$c
+.label SMP_Shoot=$ee6b
+.label W_DETECTED=$14
+.label FIRE=$2cb1 {
+  .label Frame=$2cb8
+  .label PosY=$2cb3
+  .label FireTime=$10
+  .label DirectionY=$2cb5
+  .label Pointer=$12
+  .label Initialise=$2cb9 {
+  }
+  .label DirectionX=$2cb4
+  .label Do=$2cc7 {
+    .label GetDirection=$2cdc
+    .label Canfire=$2ccd
+    .label Firing=$2d35
+    .label CheckDown=$2cff
+    .label NotDown=$2d15
+    .label NotLeft=$2cf0
+    .label Finish=$2d4d
+    .label CantFire=$2ccc
+    .label Exit=$2d28
+  }
+  .label FireTimer=$2cb7
+  .label PosX_MSB=$2cb2
+  .label Active=$2cb6
+  .label PosX_LSB=$2cb1
+  .label HandleTimer=$2d4e {
+    .label NotReady=$2d5a
+    .label Finish=$2d5d
+  }
+  .label FrameUpdate=$2d5e {
+  }
+  .label FirePointer=$54
+}
+.label SUBTUNE_CAPTURE=$6
+.label SAMPLER=$3f98 {
+  .label MusicTime=$3fdc
+  .label Init=$3f98 {
+    .label isPAL=$3fbe
+  }
+  .label wait=$3fd9
+  .label SkipSamples=$3fdb
+  .label SampleComplete=$3fda
+  .label nmi=$3fdd {
+    .label play=$4024
+    .label next=$402d
+    .label notatend=$402d
+    .label exit=$4030
+    .label endOffset=$3fff
+    .label offset=$4021
+    .label EndHere=$4003
+    .label PlayNow=$401a
+  }
+}
+.label TEMP1=$f1
+.label IRQControlRegister2=$dd0d
+.label TEMP2=$f2
+.label IRQControlRegister1=$dc0d
+.namespace MAP_GENERATOR {
+  .label WALL_EAST=$2
+  .label Wall_5_Block=$17a9
+  .label WallUp_D=$17e9
+  .label ScrollUp=$1d08 {
+    .label Exit=$1f82
+  }
+  .label InitialSetup=$18b6 {
+  }
+  .label Scrolling=$1776
+  .label WallDown=$1834
+  .label SpritesUp=$2188 {
+    .label Loop=$218a
+    .label NoDestroy=$21a3
+    .label EndLoop=$21ab
+  }
+  .label WallDown_D=$17f8
+  .label ScrollDown=$2232 {
+    .label Exit=$24ac
+  }
+  .label Wall_2_Block=$1791
+  .label SpritesLeft=$214d {
+    .label Loop=$214f
+    .label NoDestroy=$217e
+    .label NoMSB=$216b
+    .label EndLoop=$2182
+    .label MSB=$2164
+  }
+  .label Add_LSB=$1762
+  .label SetupScroll=$1b56 {
+    .label NoChicken=$1b86
+  }
+  .label Wall_X_End=$17d1
+  .label ScrollTime=$2
+  .label TidyIntersections=$19c3 {
+    .label Loop=$19c5
+    .label DontNeed7_5=$19e0
+    .label NotGapAbove=$1a23
+    .label DontNeed3_5=$19f6
+    .label NotGapBelow=$1a39
+    .label EndLoop=$1a39
+    .label CheckGapRight=$19ca
+    .label NotGapAbove1=$1a17
+    .label CheckAbove1=$1a03
+  }
+  .label DirectionScreenInc=$1770
+  .label WALL_SOUTH=$1
+  .label MultiplyBy7=$1b29 {
+    .label Loop=$1b37
+  }
+  .label WALL_NORTH=$0
+  .label WallRight_D=$1807
+  .label BlockEntrance=$1906 {
+    .label Loop=$1920
+    .label GetWallSize=$190b
+    .label NoBlock=$1941
+  }
+  .label WallSize=$18ac
+  .label CharID=$18b0
+  .label SpritesRight=$21de {
+    .label Loop=$21e0
+    .label NoDestroy=$2208
+    .label NoMSB=$220f
+    .label EndLoop=$2213
+    .label MSB=$21f5
+  }
+  .label HandleScroll=$24ad {
+    .label Ready=$24c8
+    .label Sprites=$24b8
+  }
+  .label FrameUpdate=$194f {
+    .label NotScrolling=$1957
+  }
+  .label WallLeft=$1852
+  .label Work_MSB=$1761
+  .label Magic_LSB=$53
+  .label ScrollFunc_MSB=$177d
+  .label Wall_6_Block=$17b1
+  .label Walls=$1764
+  .label ScrollTimer=$1778
+  .label AddMagicNumber=$1b11 {
+  }
+  .label Wall_X_Start=$17c9
+  .label CheckScrollProgress=$2219 {
+    .label Exit=$2231
+  }
+  .label DirectionToScroll=$1775
+  .label Wall_7_Block=$17b9
+  .label Wall_3_Block=$1799
+  .label CalculateWallsOn=$18ce {
+    .label Loop=$18d0
+    .label Loop2=$18dd
+  }
+  .label SpritesDown=$21b1 {
+    .label Loop=$21b3
+    .label NoDestroy=$21cf
+    .label EndLoop=$21d7
+  }
+  .label DebugTimer=$1774
+  .label ScrollLeft=$1b87 {
+    .label Loop=$1b89
+    .label Finish=$1cbd
+    .label Exit=$1d07
+  }
+  .label Generate=$1958 {
+    .label Again=$19b8
+    .label DontStore=$1985
+    .label PillarLoop=$196b
+  }
+  .label X=$175e
+  .label ScrollProgress=$1777
+  .label Wall_Y_Start=$17d9
+  .label WallY=$188e
+  .label Y=$175f
+  .label Add_MSB=$1763
+  .label WallX=$1870
+  .label WallUp=$1825
+  .label DrawWall=$1ab6 {
+    .label Decrease=$1aca
+    .label EndLoop=$1b01
+    .label Increase=$1ae7
+    .label CharLoop=$1ab8
+    .label Finish=$1b07
+  }
+  .label WALL_WEST=$3
+  .label GetWallData=$1a53 {
+    .label GetMoveDirection=$1a5a
+    .label GetWallData=$1a65
+    .label GetScreenAddress=$1a80
+    .label GetWallDirection=$1a53
+  }
+  .label SpawnSide=$18b4
+  .label WallLeft_D=$1816
+  .label WallRight=$1843
+  .label ScrollRight=$1f83 {
+    .label Loop=$1f85
+    .label Finish=$20b7
+    .label Exit=$214c
+  }
+  .label DirectionScreenAdd=$176c
+  .label RandomMap=$1942 {
+  }
+  .label DrawOutline=$1b08 {
+  }
+  .label HumanIgnoreWall=$1861
+  .label Wall_4_Block=$17a1
+  .label Wall_8_Block=$17c1
+  .label EntranceColour=$18b5
+  .label Wall_Y_End=$17e1
+  .label DrawAllWalls=$1a41 {
+    .label WallLoop=$1a43
+  }
+  .label Wall_1_Block=$1789
+  .label ScrollFunc_LSB=$1779
+  .label Work_LSB=$1760
+  .label Magic_MSB=$31
+}
+.label SpriteWidth=$2677
+.label LEFT=$0
+.label WALL_NORTH=$0
+.label W_IN=$1a
+.label SMP_Attack=$9be4
+.label SpriteX=$3b
+.label GAME_MAP=$0
+.label SMP_Done=$fb7a
+.label LowByte=$838
+.label WALL_DATA=$24dd {
+  .label Wall_7_X_Start=$25af
+  .label WALL_EAST=$2
+  .label Segment_5_Chars=$24fd
+  .label Wall_6_Y_End=$260b
+  .label Wall_3_Y_End=$25ff
+  .label Segment_2_Chars=$24e5
+  .label SY1=$7
+  .label SouthBot_1=$256c
+  .label Wall_5_X_Start=$25a7
+  .label SouthBot_2=$2586
+  .label SY2=$10
+  .label Segment_Start_Y=$2525
+  .label Segment_Start_X=$251d
+  .label NorthTop_2=$2551
+  .label NorthTop_1=$252d
+  .label Wall_6_X_End=$25cb
+  .label Wall_3_X_Start=$259f
+  .label Wall_1_X_Start=$2597
+  .label Wall_3_X_End=$25bf
+  .label SouthTop_1=$2536
+  .label Wall_6_Y_Start=$25eb
+  .label WALL_SOUTH=$1
+  .label Wall_4_Y_Start=$25e3
+  .label Wall_2_Y_End=$25fb
+  .label WALL_NORTH=$0
+  .label NorthBot_1=$2561
+  .label Segment_6_Chars=$2505
+  .label Segment_3_Chars=$24ed
+  .label Wall_2_Y_Start=$25db
+  .label Wall_2_X_End=$25bb
+  .label Wall_8_X_Start=$25b3
+  .label Wall_5_Y_End=$2607
+  .label CharWallDistance_Left=$2620
+  .label Wall_1_Y_End=$25f7
+  .label Wall_8_Y_End=$2613
+  .label CharWallDistance_Down=$2632
+  .label Segment_7_Chars=$250d
+  .label Wall_6_X_Start=$25ab
+  .label Wall_5_X_End=$25c7
+  .label Wall_4_X_Start=$25a3
+  .label Wall_2_X_Start=$259b
+  .label Wall_1_X_End=$25b7
+  .label Wall_8_X_End=$25d3
+  .label Wall_4_Y_End=$2603
+  .label Wall_7_Y_Start=$25ef
+  .label EastTop_1=$2541
+  .label Segment_4_Chars=$24f5
+  .label EastTop_2=$255a
+  .label CharWallDistance_Right=$2617
+  .label WALL_WEST=$3
+  .label Wall_4_X_End=$25c3
+  .label Wall_5_Y_Start=$25e7
+  .label EastBot_1=$2576
+  .label EastBot_2=$2590
+  .label WestBot_1=$257e
+  .label Wall_3_Y_Start=$25df
+  .label Wall_8_Y_Start=$25f3
+  .label Segment_1_Chars=$24dd
+  .label SX2=$d
+  .label SX1=$7
+  .label SX4=$19
+  .label Wall_7_Y_End=$260f
+  .label SX3=$13
+  .label WestTop_1=$2549
+  .label Wall_1_Y_Start=$25d7
+  .label CharWallDistance_Up=$2629
+  .label Segment_8_Chars=$2515
+  .label Wall_7_X_End=$25cf
+}
+.label SpriteY=$4f
+.label Line=$2e
+.label PLAYER=$26b3 {
+  .label HandleFlash=$2c22 {
+    .label TurnOn=$2c43
+    .label StillGoing=$2c36
+    .label DoFlash=$2c2b
+    .label TurnOff=$2c49
+  }
+  .label PosY=$26c1
+  .label DeathFrames=$18
+  .label SpawnCharY=$16
+  .label UpdateSprite=$2aad {
+    .label IsMoving=$2af4
+    .label Position=$2ab2
+    .label Animate=$2ae3
+    .label Idle=$2ae8
+    .label NotScrolling=$2ae1
+    .label MSB=$2b05
+    .label Colour=$2ad8
+    .label MSB_Done=$2b10
+  }
+  .label FrameSequence=$26e1
+  .label CharConvert=$2776
+  .label SpawnCharX=$5
+  .label ControlDirection=$2974 {
+    .label CheckDead=$297c
+    .label Down=$29a7
+    .label Left=$2a6f
+    .label NotDead=$2981
+    .label CheckRight=$2a20
+    .label CheckDown=$299f
+    .label Right=$2a28
+    .label CheckOffsetUp=$2a08
+    .label CheckOffsetDown=$29c5
+    .label NotTryFire=$299a
+    .label NoWrapOffsetRight=$2a64
+    .label NoWrapOffsetUp=$2a20
+    .label Okay=$2a5b
+    .label CheckFire=$2aab
+    .label CheckUp=$29e5
+    .label CheckOffsetLeft=$2a91
+    .label NoWrapOffsetLeft=$2aab
+    .label NotFiring=$298c
+    .label WrapOffsetDown=$29d9
+    .label NoWrapOffsetDown=$29e2
+    .label Up=$29ea
+    .label CheckOffsetRight=$2a4a
+    .label Finish=$2aab
+    .label CheckLeft=$2a67
+  }
+  .label HandleDead=$2b9f {
+    .label Ready=$2ba8
+    .label Finish=$2be4
+  }
+  .label BlockRightBot_Right=$275f
+  .label RightChar=$2768
+  .label CalculateBlockID=$2882 {
+    .label GetYTablePos=$288c
+    .label AddCharIndex=$2898
+    .label GetXTablePos=$2882
+  }
+  .label BlockUpTop_Left=$2707
+  .label BlockRightBot_Left=$2757
+  .label FlashFrames=$6
+  .label FlashesRemaining=$2774
+  .label LeftChar=$2767
+  .label ShowOffsets=$2864 {
+  }
+  .label SPEED_FRAC_DIAG=$8c
+  .label Dead=$26de
+  .label SpawnY=$2770
+  .label PointerStart=$29
+  .label SpawnX=$276c
+  .label PlayerSprite=$13
+  .label CheckPosition=$28bd {
+    .label Loop=$2906
+    .label CheckBlocked=$2915
+    .label GoLeft=$296e
+    .label HowManySquares=$28c7
+    .label NoBlock=$2923
+    .label NoRowColChange=$2970
+    .label NextColumn=$2949
+    .label TwoColumns=$28e3
+    .label CheckChar=$294c
+    .label NoOverride=$291a
+    .label NoRowCharChange=$295d
+    .label EndLoop=$2970
+    .label Use8=$28d0
+    .label GetTopLeftChar=$28e3
+    .label NewRow=$2939
+    .label Setup=$28bd
+    .label Finish=$2973
+  }
+  .label BlockLeftBot_Right=$273f
+  .label PosX_Frac=$26bf
+  .label PosX_MSB=$26bd
+  .label Active=$26cb
+  .label FrameUpdate=$2c60 {
+    .label NoFlash=$2c6d
+    .label SkipControl=$2ca9
+    .label NotDead=$2c95
+    .label Spawned=$2c88
+    .label NotActive=$2c87
+    .label Finish=$2cb0 {
+    }
+    .label NowReady=$2c7a
+  }
+  .label Activate=$2c4f {
+  }
+  .label FracSpeed=$26dd
+  .label LastEnemySprite=$26c8
+  .label BlockDownTop_Left=$26e7
+  .label BlockDownBot_Right=$26ff
+  .label BlockLeftBot_Left=$2737
+  .label DeathColours=$26d3
+  .label Hide=$281e {
+  }
+  .label CharX=$26b3
+  .label Frame=$26c5
+  .label BlockUpBot_Right=$271f
+  .label CharY=$26b5
+  .label SPEED_PIXEL=$0
+  .label PosY_Frac=$26c3
+  .label SPEED_PIXEL_DIAG=$0
+  .label BlockDownTop_Right=$26ef
+  .label ResetAfterDead=$2b7c {
+    .label NotGameOver=$2b98
+  }
+  .label BlockLeftTop_Right=$272f
+  .label FrameTime=$1
+  .label Direction=$26ca
+  .label CalculateSegment=$289d {
+    .label NowY=$28a9
+    .label NoChange=$28bc
+    .label UseLSB=$289d
+  }
+  .label SPEED_FRAC=$a0
+  .label SpawnDelay=$26e6
+  .label Moving=$26cc
+  .label Colours=$26cf
+  .label FacingRight=$26df
+  .label BlockRightTop_Left=$2747
+  .label FirstEnemySprite=$26c9
+  .label CanMove=$26e0
+  .label StartCharX=$26e5
+  .label Kill=$2b3f {
+    .label Finish=$2b7b
+  }
+  .label CheckDiag=$283b {
+    .label NoDiag=$2863
+  }
+  .label Firing=$26cd
+  .label ColourFrame=$26c6
+  .label SpawnSide=$276b
+  .label StartX=$2c
+  .label StartY=$8a
+  .label BlockUpBot_Left=$2717
+  .label Sector=$2775
+  .label OffsetX=$26b7
+  .label FrameTimer=$26c7
+  .label Initialise=$278a {
+    .label CalcPixels=$27db
+    .label ChangeY=$27a5
+    .label ChangeX=$27ae
+    .label Default=$27b7
+    .label NotDefault=$2797
+  }
+  .label OffsetY=$26b9
+  .label CheckLeaveLevel=$2be5 {
+    .label NotUp=$2c12
+    .label CheckRight=$2be5
+    .label NotDown=$2c21
+    .label NotLeft=$2c03
+    .label CheckLeft=$2bf4
+    .label Exit=$2c21
+  }
+  .label DeathProgress=$26db
+  .label CheckFrame=$2b11 {
+    .label Ready=$2b1a
+    .label ColourOK=$2b2e
+    .label Finish=$2b3e
+  }
+  .label UseCharX=$2769
+  .label BlockRightTop_Right=$274f
+  .label PosX_LSB=$26bb
+  .label BlockLeftTop_Left=$2727
+  .label UseCharY=$276a
+  .label Fire=$2aac {
+  }
+  .label PixelSpeed=$26dc
+  .label BlockDownBot_Left=$26f7
+  .label BlockUpTop_Right=$270f
+  .label SpriteColour=$26ce
+}
+.label GAME_MODE_PLAY=$3
+.label W_LIFE=$1b
+.label BONUS=$411f {
+  .label BonusID=$4121
+  .label DrawText=$4151 {
+    .label Loop=$415c
+    .label NoJump=$416c
+  }
+  .label FrameUpdate=$419b {
+    .label Finish=$41a9
+  }
+  .label StartX=$23
+  .label StartY=$12
+  .label BonusDigits=$411f
+  .label AddBonusNextFrame=$412c
+  .label Show=$412d {
+    .label NoFirstDigit=$4145
+    .label CheckAbove10=$4138
+  }
+  .label BonusText=$4122
+  .label DrawNumber=$41aa {
+    .label NoFirst=$41c7
+    .label Hundreds=$41ac
+  }
+  .label Clear=$4172 {
+    .label Loop=$4181
+  }
+}
+.label W_IT=$e
+.label CHAR_COLORS=$5308
+.label W_NOT=$b
+.label SpriteOrder=$8b
+.label A=$60
+.label B=$61
+.label C=$62
+.label D=$63
+.label ColourCopy=$c7
+.label E=$64
+.label SUBTUNE_PERFECT=$3
+.label F=$65
+.label KernalZP=$4e00
+.label ONE=$1
+.label G=$66
+.label H=$67
+.label PURPLE_MULT=$c
+.label I=$68
+.label IRQ=$885 {
+  .label SidTime=$5
+  .label DisableCIA=$889 {
+  }
+  .label SidTimer=$887
+  .label Frame=$888
+  .label SetupInterrupts=$892 {
+    .label NoSkip=$8b7
+  }
+  .label OpenBorderIRQLine=$f9
+  .label MultiplexerIRQLine=$1
+  .label MultiIRQLines=$885
+  .label SetNextInterrupt=$8b8 {
+  }
+  .label MainIRQLine=$fe
+  .label ResetBorderIRQLine=$0
+  .label MainIRQ=$8ca {
+    .label NoSprites=$907
+    .label ResetBorder=$8cf
+    .label Finish=$8f9
+    .label OnePlayer=$8f2
+  }
+}
+.label J=$69
+.label K=$6a
+.label L=$6b
+.label SMP_Alert=$83d6
+.label M=$6c
+.label W_EXPLODE=$1
+.label N=$6d
+.label O=$6e
+.label SPACE=$20
+.label P=$6f
+.label Q=$80
+.label R=$81
+.label S=$82
+.label SMP_Chicken=$a475
+.label T=$83
+.label SamplerTemp=$2
+.label U=$84
+.label V=$85
+.label SUBTUNE_BEAM_CAPTURE=$a
+.label W=$86
+.label X=$87
+.label W_A=$7
+.label Y=$88
+.label Z=$89
+.label ThirdInitials=$820
+.label BOTTOM_LEFT=$2
+.label W_FIGHT=$5
+.label S_FIRE=$0
+.label ALL_ON=$ff
+.label a=$8a
+.label b=$8b
+.label c=$8c
+.label d=$8d
+.label e=$8e
+.label f=$8f
+.label g=$a0
+.label h=$a1
+.label S_LIFE=$29
+.label i=$a2
+.label j=$a3
+.label k=$a4
+.label l=$a5
+.label SMP_Done2=$c831
+.label m=$a6
+.label SMP_Done1=$be4f
+.label n=$a7
+.label o=$a8
+.label S_FIRE_ROBOT=$24
+.label p=$a9
+.label q=$aa
+.label r=$ab
+.label W_GOT=$12
+.label s=$ac
+.namespace BULLET {
+  .label CheckRobotCollision2=$3331 {
+    .label Loop=$3333
+    .label XSize=$4
+    .label YSize=$6
+    .label EndLoop=$3381
+    .label SkipKill=$337d
+  }
+  .label PosY=$2d70
+  .label CharOffsetX_R=$2e82
+  .label CharOffsetX_P=$2e72
+  .label UpdateSprite=$30e9 {
+  }
+  .label RobotPixelPosition=$31a6 {
+    .label Add=$31d8
+    .label NoWrapSub=$31d5
+    .label Subtract=$31ba
+    .label DoY=$31eb
+  }
+  .label CollisionOffsetX=$2dbd
+  .label WholeOffsetY_P=$2ee2
+  .label Process=$2f66 {
+    .label MoveLeft=$2f70
+    .label CheckOffsetXLeft=$2f99
+    .label MoveDown=$3048
+    .label DoX=$2f66
+    .label CheckOffsetYDown=$3074
+    .label CheckOffsetYUp=$302e
+    .label MoveRight=$2fb3
+    .label NoLeaveDown=$3067
+    .label WrapOffsetRight=$2fe6
+    .label NoWrapOffsetRight=$2ff8
+    .label DoY=$2ff8
+    .label NoLeaveRight=$2fcf
+    .label NoUpLeave=$3021
+    .label NoWrapOffsetUp=$3045
+    .label CheckOffsetXRight=$2fdc
+    .label MoveUp=$3002
+    .label NoLeftLeave=$2f8c
+    .label MoveX=$2f6e
+    .label NoWrapOffsetLeft=$2fb0
+    .label MoveY=$3000
+    .label WrapOffsetDown=$307e
+    .label NoWrapOffsetDown=$3090
+    .label Finish=$3090
+  }
+  .label CharOffsetX_Fine_R=$2e8a
+  .label CharOffsetY_Fine_R=$2eba
+  .label CharOffsetX_Fine_P=$2e7a
+  .label CharOffsetY_Fine_P=$2eaa
+  .label CheckWallCollision=$33e1 {
+    .label NoBlock3=$3461
+    .label KillMe=$3408
+    .label NoBlock2=$3436
+    .label NoBlock=$340b
+  }
+  .label Delay=$2e1d
+  .label CollisionOffsetY=$2dc4
+  .label CharX_2=$2d9a
+  .label PlayerOffsetY=$2e3a
+  .label PlayerOffsetX=$2e32
+  .label CharOffsetX_Pos=$2e6a
+  .label CharX_3=$2daf
+  .label BulletSpeed_Frac=$2e16
+  .label DirectionLookupX=$2e52
+  .label FracSpeed_Diag=$8d
+  .label FireRobot=$3124 {
+    .label GetID=$3124
+    .label Available=$3134
+    .label DoubleCheck=$312e
+    .label Exit=$3133
+  }
+  .label WholeOffsetX_Fine_P=$2ed2
+  .label CollisionOffsetsX_R=$2f02
+  .label CheckPlayerCollision=$32f6 {
+    .label CheckIfPlayerBullet=$32f6
+    .label HitPlayer=$3327
+    .label XSize=$3
+    .label YSize=$8
+    .label SkipKill=$332f
+    .label NoCollision=$332f
+    .label DoX=$32ff
+    .label DoY=$3312
+  }
+  .label CharOffsetY_Pos=$2e92
+  .label MaxEnemyBullets=$2f26
+  .label MAX_BULLETS=$7
+  .label GetAvailableID=$3113 {
+    .label Loop=$3115
+    .label Found=$3123
+  }
+  .label RobotOffsetX=$2e42
+  .label RobotOffsetY=$2e4a
+  .label MaxX=$f8
+  .label DebugChar=$2f22
+  .label CheckRobotCollision=$3388 {
+    .label Loop=$338a
+    .label XSize=$4
+    .label YSize=$6
+    .label EndLoop=$33db
+    .label SkipKill=$33d7
+    .label NotOtto=$33ca
+  }
+  .label PosX_Frac=$2d77
+  .label MaxY=$fa
+  .label PosX_MSB=$2d69
+  .label FirePlayer=$35ea {
+    .label DoneDiag=$361f
+    .label Flat=$3615
+    .label Diag=$3608
+  }
+  .label FrameUpdate=$30b1 {
+    .label Loop=$30b9
+    .label Okay=$30c5
+    .label Okay2=$30de
+    .label EndLoop=$30e3
+    .label NotScrolling=$30b7
+    .label SkipMove=$30ce
+    .label SkipCollision=$30e1
+  }
+  .label FracSpeed=$9a
+  .label ClearAll=$2f28 {
+    .label Loop=$2f30
+  }
+  .label CharX=$2d93
+  .label Frame=$2dd9
+  .label MinX=$4
+  .label CharY=$2da1
+  .label MinY=$28
+  .label PosY_Frac=$2d7e
+  .label CharOffsetY_R=$2eb2
+  .label FrameLookup=$2f1a
+  .label CharOffsetY_P=$2ea2
+  .label WholeOffsetX_Pos=$2ec2
+  .label Pointer=$2de7
+  .label CheckOttoCollision=$3330 {
+  }
+  .label IsDiagonal=$2f12
+  .label IDThatFired=$2e24
+  .label Colour=$2dfb
+  .label CalculateSegment=$3091 {
+    .label NowY=$309d
+    .label NoChange=$30b0
+    .label UseLSB=$3091
+  }
+  .label GetFreeID=$3462 {
+    .label CantFire1=$346a
+  }
+  .label CharY_3=$2db6
+  .label CharY_2=$2da8
+  .label Destroy=$2f41 {
+    .label NotRobot=$2f65
+  }
+  .label RobotCharPosition=$31f6 {
+    .label GoUp=$3284
+    .label GoLeft=$3212
+    .label YChar=$13
+    .label CheckOffsetUp=$32a4
+    .label DoX=$320d
+    .label CheckOffsetDown=$32dc
+    .label GoRight=$3249
+    .label GoDown=$32bc
+    .label NoWrapOffsetRight=$327f
+    .label DoY=$327f
+    .label NoWrapOffsetUp=$32bb
+    .label XChar=$10
+    .label CheckOffsetLeft=$3232
+    .label NoWrapOffsetLeft=$3246
+    .label NoWrapOffsetDown=$32f5
+    .label CheckOffsetRight=$3269
+    .label XOff=$2d
+    .label YOff=$2e
+  }
+  .label WholeOffsetY_Pos=$2eda
+  .label WholeOffsetY_Fine_P=$2eea
+  .label CharOffsetY_Pos_R=$2e9a
+  .label StartPlayerPointer=$50
+  .label DirectionLookupY=$2e5a
+  .label BulletSpeed_Pixel=$2e0f
+  .label Sector=$2e2b
+  .label PlayerSpriteWidth=$2e62
+  .label CollisionOffsetsY_R=$2f0a
+  .label DirectionY=$2d8c
+  .label OffsetX=$2dcb
+  .label DirectionX=$2d85
+  .label OffsetY=$2dd2
+  .label RobotPixelSpeed=$310e
+  .label EnemyBullets=$2f27
+  .label CollisionOffsetsY=$2efa
+  .label PosX_LSB=$2d62
+  .label CollisionOffsetsX=$2ef2
+  .label RobotFracSpeed=$3110
+  .label WholeOffsetX_P=$2eca
+  .label MaxBullets=$3112
+  .label PlayerCharPosition=$34b9 {
+    .label GoUp=$3554
+    .label GoLeft=$34be
+    .label Zero3=$3591
+    .label Zero2=$3543
+    .label Zero1=$34f8
+    .label CheckOffsetUp=$3576
+    .label DoX=$34b9
+    .label CheckOffsetDown=$35c0
+    .label GoRight=$3507
+    .label GoDown=$359e
+    .label NoWrapOffsetRight=$354f
+    .label DoY=$354f
+    .label Zero4=$35dd
+    .label NoWrapOffsetUp=$359d
+    .label CheckOffsetLeft=$34e0
+    .label NoWrapOffsetLeft=$3504
+    .label NoWrapOffsetDown=$35e9
+    .label CheckOffsetRight=$3529
+  }
+  .label Diagonal=$2de0
+  .label Fire=$310d {
+  }
+  .label PixelSpeed_Diag=$2
+  .label PixelSpeed=$3
+  .label PlayerPixelPosition=$346f {
+    .label Add=$349c
+    .label NoWrapSub=$3499
+    .label Subtract=$3479
+    .label DoY=$34ae
+  }
+  .label StartRobotPointer=$5c
+}
+.label t=$ad
+.label u=$ae
+.label v=$af
+.label w=$c0
+.label x=$c1
+.label y=$c2
+.label PAL=$0
+.label z=$87
+.label GameZP=$4d00
+.label HI_SCORE=$41ff {
+  .label DrawText=$42ef {
+    .label EndOfColumn=$432f
+    .label Done=$4339
+    .label RowLoop=$42f3
+    .label ColumnLoop=$4309
+  }
+  .label LetterDown=$4375 {
+    .label Finish=$4382
+  }
+  .label Finished=$4383 {
+  }
+  .label MaxLetter=$89
+  .label DrawLetter=$4348 {
+    .label NowDraw=$4363
+    .label NotP=$4363
+    .label NotQ=$4357
+  }
+  .label Cooldown=$42c1
+  .label Scores=$42c6
+  .label ConfirmLetter=$43a5 {
+    .label NotEnded=$43bb
+  }
+  .label Check=$43fb {
+    .label Loop=$4415
+    .label EqualsMed=$4437
+    .label NoCopy=$448e
+    .label BiggerMed=$4432
+    .label Done=$444d
+    .label CheckScore=$440d
+    .label EndLoop=$4444
+    .label CopyLoop=$445c
+    .label EqualsHigh=$4428
+    .label BiggerHigh=$4423
+    .label Player1=$43fb
+    .label Finish=$44a3
+  }
+  .label Columns=$42b0
+  .label Text=$41ff
+  .label SelectedLetter=$42c0
+  .label Initialise=$42ca {
+    .label NoHighScore=$42d1
+    .label GotHighScore=$42d4
+  }
+  .label Initials=$42c3
+  .label MinLetter=$60
+  .label LetterUp=$433a {
+    .label Finish=$4347
+  }
+  .label LetterIndex=$42c2
+  .label FrameUpdate=$43c7 {
+    .label Ready=$43d0
+    .label Down=$43ef
+    .label Left=$43df
+    .label CheckRight=$43e2
+    .label CheckUp=$43f2
+    .label CheckDebounce=$43c7
+    .label CheckDown=$43ea
+    .label Fire=$43d7
+    .label Right=$43e7
+    .label Finish=$43fa
+    .label CheckLeft=$43da
+  }
+  .label Colours=$42a8
+  .label CooldownTime=$3
+  .label PlayerPosition=$42c9
+  .label Rows=$42b8
+}
+.label SUBTUNE_GAME_OVER=$1
+.label ZERO=$0
+.label DOWN=$2
+.label W_DESTROY=$2
+.label SUBTUNE_BLANK=$5
+.label SpriteHeight=$268b
+.label W_DIE=$19
+.label MAPLOADER=$a1a {
+  .label DrawMap=$a36 {
+    .label Screen=$adf
+    .label GetMapAddress=$a80
+    .label TileRowLoop=$a9d
+    .label Tile=$ab4
+    .label NextColumn=$b0f
+    .label LoadColour=$ae3
+    .label NotLastRow=$afb
+    .label OkayToDraw=$ad9
+    .label Colour=$ae9
+    .label NoTile=$b28
+    .label TileColumnLoop=$aa2
+    .label TileLookup=$ad9
+    .label EndLoop=$b00
+    .label NextRow=$b50
+  }
+  .label Columns=$a32
+  .label CurrentMap=$a20
+  .label CurrentMapID=$a34
+  .label TileScreenLocations=$a1a
+  .label MapTiles=$a2a
+  .label CurrentColours=$a24
+  .label Maps=$a26
+  .label Column=$a1e
+  .label CurrentTiles=$a22
+  .label Colours=$a2e
+  .label Row=$a1f
+  .label ColumnsToDraw=$a35
+}
+.label S_GOT_PLAYER=$25
+.label UP=$3
+.label GAME_MODE_DEMO=$8
+.label SMP_Fire=$5400
+.label TextColumn=$f0
+.label W_THE=$3
+.label SMP_FireRobot=$e62f
+.label SMP_Fight=$7524
+.label WALL_SOUTH=$1
+.label ROBOT_LEFT=$3
+.label SpriteMSB=$263b
+.label NTSC=$1
+.label SMP_Not=$8ac3
+.label LIVES=$164a {
+  .label Add=$1681 {
+    .label CantAdd=$1693
+  }
+  .label Left=$164e
+  .label GameOver=$1650
+  .label Draw=$1694 {
+    .label Loop=$16a4
+    .label DrawMan=$16ac
+  }
+  .label Lives=$3
+  .label FlashTime=$10
+  .label FlashTimer=$164a
+  .label Active=$164f
+  .label FlashState=$164b
+  .label FrameUpdate=$16b8 {
+  }
+  .label Decrease=$1667 {
+    .label GameOver2=$1678
+    .label LoseLife=$166c
+    .label Finish=$1680
+  }
+  .label LabelRows=$164c
+  .label NewGame=$1651 {
+  }
+}
+.label SMP_Must=$87a1
+.label W_CHICKEN=$11
+.label UTILITY=$910 {
+  .label ClearScreen=$922 {
+    .label Loop=$926
+  }
+  .label BankInKernal=$919 {
+  }
+  .label BankOutKernalAndBasic=$910 {
+  }
+  .label StoreMSBColourY=$946 {
+    .label NoMSB=$951
+    .label MSB=$948
+  }
+  .label StoreMSBColourX=$936 {
+    .label NoMSB=$93f
+    .label MSB=$938
+  }
+}
+.label SCORE=$14da {
+  .label Digit=$14dd
+  .label DrawScoreAnywhere=$15ee {
+    .label ScoreLoop=$1604
+    .label NoCheck=$161b
+    .label InMills=$1604
+    .label PlotDigit=$1625 {
+    }
+    .label Finish=$1646
+    .label NextSet=$1612
+  }
+  .label DrawTitle=$15cd {
+  }
+  .label DrawWhenFree=$14e3
+  .label ScoreInitialised=$14e4
+  .label DrawScore=$1647 {
+  }
+  .label AddScore=$1518 {
+    .label Okay=$151c
+    .label SecondDigit=$153d
+    .label CheckSecond=$155e
+    .label GotNewLife=$156b
+    .label AddLife=$156e
+    .label FirstDigit=$151d
+    .label NowDraw=$157b
+    .label NotYet=$157a
+    .label NoHigh=$157e
+    .label Finish=$1555
+    .label CheckFirst=$1565
+  }
+  .label CharacterSetStart=$40
+  .label ScoreM=$14e5
+  .label ScoreL=$14f1
+  .label ExtraNormal=$14ff
+  .label Value=$14da
+  .label DrawP1=$157f {
+    .label ScoreLoop=$1595
+    .label NoCheck=$15ac
+    .label InMills=$1595
+    .label PlotDigit=$15b6 {
+    }
+    .label Finish=$15cc
+    .label NextSet=$15a3
+  }
+  .label ExtraLife=$46
+  .label Best=$14e0
+  .label Reset=$1501 {
+    .label Finish=$1517
+  }
+  .label HadExtra=$14fd
+}
+.label PLOT=$170b {
+  .label COLOR_ADDRESS=$20
+  .label CalculateAddresses=$170b {
+    .label InvalidRow=$170f
+    .label OkayTop=$1718
+    .label Store=$1716
+    .label OffTop=$1714
+  }
+  .label SCREEN_ADDRESS=$1e
+  .label GetCharacter=$1738 {
+  }
+  .label PlotCharacter=$1744 {
+    .label Finish=$175d
+  }
+}
+.label CheckReduce=$3f82 {
+  .label NotPlayingDead=$3f97
+}
+.label S_DIE=$2b
+.label JOY_PORT_2=$dc00
+.label SPEECH=$fb7a {
+  .label StartSequence=$794 {
+    .label Loop=$7e4
+    .label Okay=$79e
+    .label SkipFreq=$7d2
+    .label NotDead=$7af
+    .label NotTitle=$7be
+    .label Finish=$7f9
+  }
+  .label SEQ_ATCK_THE_INTRUDER=$5a2
+  .label SEQ_KILL_THE_HUMANOID=$586
+  .label SEQ_SHOT_THE_CHICKEN=$5d8
+  .label SEQ_CHGR_THE_HUMANOID=$5ad
+  .label SEQ_INTR_ESCAPE=$5bd
+  .label SEQ_FIGHT_LIKE_A_ROBOT=$57a
+  .label SEQ_SHOT_THE_INTRUDER=$5db
+  .label OnlyWhenChicken=$6d1
+  .label SEQ_FIRE=$575
+  .label SEQ_COINS_POCKET=$5de
+  .label SEQ_IT_MUST=$596
+  .label SEQ_ROBOT_ATTACK=$5ce
+  .label CanOverride=$679
+  .label SEQ_CHIC_ESCAPE=$5b8
+  .label Begin_MSB=$535
+  .label Died=$fb7e
+  .label End_MSB=$551
+  .label SEQ_EXPLODE=$576
+  .label SEQ_KILL_THE_INTRUDER=$58e
+  .label SEQ_KILL_IT=$589
+  .label SampleSequence=$56d
+  .label SEQ_INTRU_ATTACK=$5cb
+  .label SEQ_DEST_IT=$5a8
+  .label SEQ_CHGR_THE_CHICKEN=$5b2
+  .label SEQ_CHGR_THE_INTRUDER=$5b5
+  .label SEQ_ATCK_THE_CHICKEN=$59f
+  .label FrameUpdate=$6fd {
+    .label NotDead=$723
+    .label CarryOn=$72b
+    .label ReadyToPlay=$723
+    .label Finish=$745
+  }
+  .label SEQ_ROBOT_FIRE=$5e2
+  .label Sequences_LSB=$5f5
+  .label VariableFreq=$6a5
+  .label SEQ_THE_HUMANOID_MUST=$591
+  .label SEQ_KILL_THE_CHICKEN=$58b
+  .label SEQ_DEST_THE_HUMANOID=$5a5
+  .label MAX_SPEECH=$22
+  .label Cooldown=$fb7a
+  .label SEQ_HUMANOID_DETECTED=$584
+  .label SEQ_ATCK_IT=$59d
+  .label SEQ_GOT_IT=$5ec
+  .label SEQ_DEST_THE_CHICKEN=$5aa
+  .label SEQ_FIGHT_THE_HUMAN=$5c2
+  .label SEQ_GOT_THE_HUMANOID=$5e3
+  .label SEQ_GOT_THE_CHICKEN=$5e6
+  .label IsChicken=$fb7d
+  .label SEQ_GOT_THE_INTRUDER=$5e9
+  .label SEQ_CHICKEN_ROBOT=$5ef
+  .label SEQ_LIFE=$5ee
+  .label RandomSpeech=$75d {
+    .label Ready=$76d
+    .label Again=$774
+    .label NoSpeech=$793
+    .label NoChickenCheck=$78b
+  }
+  .label Sequences_Length=$64d
+  .label SequenceLength=$fb7c
+  .label Begin_LSB=$519
+  .label SEQ_DIE=$5f4
+  .label SEQ_FIGHT_THE_INTRUDER=$5c5
+  .label SEQ_DESTROY_THE_INTRUDER=$577
+  .label SEQ_INTRUDER_DETECTED=$582
+  .label SEQ_INTRUDER_ALERT=$57e
+  .label SEQ_CHGR_IT=$5b0
+  .label SEQ_HUMAN_ATTACK=$5c8
+  .label Sequences_MSB=$621
+  .label SequencePosition=$fb7b
+  .label SEQ_ATCK_THE_HUMANOID=$59a
+  .label SEQ_SHOT_THE_HUMANOID=$5d5
+  .label RobotBrag=$746 {
+  }
+  .label GotPlayer=$755 {
+  }
+}
+.label S_FIGHT_ROBOT=$3
+.label W_FIRE=$0
+.label GAME_MODE_ATTRACT=$2
+.label CYAN_MULT=$b
+.label ROBOT_IDLE=$0
+.label Colon=$c6
+.namespace ROBOT {
+  .label NewLevel=$3e0b {
+    .label Loop=$3e21
+  }
+  .label Count=$383d
+  .label Segment_5_Walls=$38f6
+  .label CalculateCount=$3e60 {
+  }
+  .label MAX_ROBOTS=$b
+  .label SegmentRows=$38b4
+  .label ShootGap=$3
+  .label RemoveRobot=$39c7 {
+  }
+  .label Segment_10_Walls=$390a
+  .label BlockUp=$3743
+  .label SameSegment=$37bc
+  .label Segment_8_Walls=$3902
+  .label SectorOccupied=$37c8
+  .label Frames=$386a
+  .label SectorsLeft=$37f7
+  .label AI=$40ef {
+    .label Again=$40f3
+    .label NoWrap=$411e
+    .label ProcessAI=$411b
+    .label NothingToDo=$411e
+  }
+  .label CheckShoot=$4036 {
+    .label ShootRight=$4065
+    .label NotDiagonal=$4091
+    .label Diagonal=$4083
+    .label ShootUp=$4054
+    .label ShootLeft=$406d
+    .label ShootDown=$404c
+    .label NotInX=$4059
+    .label NotInY=$4075
+    .label Finish=$4099
+  }
+  .label PosX_Frac=$3672
+  .label PosX_MSB=$365c
+  .label FrameUpdate=$3c04 {
+    .label Loop=$3c11
+    .label DoWork=$3c0c
+    .label EndLoop=$3c2e
+    .label NotWaiting=$3c20
+    .label Exit=$3c36
+  }
+  .label Segment_2_Walls=$38ea
+  .label FracSpeed=$3839
+  .label SectorsRight=$3806
+  .label YLookup=$4034
+  .label CurrentColour=$3843
+  .label FramePointers=$384c
+  .label SpawnSectors=$383e
+  .label CharX=$369e
+  .label Frame=$36d5
+  .label BlockRight_MSB=$376f
+  .label CharY=$36a9
+  .label SectorsRight_MSB=$3815
+  .label SectorDown=$3785
+  .label SectorRight_MSB=$37a6
+  .label CalculateChars=$3f30 {
+    .label CheckMSB=$3f47
+    .label CalcXOffset=$3f35
+    .label YReduce=$32
+    .label LSB=$3f57
+    .label Calc=$3f5d
+    .label MSB=$3f4c
+    .label XReduce=$18
+    .label DoY=$3f66
+  }
+  .label Generate=$3e70 {
+    .label Okay=$3f26
+    .label XPosition=$3e95
+    .label Again=$3ebb
+    .label Sprite=$3ed1
+    .label YPosition=$3eb5
+    .label SectorID=$3e75
+    .label Settings=$3f07
+  }
+  .label CurrentMoveRobot=$37d7
+  .label Segment_15_Walls=$391e
+  .label Kill=$393a {
+    .label Loop=$39b0
+    .label NotAllDead=$397d
+    .label DoubleIncrease=$3997
+    .label NoReduce=$39c6
+    .label Reduce=$3946
+    .label NotLast=$39ad
+  }
+  .label CheckSpriteCollision=$3db1 {
+    .label Loop=$3dbc
+    .label EndLoop=$3e05
+    .label IsRobot=$3df9
+    .label IsPlayer=$3e02
+  }
+  .label SectorCentreY=$37e8
+  .label FrameSpeeds=$3872
+  .label CheckWallDistances=$3cad {
+    .label Loop=$3cb9
+    .label MARGIN=$3
+    .label CheckUp=$3cc9
+    .label NoBlockLeft=$3d41
+    .label EndLoop=$3d67
+    .label WIDTH=$8
+    .label NoBlockUp=$3cf2
+    .label HEIGHT=$b
+    .label Continue=$3cc5
+    .label Finish=$3d73
+    .label NoBlockRight=$3d67
+    .label NoBlockDown=$3d18
+  }
+  .label BlockRight=$3764
+  .label MoveDirection=$37b1
+  .label SectorCentreX=$37d9
+  .label FracSpeed_One=$383b
+  .label StartCount=$383c
+  .label PlayerDiffY=$3717
+  .label PlayerDiffX=$370c
+  .label Segment_1_Walls=$38e6
+  .label Segment_7_Walls=$38fe
+  .label ResetData=$3e39 {
+    .label Loop=$3e3d
+    .label SkipRobot=$3e59
+  }
+  .label WaitTimer=$36ca
+  .label BlockLeft=$3759
+  .label SectorsUp=$381a
+  .label StartPointer=$36e0
+  .label GetDistanceToPlayer=$40e8 {
+  }
+  .label YOff=$6
+  .label UpdatePointer=$3a24 {
+  }
+  .label SpriteID=$3701
+  .label ChangeState=$3922 {
+    .label NoPointer=$3934
+  }
+  .label PosY=$3667
+  .label FireCooldown=$3738
+  .label Segment_14_Walls=$391a
+  .label UpdateSprite=$3a3a {
+    .label Finish=$3a62
+  }
+  .label KillAll=$3bde {
+    .label Loop=$3be0
+  }
+  .label CalculateXDiff=$409a {
+    .label CheckLSB=$409a
+    .label PlayerToLeft=$40ae
+    .label Finish=$40bd
+  }
+  .label Delay=$37c7
+  .label SpawnSector=$3842
+  .label CalculateBlockedWalls=$3c3a {
+    .label NoWallDown=$3c71
+    .label Down=$3c5d
+    .label NoWallLeft=$3c8a
+    .label Left=$3c74
+    .label NoWallUp=$3c5a
+    .label Right=$3c8d
+    .label NoWallRight=$3ca2
+    .label PastOver4=$3c96
+    .label PastOver3=$3c7d
+    .label PasteOver1=$3c4f
+    .label PastOver2=$3c66
+    .label Up=$3c46
+    .label Finish=$3cac
+  }
+  .label PixelSpeed_One=$383a
+  .label SectorRight=$379b
+  .label SectorUp=$377a
+  .label SectorsDown=$3829
+  .label SectorLeft=$3790
+  .label Segment_9_Walls=$3906
+  .label SectorXStart=$22
+  .label Segment_6_Walls=$38fa
+  .label StartFrameIDs=$3862
+  .label Active=$387a
+  .label ColumnOverwrite=$389b
+  .label State=$36bf
+  .label ShootFrame=$4033
+  .label Segment_11_Walls=$390e
+  .label StartPointers=$3844
+  .label BlockDown=$374e
+  .label PosY_Frac=$367d
+  .label RowOverwrite=$38cd
+  .label CalculateSegment=$3d74 {
+    .label NowY=$3d8e
+    .label NoChange=$3db0
+    .label UseLSB=$3d79
+  }
+  .label Move=$3a63 {
+    .label NoWallDown=$3af8
+    .label StoppedLeft=$3b3b
+    .label CalcSegment=$3b80
+    .label NoWallLeft=$3b3e
+    .label NotDead=$3a6b
+    .label MoveLeft=$3b0b
+    .label CantBlockLeft=$3b18
+    .label NoStateChange=$3b92
+    .label NoWallUp=$3ac2
+    .label MoveDown=$3acb
+    .label NoWallRight=$3b7a
+    .label DoX=$3afe
+    .label Different=$3a8b
+    .label MoveRight=$3b47
+    .label DoY=$3a75
+    .label MoveUp=$3a95
+    .label CantBlockUp=$3aa2
+    .label Moving=$3b88
+    .label CantBlockDown=$3ad8
+    .label CanMove=$3a71
+    .label StoppedRight=$3b77
+    .label IsDifference=$3b06
+    .label CantBlockRight=$3b54
+  }
+  .label Segment_12_Walls=$3912
+  .label Segment_3_Walls=$38ee
+  .label XOff=$4
+  .label UpdateFrame=$39eb {
+    .label Ready=$39f4
+    .label NoLoop=$3a20
+  }
+  .label Segment_4_Walls=$38f2
+  .label MoveOne=$3b99 {
+    .label NoMove2=$3bcc
+    .label NoWrap=$3bb9
+    .label EndLoop2=$3bcf
+    .label EndLoop=$3bae
+    .label NoMove=$3bab
+    .label NoWrap2=$3bda
+    .label NotLastRobot=$3b99
+  }
+  .label Sector=$36b4
+  .label OffsetX=$3688
+  .label DirectionY=$372d
+  .label FrameTimer=$36eb
+  .label OffsetY=$3693
+  .label DirectionX=$3722
+  .label Segment_13_Walls=$3916
+  .label LastRobot=$37d8
+  .label CalculateYDiff=$40be {
+    .label PlayerAbove=$40d5
+    .label Finish=$40e7
+  }
+  .label PosX_LSB=$3651
+  .label SectorXGap=$30
+  .label PixelSpeed=$3838
+  .label MIN_ROBOTS=$4
+  .label SegmentColumns=$387b
+  .label FrameSpeed=$36f6
+}
+.label SUBTUNE_START=$0
+.label SMP_In=$b129
+.label SMP_It=$99d9
+.label FALSE=$0
+.label TITLE=$115d {
+  .label CoinCooldown=$1166
+  .label Fill=$11cf
+  .label Mode=$115f
+  .label DebounceTime=$28
+  .label FlipTime=$96
+  .label Columns=$119b
+  .label DelayTimer=$115d
+  .label Initialise=$1237 {
+    .label SkipSave=$1237
+  }
+  .label FlipTimer=$1161
+  .label DelayTime=$5
+  .label ColourRows=$135d {
+    .label Loop=$135f
+    .label ColumnLoop=$1375
+  }
+  .label MoveDownRow=$12d9 {
+  }
+  .label FrameUpdate=$126a {
+    .label Ready=$127b
+    .label NoSpeech=$129b
+    .label NoCoinShow=$1285
+  }
+  .label Colours=$1203
+  .label Speedrun=$1163
+  .label DisplayScores=$12e7 {
+    .label Loop=$12e9
+  }
+  .label Infinite=$1164
+  .label Controls=$129c {
+    .label Okay=$12a5
+    .label CheckUp=$12af
+    .label Start=$12ac
+    .label CheckDown=$12c4
+    .label Finish=$12d8
+  }
+  .label TargetRow=$115e
+  .label DisplayNames=$1317 {
+    .label Loop=$1320
+  }
+  .label Finishing=$1160
+  .label Players=$1162
+  .label DebounceTimer=$1165
+  .label Rows=$1167
+}
+.label W_CHARGE=$10
+.label ROBOT_UP=$5
+.label ROBOT_THINKING=$1
+.label W_INTRUDER=$4
+.label PLEXOR=$b78 {
+  .label SpriteIndexOrig=$b79
+  .label _SpriteColor=$c45
+  .label _SpriteOrder=$c6d
+  .label Initialise=$c10 {
+  }
+  .label SpriteIndex=$b78
+  .label VicSpriteIndex=$b7a
+  .label IPOT=$b83
+  .label _SpritePointer=$c59
+  .label VicSpriteTable=$c00
+  .label POT=$b7b
+  .label __DATAEND=$c81
+  .label MP_IRQ=$c81 {
+    .label LoopStart=$c92
+    .label SelfMod=$c8f
+    .label NoSpritesExit=$f61
+    .label AreSprites=$c86
+    .label FinalExit=$f84
+  }
+  .label NoSprites=$b8b
+  .label CopyData=$f8d {
+  }
+  .label Sort=$10ce {
+    .label Loop=$112d
+    .label restart=$10d8
+    .label EndLoop=$113d
+    .label swaploop=$10f2
+    .label swapdone=$10fe
+    .label sortloop=$10db
+    .label Loop2=$10d3
+    .label noswap2=$1109
+    .label Finish=$1142
+    .label noswap1=$1106
+  }
+  .label NextLine=$b8c
+  .label __DATA=$c1d
+  .label _SpriteY=$c31
+  .label _SpriteX=$c1d
+}
+.label OTTO=$45cf {
+  .label X_Value=$45d2
+  .label SpriteID=$12
+  .label PosY=$460d
+  .label NewLevel=$4616 {
+  }
+  .label UpdateSprite=$480b {
+  }
+  .label DecreaseX=$4630 {
+    .label Okay=$463d
+  }
+  .label DistanceX=$45d8
+  .label JumpLookupY=$45e9
+  .label JumpLookupX=$45f4
+  .label DistanceY=$45d9
+  .label JumpFrames=$45e3
+  .label XMovementPixel=$460f
+  .label Disable=$47b8 {
+  }
+  .label SpawnPointX=$45db
+  .label SpawnPointY=$45df
+  .label Spawning=$45d4
+  .label CalculateFrames=$4866 {
+    .label Loop=$487e
+  }
+  .label MoveDown=$45d7
+  .label DefaultJumpY=$fffffff8
+  .label SpawnOtto=$47ce {
+    .label Skip=$480a
+  }
+  .label MaxX=$ff
+  .label Active=$45d3
+  .label PosX_MSB=$460c
+  .label FrameUpdate=$4838 {
+    .label NotYet=$4862
+    .label Handle=$4863
+  }
+  .label NewGame=$4610 {
+  }
+  .label XSpeed=$50
+  .label HandleSpawning=$469b {
+    .label Ready=$46a4
+    .label StartMoving=$46b8
+  }
+  .label Frame=$45da
+  .label MinX=$1c
+  .label JumpAdjust=$4
+  .label FrameLookup=$45e4
+  .label IncreaseFrames=$4675 {
+    .label NoChange=$469a
+    .label Finish=$468c
+  }
+  .label DelayFrames=$45d0
+  .label MoveRight=$45d6
+  .label HandleOtto=$47ac {
+    .label DoSpawn=$47b4
+    .label OpenPlay=$47b1
+  }
+  .label HandleJump=$4728 {
+    .label Ready=$4736
+    .label GetDirection=$4741
+    .label GotDirection=$4747
+    .label ShowSprite=$47a5
+    .label GoLeft=$4768
+    .label NotBounce=$475c
+    .label DoX=$475c
+    .label GoRight=$4775
+    .label DoY=$477f
+    .label CheckCollision=$47a8
+  }
+  .label DoTwice=$45ff
+  .label CalculateDirection=$46bf {
+    .label GoUp=$46f0
+    .label GoLeft=$46cf
+    .label DoX=$46bf
+    .label GoRight=$46c7
+    .label GoDown=$46df
+    .label DoY=$46d4
+  }
+  .label DefaultLandY=$8
+  .label JumpFrameStart=$6
+  .label XMovementFrac=$460e
+  .label JumpProgress=$460a
+  .label SpawnFrameTime=$a
+  .label Collision=$463e {
+    .label MSB_Same=$4648
+    .label NoCollision=$4674
+    .label DoX=$4648
+    .label Finish=$4674
+    .label DoY=$465b
+  }
+  .label AddX=$4700 {
+    .label NoDouble=$4727
+  }
+  .label FrameTimer=$45d5
+  .label PosX_LSB=$460b
+  .label CountActive=$45cf
+  .label StartPointer=$44
+}
+.label ROBOT_DOWN=$4
+.label HiByte=$828
+.label SUBTUNE_HI_SCORE=$4
+.label W_SHOOT=$15
+.label W_FIRE_ROBOT=$16
+.label SMP_Intruder=$6ed2
+.label W_MUST=$a
+.label Dot=$c5
+.label MAP_TILES=$5208
+.label SpriteCopyX=$9f
+.label SpriteCopyY=$b3
+.label FirstInitials=$810
+.label ZP=$3 {
+  .label SpriteID=$1a
+  .label XDiff=$2d
+  .label Repeat=$38
+  .label BulletID=$1d
+  .label Temp4=$c
+  .label CurrentID=$14
+  .label Counter=$3
+  .label ScreenMove=$19
+  .label TextAddress=$23
+  .label StageWaveOrderAddress=$27
+  .label NextLine=$3a
+  .label ColumnID=$1b
+  .label StoredXReg=$10
+  .label CurrentSample=$2a
+  .label Died=$2b
+  .label RobotID=$1c
+  .label CharID=$7
+  .label SoundFX=$2c
+  .label State=$39
+  .label Row=$4
+  .label Frequency_MSB=$30
+  .label StoredYReg=$13
+  .label RowOffset=$6
+  .label B=$37
+  .label C=$36
+  .label D=$35
+  .label E=$34
+  .label CollideChar=$29
+  .label H=$33
+  .label L=$32
+  .label CharDirection=$18
+  .label Colour=$f
+  .label CharOffset=$22
+  .label Column=$5
+  .label WallDirection=$17
+  .label X=$d
+  .label ScreenAddress=$1e
+  .label Y=$e
+  .label YReached=$31
+  .label Amount=$12
+  .label EndID=$11
+  .label ColourAddress=$20
+  .label Temp3=$b
+  .label Temp2=$a
+  .label Temp1=$9
+  .label YDiff=$2e
+  .label SoundID=$15
+  .label Frequency=$2f
+  .label WallID=$16
+  .label DataAddress=$25
+  .label StartID=$8
+}
+.label MAP=$5104
+.label YELLOW_MULT=$f
+.label ROBOT_DYING=$6
+.label SMP_Coins=$b526
+.label W_ALERT=$9
+.label ROBOT_DEAD=$ff
+.label PADDING=$5
+.label SUBTUNE_DANGER=$8
+.label SMP_Die=$c400
+.label GAME_MODE_TITLE=$0
+.label Comma=$c4
+.label SMP_Humanoid=$9282
+.label SMP_The=$6b32
+.label S_EXPLODE=$1
+.label RIGHT=$1
+.label W_HUMANOID=$d
+.label PROGRESSION=$44a4 {
+  .label GetLevelData=$454d {
+    .label RobotColour=$4559
+    .label BulletSpeed=$455f
+    .label BulletNum=$454d
+    .label RobotSpeed=$4571
+    .label Delay=$457d
+  }
+  .label BulletSpeedFast_MSB=$1
+  .label BulletSpeedFast_LSB=$64
+  .label RobotsPerFrame=$1
+  .label IncreaseLevel=$4596 {
+    .label IncreaseID=$45bc
+    .label IncreaseSpeeds=$459a
+    .label DoubleBulletSpeed=$45c4
+    .label NoDouble=$45ce
+  }
+  .label ScoreLevelM=$44ce
+  .label Colours=$44b3
+  .label BulletSpeedPerLevel=$f
+  .label FrameDelay=$44e9
+  .label MaxScoreIncrease_M=$20
+  .label BulletSpeed_LSB=$44f7
+  .label BulletSpeed_MSB=$44f8
+  .label ScoreLevelH=$44c1
+  .label MaxScoreIncrease_H=$1
+  .label RobotSpeed_LSB=$44f9
+  .label RobotSpeed_MSB=$44fa
+  .label CheckLevel=$4531 {
+    .label CheckHigh=$4534
+    .label CheckMid=$4541
+    .label CheckLow=$454c
+    .label NotYet=$454c
+  }
+  .label RobotSpeedStart_MSB=$0
+  .label RobotSpeedStart_LSB=$64
+  .label BulletSpeedStart_MSB=$0
+  .label Bullets=$44a5
+  .label BulletSpeedStart_LSB=$c8
+  .label Level=$44a4
+  .label RobotSpeedPerRobot=$19
+  .label RobotSpeedPerLevel=$14
+  .label NewGame=$44fb {
+    .label Loop=$4527
+    .label NoFake=$452d
+  }
+  .label FrameSpeed=$44db
+}
+.label W_ROBOT=$8
+.label PROCESSOR_PORT=$1
+.label RANDOM=$16b9 {
+  .label RandomAdd=$16b9
+  .label init=$16fa
+  .label Get=$16ba {
+  }
+  .label init2=$16c6 {
+  }
+  .label Get2=$16e3 {
+    .label seed=$16f9
+    .label noEor=$16f5
+    .label doEor=$16ed
+  }
+}
+.label MAX_SPRITES=$14
+.label SpriteCharX=$264f
+.label S_DESTROY_INTRUDER=$2
+.label GAME_MODE_SCORE=$7
+.label SpriteCharY=$2663
+.label TITLE_DEMO=$5000
+.label SMP_Got=$a90f
+.label WALL_EAST=$2
+.label INPUT=$95a {
+  .label PortToRead=$95e
+  .label joyLeftMask=$4
+  .label JOY_FIRE_NOW=$971
+  .label joyRightMask=$8
+  .label JOY_LEFT_LAST=$961
+  .label ReadC64Joystick=$975 {
+    .label StoreReading=$982
+    .label PortOne=$97f
+  }
+  .label JOY_DOWN_NOW=$96d
+  .label JOY_FIRE_LAST=$967
+  .label JOY_LEFT_NOW=$96b
+  .label joyFireMask=$10
+  .label joyDownMask=$2
+  .label JOY_UP_NOW=$96f
+  .label JOY_READING=$95a
+  .label LAST_READING=$95c
+  .label JOY_RIGHT_NOW=$969
+  .label ReadJoystick=$9dd {
+  }
+  .label FIRE_UP_THIS_FRAME=$973
+  .label CalculateButtons=$986 {
+    .label DownUp=$9cd
+    .label CheckFire=$989
+    .label CheckUp=$9af
+    .label CheckRight=$9cd
+    .label CheckFireUp=$9a0
+    .label CheckDown=$9be
+    .label LeftUp=$9af
+    .label Finish=$9dc
+    .label UpUp=$9be
+    .label CheckLeft=$9a0
+    .label RightUp=$9dc
+  }
+  .label JOY_RIGHT_LAST=$95f
+  .label JOY_UP_LAST=$965
+  .label JOY_DOWN_LAST=$963
+  .label joyUpMask=$1
+}
+.label BOTTOM_RIGHT=$1
+.label W_POCKET=$18
+.label GREEN_MULT=$d
+.label GAME_MODE_OVER=$4
+.label SMP_Charge=$9ff3
+.label CHAR_SET=$d800
+.label W_KILL=$13
+.label GAME_MODE_CHALLENGE=$6
+.label W_ATTACK=$f
+.label MAIN=$2000 {
+  .label GameCode=$4a4c {
+    .label NotMap=$4a60
+    .label Okay2=$4a73
+    .label IsMap=$4a54
+    .label Skip=$4a7f
+    .label DoPalMode=$4a4c
+  }
+  .label PerformFrameCodeFlag=$48ad
+  .label LoadScores=$492e {
+  }
+  .label Cooldown=$48b1
+  .label SetupTitleScreen=$498a {
+    .label Loop2=$49ae
+  }
+  .label nmi=$4958 {
+    .label Okay=$495e
+    .label CanPause=$4971
+    .label Pause=$497c
+    .label Exit=$4989
+  }
+  .label ResetGame=$49c8 {
+    .label Loop=$49ef
+  }
+  .label SetupRestoreKey=$4944 {
+  }
+  .label SaveKernalZPOnly=$4b0b {
+    .label Loop=$4b0d
+  }
+  .label Entry=$48c5 {
+  }
+  .label Loading=$48b2
+  .label SetGameColours=$4a31 {
+  }
+  .label LoadScreen=$4a0b {
+  }
+  .label SaveKernalZP=$4afb {
+    .label Loop=$4afd
+  }
+  .label InitialiseGame=$4a05 {
+  }
+  .label GameIsOver=$48ae
+  .label SetupVIC=$4a14 {
+  }
+  .label Loop=$4a82 {
+    .label Okay=$4a8f
+  }
+  .label Unpause=$494f {
+  }
+  .label LoadHiScore=$4923 {
+  }
+  .label MachineType=$48af
+  .label Saving=$48bc
+  .label SaveGameZP=$4b16 {
+    .label Loop=$4b18
+  }
+  .label ShowTitleScreen=$49b6 {
+  }
+  .label GameActive=$48ac
+  .label DrawLoading=$48f3 {
+    .label Loop=$48f5
+    .label Row=$b
+  }
+  .label GameMode=$48b0
+  .label FrameCode=$4a92 {
+    .label Score=$4aca
+    .label GameOver=$4ab1
+    .label Playing=$4ad0
+    .label GamePaused=$4ad3
+    .label IsActive=$4a9f
+    .label NoQuit=$4af8
+    .label TitleScreen=$4ab7
+  }
+  .label ResetSprites=$49bc {
+    .label Loop=$49be
+  }
+  .label DrawSaving=$4907 {
+    .label Loop=$4909
+    .label Row=$b
+  }
+}
+.label SUBTUNE_RECAPTURE=$7
+.label SUBTUNE_BEAM=$b
+.label SMP_Detected=$e000
+.label ROBOT_RIGHT=$2
+.label SpriteType=$269f
+.label SMP_Life=$f16a
+.label RED_MULT=$a
+.label TRUE=$1
+.label S_CHICKEN=$2a
+.label SPRITE_POINTERS=$c3f8
+.label W_LIKE=$6
+.label SMP_Robot=$7df3
+.label GAME_MODE_PRE_STAGE=$1
+.label WHITE_MULT=$9
+.label SCREEN_RAM=$c000
+.label DISK=$1385 {
+  .label K_setlfs=$ffba
+  .label K_close=$ffc3
+  .label K_load=$ffd5
+  .label DELETE=$1427 {
+    .label fname=$145b
+    .label fname_end=$1466
+    .label skip=$1438
+    .label error=$144b
+  }
+  .label K_open=$ffc0
+  .label file_end=$83f
+  .label LOAD=$1466 {
+    .label fname=$14d0
+    .label fname_end=$14da
+    .label load_address=$810
+    .label skip=$1487
+    .label error=$14b3
+  }
+  .label K_setnam=$ffbd
+  .label K_save=$ffd8
+  .label K_clrchn=$ffcc
+  .label SAVE=$1385 {
+    .label fname=$141d
+    .label fname_end=$1427
+    .label skip=$13bc
+    .label error=$13f8
+  }
+  .label file_start=$810
+}
+.label SMP_Escape=$8d53
+.label SpritePointer=$77
+.label SMP_Kill=$ad70
+.label GAME_MODE_SWITCH_TITLE=$5
+.label SecondInitials=$818
+.label INTERRUPT_VECTOR=$fffe
+.label SMP_A=$7ae7
+.label SpriteColor=$63
+.label W_COINS=$17
+.label TOP_RIGHT=$0
+.label SUBTUNE_CHALLENGING=$2
+.label SMP_Pocket=$ba2b
+.label WALL_WEST=$3
+.label SMP_Explode=$5f0d
+.label SMP_Destroy=$649d
+.label MedByte=$830
+.label VIC=$843 {
+  .label SPRITE_BG_COLLISION=$d01f
+  .label BORDER_COLOR=$d020
+  .label SPRITE_MULTICOLOR=$d01c
+  .label SPRITE_1_X=$d002
+  .label SPRITE_1_Y=$d003
+  .label SPRITE_3_Y=$d007
+  .label SPRITE_3_X=$d006
+  .label SPRITE_5_Y=$d00b
+  .label SCREEN_CONTROL=$d011
+  .label SPRITE_5_X=$d00a
+  .label SPRITE_7_Y=$d00f
+  .label SPRITE_7_X=$d00e
+  .label EXTENDED_BG_COLOR_1=$d022
+  .label EXTENDED_BG_COLOR_2=$d023
+  .label SPRITE_PRIORITY=$d01b
+  .label SPRITE_MSB=$d010
+  .label ScreenRowMSB=$86c
+  .label BACKGROUND_COLOR=$d021
+  .label BANK_SELECT=$dd00
+  .label INTERRUPT_CONTROL=$d01a
+  .label SPRITE_COLOR_7=$d02e
+  .label SPRITE_COLOR_6=$d02d
+  .label COLOR_RAM=$d800
+  .label SPRITE_MULTICOLOR_2=$d026
+  .label SPRITE_MULTICOLOR_1=$d025
+  .label INTERRUPT_STATUS=$d019
+  .label SPRITE_0_X=$d000
+  .label SPRITE_COLOR_5=$d02c
+  .label SPRITE_COLOR_4=$d02b
+  .label SPRITE_COLOR_3=$d02a
+  .label SPRITE_COLOR_2=$d029
+  .label SPRITE_COLOR_1=$d028
+  .label SPRITE_COLOR_0=$d027
+  .label COLOR_ADDRESS=$20
+  .label SPRITE_ENABLE=$d015
+  .label MSB_On=$843
+  .label SCREEN_ADDRESS=$1e
+  .label SPRITE_0_Y=$d001
+  .label SPRITE_2_X=$d004
+  .label SPRITE_4_X=$d008
+  .label SPRITE_2_Y=$d005
+  .label MSB_Off=$84b
+  .label SPRITE_6_X=$d00c
+  .label SPRITE_4_Y=$d009
+  .label MEMORY_SETUP=$d018
+  .label SPRITE_6_Y=$d00d
+  .label RASTER_Y=$d012
+  .label ScreenRowLSB=$853
+  .label SCREEN_CONTROL_2=$d016
+}
+.label TextRow=$ef
+.label BLUE_MULT=$e

@@ -1,0 +1,18 @@
+parsing
+Got 99 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/bullet.asm 47:8) Error: Unknown symbol 'SFX_FIRE'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/bullet.asm 47:4) Error: Macro command 'sfx' not defined
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/bullet.asm 48:8) Error: Unknown symbol 'SOUND'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/bullet.asm 59:8) Error: Unknown symbol 'INPUT'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/bullet.asm 64:9) Error: Unknown symbol 'LEFT_MASK'
+  ...
+
+
+  CanFire:
+
+   sfx(SFX_FIRE)
+       ^
+
+Error: Unknown symbol 'SFX_FIRE'
+
+

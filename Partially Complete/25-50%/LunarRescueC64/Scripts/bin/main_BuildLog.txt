@@ -1,0 +1,54 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/LunarRescueC64/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0025 Temp vars zero page
+  *$0026-$003d LPAX
+  *$003e-$0054 SpriteX
+  *$0055-$00c7 SpriteY
+  *$00c8-$00e2 SpriteCopyY
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $0810-$0836 Hi score_Data
+  $0880-$08c1 Modules
+  $08c2-$0972 IRQ
+  $0973-$09bd Utility
+  $09be-$09dc Input
+  $09dd-$0a7d Joystick
+  $0a7e-$0bff Maploader
+  $0c00-$0c8f VicSpriteTable
+  $0c90-$0f81 IRQ
+  $0f82-$117e ---String Data
+  $117f-$12b4 ---Text
+  $12b5-$130a Title
+  $130b-$13c3 Check Left Finish
+  $13c4-$13ee High Scores
+  $13ef-$1ace Position
+  $1acf-$1dba Score
+  $1dbb-$2065 Lives
+  $2066-$20b7 -Random
+  $20b8-$215f -Plot
+  $2160-$2161 GAME OVER
+  $2162-$2183 
+  $2184-$21f3 DisplayGameOver
+  $21f4-$299a -Sound
+  $299b-$2c29 Main
+  $5900-$5a03 Title Map
+  $5a04-$5b07 Game Map
+  $5b08-$5cdb Game Tiles
+  $5d50-$5e50 Game Colours
+  $5f00-$5f37 Logo
+  $6000-$6be9 sid
+  $c400-$cf3f Sprites
+  $e000-$e1ff Game ZP Backup
+  $f000-$f807 Charset
+  $fd00-$feff SpriteCharLookup
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/LunarRescueC64/Scripts/bin/main.vs
+Writing Symbol file: main.sym

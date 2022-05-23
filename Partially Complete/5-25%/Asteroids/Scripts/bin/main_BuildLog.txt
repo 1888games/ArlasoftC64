@@ -1,0 +1,51 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Asteroids/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0010-$0031 Temp vars zero page
+  *$0032-$0048 SpriteX
+  *$0049-$00bb SpriteY
+  *$00bc-$00d6 SpriteCopyY
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $0810-$0836 Hi score_Data
+  $0880-$08c1 Modules
+  $08c2-$09bf IRQ
+  $09c0-$0a0a Utility
+  $0a0b-$0a29 Input
+  $0a2a-$0aca Joystick
+  $0acb-$0cff Maploader
+  $0d00-$0d97 VicSpriteTable
+  $0d98-$1089 IRQ
+  $108a-$1100 -Random
+  $1101-$1187 -Plot
+  $1200-$12ff AST - Object Data
+  $1300-$13ff AST - ROM Zeropage
+  $1400-$13ff Unnamed
+  $1400-$14e4 ---String Data
+  $14e5-$1772 ---Text
+  $1773-$1a5f Score
+  $1a60-$2018 -Sound
+  $2019-$208e Startup
+  $208f-$20ac Game
+  $20ad-$2157 Wave
+  $2158-$2901 Asteroid
+  $5900-$5a03 Demo Map
+  $6000-$6be9 sid
+  $6c00-$6e1a Main
+  $7400-$7503 Game Map
+  $7504-$7597 Game Tiles
+  $7800-$78ff Game Colours
+  $7900-$7937 Logo
+  $a500-$a6ff Game ZP Backup
+  $c400-$d73f Sprites
+  $f000-$f7ff Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Asteroids/Scripts/bin/main.vs
+Writing Symbol file: main.sym

@@ -1,0 +1,19 @@
+parsing
+Got 228 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/system/hi_score.asm 7:8) Unknown symbol 'C'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/system/hi_score.asm 7:10) Unknown symbol 'o'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/system/hi_score.asm 7:12) Unknown symbol 'n'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/system/hi_score.asm 7:14) Unknown symbol 'g'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/system/hi_score.asm 7:16) Unknown symbol 'r'
+  ...
+
+ Text:
+
+ * = * "Hi_Score"
+ .byte C,o,n,g,r,a,t,u,l,a,t,i,o,n,s,SPACE,P,l,a,y,e,r,SPACE,65, 0
+       ^
+
+Error: Unknown symbol 'C'
+at line 7, column 8 in hi_score.asm
+
+

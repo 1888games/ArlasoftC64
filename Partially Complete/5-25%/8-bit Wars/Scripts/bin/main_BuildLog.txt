@@ -1,0 +1,24 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: C:\Users\Nick\Dropbox\C64\Projects\Backburner\8-bit Wars\Scripts\bin\main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$002c Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $080e-$08b5 Lookups
+  $08b6-$0b9b Common
+  $0b9c-$129e Game
+  $7000-$70ef Hud Map
+  $7100-$7233 Hud Tiles
+  $7300-$73f3 Char Colours
+  $7400-$b6cb Map Data
+  $c400-$d57f Sprites
+  $f000-$f79f Charset
+
+Writing Vice symbol file: C:\Users\Nick\Dropbox\C64\Projects\Backburner\8-bit Wars\Scripts\bin\main.vs

@@ -1,0 +1,32 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/The Glob/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$002d Temp vars zero page
+  *$002e-$0049 LPAX
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $0880-$08c1 Modules
+  $08c2-$094e IRQ
+  $094f-$0960 Utility
+  $0961-$097f Input
+  $0980-$0a20 Joystick
+  $0a21-$0b53 Maploader
+  $0b54-$0ba5 -Random
+  $0ba6-$0bfa -Plot
+  $0bfb-$0df9 -Sound
+  $0dfa-$0f10 Main
+  $5a04-$5b07 Game Map
+  $5b08-$5bb3 Game Tiles
+  $5d50-$5dab Game Colours
+  $c400-$d33f Sprites
+  $f000-$f2df Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/The Glob/Scripts/bin/main.vs
+Writing Symbol file: main.sym

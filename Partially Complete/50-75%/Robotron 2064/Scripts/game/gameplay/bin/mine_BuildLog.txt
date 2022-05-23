@@ -1,0 +1,18 @@
+parsing
+Got 40 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/mine.asm 38:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/mine.asm 39:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/mine.asm 43:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/mine.asm 44:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/mine.asm 65:8) Error: Unknown symbol 'ZP'
+  ...
+
+
+  Loop:
+
+   stx ZP.X
+       ^
+
+Error: Unknown symbol 'ZP'
+
+

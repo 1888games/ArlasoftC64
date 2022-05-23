@@ -1,0 +1,46 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/Thunderground/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0036 Temp vars zero page
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$1157 IRQ
+  $1158-$1186 Utility
+  $1187-$11a3 Input
+  $11a4-$123f Joystick
+  $1240-$137b Maploader
+  $137c-$1434 -Plot
+  $1435-$148f -Random
+  $1490-$1808 Score
+  $2000-$1fff Unnamed
+  $2000-$2498 Player
+  $2499-$264d Bases
+  $264e-$292a Bullet
+  $292b-$2bbd Level
+  $2bbe-$2c41 Lives
+  $3000-$335e sid
+  $7000-$7103 Game Map
+  $7104-$714f Game Tiles
+  $7300-$737b Game Colours
+  $7500-$7603 Full Map
+  $7700-$7803 Title Map
+  $8000-$834c Unnamed
+  $834d-$8364 Enemy
+  $8365-$8368 Error2
+  $8369-$8ade Error
+  $8adf-$8f6b Title
+  $8f6c-$9097 -Sound
+  $9098-$926d Main
+  $c400-$c9bf Sprites
+  $f000-$f3df Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/Thunderground/Scripts/bin/main.vs
+Writing Symbol file: main.sym

@@ -1,0 +1,110 @@
+1.0
+- Time to do a 1.0 release. No major changes.
+
+0.9.6
+- get it working on Windows
+- and overhaul the README to include Windows installation instructions and more
+  introductory information.
+
+0.9.5
+- improve error feedback when level file is invalid.
+- bug fixes in error handling code paths that are rarely/never hit.
+
+0.9.4
+- workaround change in librsvg - CSS selector specificity seems to no longer take ID selectors into account? This affected rendering of many of the tiles.
+- improve level complete dialog box.
+- improve error feedback when tileset is not found.
+- update for GTK 2.12.
+
+0.9.3
+- fix auto-round menu toggle in the editor
+
+0.9.2
+- redesign status bar; long hint strings can now be seen as a tooltip
+- fix demo playback
+- more code cleanup and commenting
+
+0.9.1
+- editor no longer crashes if it fails to save (!)
+- better error feedback if the tileset is not found
+- general code cleanup
+
+0.9
+- make the game wait a bit before reacting to a key being held down. This stops
+  the occasional random double-moves caused by a key press spanning more than
+  1/10th of a second. You have to hold shift down if you really need to move
+  fast.
+- finish writing recording if game exited while recording
+- fix crash when trying to tell user about failing to read a recording
+
+0.8
+- remember window size
+- starting direction of shooters now matches original Kye
+- add Kye to level if absent, in the same way that windows Kye 2.0 did
+
+0.7
+- keyboard bindings for diagonal moves & allow use of the numeric keypad
+- allow games to be recorded and played back
+- remember played files & levels
+  - list recently played level sets on the file menu
+  - list known levels in the goto dialog
+- force level to have solid border wall, as in original Kye
+- further tidying up & standardisation of the interface
+- kye cannot trigger black hole animation
+- fix stuck keyboard keys after level end
+- restart level works even after a failed goto
+
+0.6
+- fix keyboard repeat problem
+- use fallback for AboutDialog if unavailable (as in pygtk < 2.6)
+- RPM package
+
+0.5.0
+- diamonds glitter now, like they do in the original Kye
+- undo feature for the editor
+- context-sensitive enabling and disabling of editor menu items
+- warnings about problems with levels when saving
+
+0.4.0
+- switch to .tar.gz for tile sets
+- fix installation for editor
+- improve error handling
+- clean up menu code
+- bug fixing
+
+0.3.0
+- new level and delete level now work
+- auto-rounding of wall tiles
+- add dialog to edit level name, hint etc
+- overhaul dialog code, eliminate duplication
+- fix editor to work with python 2.3
+
+0.2.0
+- level editor included
+- minor code & menu reorganisation to share code & menu options with the editor
+
+0.1.1
+- stuck monsters animate correctly
+- fix number of kye lives
+
+0.1.0
+- playing area can now be enlarged - monitors are much bigger than in 1993 :-)
+- clean up dialogs and add basic help dialog
+- complete free SVG tile set
+
+0.0.3
+- support PNG images
+- fix slowness on levels with lots of blocks
+- fix game bug which allowed the kye to push black holes
+
+0.0.2
+- fix bug with mixed or lower-case level names
+- pack status bar more tightly
+- faster screen update code
+- faster magnet code
+- GPL headers on all files, for completeness
+- cope with ^Z on last line of level set (some editors from the DOS/windows days of kye add these)
+
+0.0.1
+- first release
+

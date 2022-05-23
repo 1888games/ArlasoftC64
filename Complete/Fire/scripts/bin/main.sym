@@ -1,0 +1,655 @@
+.label CHAR_DATA=$19c5 {
+  .label ObjectType=$1a0d
+  .label DataStart=$19c5
+  .label Sizes=$1a32 {
+  }
+  .label TypeColours=$1a31
+}
+.label BaseScreenLocation=$ff14
+.label FIRE=$3a35 {
+  .label SmokeObjectId=$1d
+  .label MaxSmokePosition=$4
+  .label CooldownTime=$8
+  .label Cooldown=$3a36
+  .label UpdateFire=$3a6d {
+    .label Shift=$3a78
+    .label Finish=$3a93
+  }
+  .label StartFireCharacter264=$2808
+  .label Update=$3a38 {
+    .label Shift=$3a43
+    .label NoWrap=$3a60
+    .label Finish=$3a6c
+  }
+  .label SmokeCooldown=$3a37
+  .label SmokecooldownTime=$1
+  .label SmokePosition=$3a35
+  .label StartFireCharacter=$f008
+}
+.label LIONEL=$1400 {
+  .label Initialise=$17a1 {
+  }
+}
+.label TEMP1=$2
+.label TEMP2=$3
+.label TEMP3=$4
+.label TEMP4=$5
+.label TEMP5=$6
+.label TEMP6=$7
+.label TEMP7=$8
+.label TEMP8=$9
+.label TEMP9=$a
+.label Channel1_MSB=$ff12
+.label ChannelOff=$16d0
+.label COLOR_RAM=$1c
+.label C64=$15f8 {
+  .label DisableCIA=$16a1 {
+  }
+  .label AttDec=$160a
+  .label VOICE_1_ATTDEC=$d405
+  .label VOICE_2_FREQUENCY=$d407
+  .label VOICE_3_SUSTAIN=$d414
+  .label Serial_Bus_Port_A=$dd00
+  .label VOLUME_FILTER=$d418
+  .label VOICE_1_CONTROL=$d404
+  .label Control=$1616
+  .label VOICE_2_CONTROL=$d40b
+  .label Sustain=$1610
+  .label FrequencyMSB=$15fe
+  .label Pulse_Width=$1604
+  .label IRQControlRegister2=$dd0d
+  .label IRQControlRegister1=$dc0d
+  .label VOICE_3_CONTROL=$d412
+  .label VOICE_1_FREQUENCY=$d400
+  .label VOICE_3_FREQUENCY=$d40e
+  .label BankOutKernalAndBasic=$16aa {
+  }
+  .label VOICE_1_PULSE_WIDTH=$d402
+  .label VOICE_2_PULSE_WIDTH=$d409
+  .label VOICE_1_SUSTAIN=$d406
+  .label Processor_Port=$1
+  .label PlayNote=$161c {
+  }
+  .label VOICE_2_SUSTAIN=$d40d
+  .label VOICE_3_ATTDEC=$d413
+  .label Frequency=$15f8
+  .label StopNote=$167c {
+  }
+  .label VOICE_2_ATTDEC=$d40c
+  .label VOICE_3_PULSE_WIDTH=$d410
+  .label SetC64VICBank=$16b3 {
+  }
+}
+.label ONE=$1
+.label PLUS4=$16da {
+  .label PlayNote=$16da {
+  }
+  .label StopNote=$16db {
+  }
+}
+.label PET_DOWN_3=$53
+.label PET_DOWN_2=$11
+.label PET_DOWN_1=$2e
+.label SOUND=$1472 {
+  .label CurrentNoteID=$1479
+  .label VOICE_1_ATTDEC=$d405
+  .label CurrentNoteValue=$147c
+  .label MaxChannels=$1472
+  .label ObjectID=$2
+  .label Cooldown=$1482
+  .label VOICE_2_FREQUENCY=$d407
+  .label VOICE_3_SUSTAIN=$d414
+  .label Update=$1520 {
+    .label Loop=$152c
+    .label CheckNoteStatus=$1533
+    .label LastNote=$154f
+    .label CurrentNote=$d
+    .label EndLoop=$1566
+    .label MoreNotes=$1557
+    .label Finish=$156f {
+    }
+    .label StoppingNote=$1540
+  }
+  .label StartAddress=$e
+  .label BytesToRead=$3
+  .label VOICE_1_CONTROL=$d404
+  .label VOICE_2_CONTROL=$d40b
+  .label NoteRemaining=$1473
+  .label SetupSID=$15b2 {
+  }
+  .label SID_VOLUME_FILTER=$d418
+  .label VOICE_3_CONTROL=$d412
+  .label VOICE_1_FREQUENCY=$d400
+  .label CurrentChannel=$4
+  .label EndNoteID=$1476
+  .label VOICE_3_FREQUENCY=$d40e
+  .label Initialise=$14cf {
+  }
+  .label NoteValue=$10
+  .label SongIDs=$147f
+  .label StartSong=$14d3 {
+    .label Loop=$14f5
+    .label OkayToPlay=$14db
+    .label DontOverride=$14f1
+    .label UseThisChannel=$1505
+    .label Restore=$151a {
+    }
+    .label Finish=$151f
+  }
+  .label VOICE_1_PULSE_WIDTH=$d402
+  .label VOICE_2_PULSE_WIDTH=$d409
+  .label VOICE_1_SUSTAIN=$d406
+  .label PlayNote=$1579 {
+  }
+  .label VOICE_2_SUSTAIN=$d40d
+  .label VOICE_3_ATTDEC=$d413
+  .label StopNote=$1575 {
+  }
+  .label VOICE_2_ATTDEC=$d40c
+  .label ByteID=$6
+  .label GetNextNote=$157d {
+  }
+  .label VOICE_3_PULSE_WIDTH=$d410
+}
+.label Plus4Select=$16dd
+.label ALL_ON=$ff
+.label ChannelsLSB=$16d2
+.label AdjustBackgroundForVIC=$1464 {
+  .label adjustedColour=$2
+}
+.label RANDOM=$15b8 {
+  .label RandomAdd=$15b8
+  .label C64=$15bb {
+  }
+  .label VIC=$15d4 {
+  }
+  .label Get=$15f4 {
+  }
+  .label CurrentIndex=$15b9
+  .label Initialise=$15d8 {
+  }
+  .label PET=$15ba {
+  }
+}
+.label LEVELDATA=$1d20 {
+  .label Jumpers=$1d41
+  .label Speed=$1d31
+  .label Tens=$1d52
+  .label Ones=$1d51
+  .label NextLevelID=$1d20
+  .label SetupNextLevel=$1d54 {
+    .label Wrap=$1d8a
+    .label NoIncrease=$1d82
+    .label Finish=$1d8b
+  }
+  .label MaxLevels=$10
+  .label ScreenPosition=$1d53
+  .label UpdateLevelText=$1d8f {
+    .label Finish=$1dbe
+  }
+  .label MaxJumpers=$1d21
+}
+.label PET_LEFT_1=$2c
+.label PET_LEFT_3=$9d
+.label PET_LEFT_2=$41
+.label ZP_COUNTER=$1e
+.label CharMemoryLocation=$ff13
+.label C64_ScreenControl=$d011
+.label Channel2_LSB=$ff0f
+.label ZERO=$0
+.label JOY_PORT_RIGHT=$9120
+.label INPUT=$16df {
+  .label Read264Joystick=$170a {
+  }
+  .label JOY_FIRE_LAST=$16eb
+  .label JOY_UP_NOW=$16f3
+  .label defaultJoystickPort=$2
+  .label CalculateButtons=$170d {
+    .label DownUp=$1769
+    .label CheckFire=$1710
+    .label CheckUp=$1746
+    .label CheckFireUp=$1722
+    .label CheckDown=$175a
+    .label LeftUp=$1741
+    .label Finish=$1782
+    .label UpUp=$1755
+    .label CheckLeft=$1732
+    .label RightUp=$177d
+  }
+  .label JOY_UP_LAST=$16e9
+  .label JOY_DOWN_LAST=$16e7
+  .label PortToRead=$16e2
+  .label joyLeftMask=$4
+  .label JOY_FIRE_NOW=$16f5
+  .label joyRightMask=$8
+  .label JOY_LEFT_LAST=$16e5
+  .label ReadC64Joystick=$16f9 {
+  }
+  .label ReadVICJoystick=$170b {
+  }
+  .label JOY_DOWN_NOW=$16f1
+  .label JOY_LEFT_NOW=$16ef
+  .label joyFireMask=$10
+  .label Initialise=$16df
+  .label joyDownMask=$2
+  .label JOY_READING=$16e0
+  .label JOY_RIGHT_NOW=$16ed
+  .label ReadJoystick=$1783 {
+  }
+  .label FIRE_UP_THIS_FRAME=$16f7
+  .label JOY_RIGHT_LAST=$16e3
+  .label ReadPETKeyboard=$170c {
+  }
+  .label joyUpMask=$1
+}
+.label VIDEO=$1400 {
+  .label CurrentBackgroundColour=$1433
+  .label Background_Colour=$d021
+  .label RasterLine=$d012
+  .label CurrentBackgroundLuminance=$1435
+  .label MultiColourHorizontal=$d016
+  .label RasterExtraBit=$d011
+  .label Initialise=$143a
+  .label Border_Colour=$d020
+  .label CurrentBorderColour=$1432
+  .label Extended_Colour_2=$d023
+  .label Extended_Colour_1=$d022
+  .label VerticalControl=$d011
+  .label CurrentScreenRamAddress=$1436
+  .label CurrentExtendedColour1=$1438
+  .label CurrentBorderLuminance=$1434
+  .label CurrentExtendedColour2=$1439
+}
+.label MAPLOADER=$17b1 {
+  .label Column=$17b5
+  .label DrawMap=$17bb {
+  }
+  .label Columns=$17b7
+  .label Initialise=$17ba {
+  }
+  .label Row=$17b6
+  .label TileSize=$17b9
+  .label TileScreenLocations=$17b1
+  .label Rows=$17b8
+}
+.label MAIN=$1f {
+  .label TitleColour=$874
+  .label GameCounter=$866
+  .label PerformFrameCodeFlag=$865
+  .label ColourLastRow=$918 {
+  }
+  .label GameOverTimer=$86e
+  .label InitialCooldown=$86d
+  .label LoadGame=$9fd {
+  }
+  .label SetGameOver=$a48 {
+  }
+  .label TitleScreen=$87a {
+  }
+  .label MainIRQ=$984 {
+    .label NotYet=$9a4
+    .label Paused=$991
+  }
+  .label PetLoop=$877
+  .label Entry=$823
+  .label NextLife=$9ca {
+    .label NotDead=$9dc
+    .label Finish=$9df
+  }
+  .label GameOverUpdate=$b21 {
+    .label Continue=$b29
+    .label Waiting=$b33
+  }
+  .label WaitingForFire=$873
+  .label NextLevel=$9e0 {
+  }
+  .label Reset=$9ef {
+  }
+  .label TitleLoop=$8b7 {
+  }
+  .label Loop=$af7
+  .label DeathUpdate=$904 {
+    .label NextLife=$914
+    .label Finish=$917
+  }
+  .label GameOver=$870
+  .label CheckWhetherToUpdateScore=$a44 {
+    .label NoScoreAdd=$a47
+  }
+  .label SetupCharMemoryTitle=$974 {
+  }
+  .label GameTick=$b63 {
+    .label NotRunning=$b71
+    .label Finish=$b77
+  }
+  .label GameIsActive=$86c
+  .label GameTickFlag=$869
+  .label SetupScreenMemory=$944 {
+  }
+  .label GameMode=$86a
+  .label BackgroundColour=$86b
+  .label FrameCode=$b39 {
+    .label GamePaused=$b46
+    .label Finish=$b62
+  }
+  .label SetupCharMemory=$964 {
+  }
+  .label DrawBackground=$a59 {
+  }
+  .label SetupGameColours=$919 {
+  }
+  .label NewGame=$9a5 {
+  }
+  .label DeathTimer=$875
+  .label LevelCompleteTimer=$871
+}
+.label VECTOR2=$10
+.label ChannelsMSB=$16d6
+.label VECTOR1=$e
+.label JUMPERS=$3a94 {
+  .label Trampoline1=$6
+  .label Delete=$3c16 {
+  }
+  .label Trampoline2=$e
+  .label Trampoline3=$14
+  .label AmbulancePosition=$16
+  .label SaveSoundID=$8
+  .label JumpersAvailable=$6
+  .label Draw=$3c23 {
+  }
+  .label Cooldown=$3a9a
+  .label NumberOfJumpers=$3aac
+  .label JumperMoveSFXID=$2
+  .label SavedThisLevel=$3aae
+  .label Update=$3ab2 {
+  }
+  .label JumpersToSave=$3aaf
+  .label FallStartPosition=$17
+  .label OverallCooldownTime=$9
+  .label GetNextAvailableID=$3c30 {
+    .label Loop=$3c32
+    .label Found=$3c42
+  }
+  .label Bounced=$3aa0
+  .label CheckWhetherSaved=$3bc3 {
+    .label FallDown=$3bd0
+    .label Finish=$3bde
+  }
+  .label StartCharacterID=$3
+  .label Reset=$3ab9 {
+    .label Loop=$3ac5
+    .label NoDelete=$3ad2
+    .label Finish=$3ae7
+  }
+  .label CheckDrawing=$3aeb {
+    .label Loop=$3aed
+    .label EndLoop=$3b00
+    .label Finish=$3b08
+  }
+  .label DrawNextFrame=$3aa6
+  .label SavedMan=$3b86 {
+    .label NoNew=$3bc2
+    .label NotComplete=$3b9f
+  }
+  .label Died=$3bdf {
+  }
+  .label Position=$3a94
+  .label MoveJumpers=$3b09 {
+    .label Loop=$3b0b
+    .label AlreadyJumped=$3b3e
+    .label ReadyToMove=$3b20
+    .label EndLoop=$3b7c
+    .label SetupNextTick=$3b72
+    .label NoAmbulance=$3b33
+    .label Jumping=$3b3b
+    .label CheckTrampoline1=$3b41
+    .label CheckTrampoline2=$3b4d
+    .label Finish=$3b85
+    .label CheckTrampoline3=$3b59
+    .label OkayToDraw=$3b62
+  }
+  .label MaxJumpers=$3aad
+  .label CreateNewJumper=$3c43 {
+    .label SecondFloor=$3c55
+  }
+  .label TicksBetweenMove=$3
+  .label OverallCooldown=$3ab0
+  .label CheckWhetherNewJumper=$3bf8 {
+    .label Okay=$3c03
+    .label Finish=$3c15
+  }
+  .label JumperID=$3ab1
+  .label NewJumperChance=$11
+}
+.label ChannelOn=$16ce
+.label JOY_PORT_UDLF=$9111
+.label TEMP12=$d
+.label TEMP11=$c
+.label TEMP10=$b
+.label SCREEN_RAM=$1a
+.label LIVES=$391b {
+  .label GameOverSFXId=$6
+  .label DeadSFXId=$5
+  .label Draw=$3947 {
+    .label Loop=$394f
+    .label LivesLeft=$2
+    .label DrawHeart=$3956
+    .label DrawBlank=$396a
+    .label EndLoop=$3975
+  }
+  .label GainLife=$392a {
+  }
+  .label Value=$391b
+  .label BlankCharacter=$391f
+  .label Reset=$3920 {
+  }
+  .label LoseLife=$3931 {
+    .label Finish=$3943
+    .label NoLifeSound=$393e
+  }
+  .label HeartCharacter=$391e
+  .label StartCharacterPosition=$391d
+}
+.label MEN=$3981 {
+  .label CheckBounce=$39a5 {
+    .label TrampolinePosition=$b
+    .label Loop=$39af
+    .label EndLoop=$39c5
+    .label Finish=$39cd
+  }
+  .label DrawOrHide=$398c {
+    .label Finish=$3998
+  }
+  .label Draw=$3999 {
+  }
+  .label Position=$3981
+  .label Cooldown=$3982
+  .label DisableControl=$3983
+  .label ObjectType=$0
+  .label Control=$39ce {
+    .label CheckJoystick=$39df
+    .label HandleRight=$39e4 {
+    }
+    .label Complete=$3a0d {
+    }
+    .label Enabled=$39d9
+    .label HandleLeft=$3a0e {
+      .label Low=$3a2a
+    }
+    .label Complete2=$3a32
+  }
+  .label MaxPosition=$2
+  .label MoveLeftSFXId=$1
+  .label BounceSFXId=$4
+  .label MoveRightSFXId=$3
+  .label DeletePriorCharacter=$399f {
+  }
+  .label TrampolinePositions=$3984
+  .label Reset=$3987 {
+  }
+}
+.label AdjustBorderForVIC=$1458 {
+  .label adjustedColour=$2
+}
+.label VECTOR4=$14
+.label AddLuminance=$144b {
+  .label ShiftedLuminance=$2
+  .label ColourValue=$3
+}
+.label VECTOR3=$12
+.label Channel2_MSB=$ff10
+.label VECTOR6=$18
+.label VECTOR5=$16
+.label SCORE=$37d0 {
+  .label Add=$3831 {
+    .label BetterOrEqualHigh=$3856
+    .label SetNewBest=$3873
+    .label CheckMiddle=$385b
+    .label BetterOrEqualMiddle=$3866
+    .label CheckLow=$386b
+    .label NoNewBest=$3888
+  }
+  .label DrawBest=$38d5 {
+    .label YReg=$6
+    .label ScoreLoop=$38d9
+    .label XReg=$7
+    .label PlotDigit=$38f0 {
+      .label NotYet=$3900
+    }
+  }
+  .label CheckScoreToAdd=$3810 {
+    .label Finish=$3820
+  }
+  .label LevelComplete=$3801 {
+  }
+  .label Draw=$388c {
+    .label YReg=$6
+    .label ScoreLoop=$3890
+    .label XReg=$7
+    .label PlotDigit=$38a7 {
+      .label NotYet=$38ba
+    }
+  }
+  .label Amount=$2
+  .label ScoreToAdd=$37d7
+  .label ExtraLifeMSB=$37dc
+  .label ScreenPosition=$37d9
+  .label CheckExtraLife=$3821 {
+    .label Finish=$382f
+  }
+  .label BounceScore=$37d0
+  .label CharacterSetStart=$37d8
+  .label ExtraLifeAwarded=$37dd
+  .label ExtraLifeLSB=$37db
+  .label ScorePerFrame=$1
+  .label SuccessfulBounce=$3807 {
+  }
+  .label Value=$37d1
+  .label BestPosition=$37da
+  .label AddToScore=$37f7 {
+  }
+  .label Best=$37d4
+  .label Reset=$37de {
+  }
+}
+.label Memory_Setup_Register=$d018
+.label SOUND_DATA=$1c54 {
+  .label GameOver=$1cc6
+  .label ScoreSound=$1d1a
+  .label Died=$1cc2
+  .label MenMoveLeft=$1cb8
+  .label DataStart=$1c54
+  .label SoundTest=$1c70
+  .label MenMoveRight=$1cbc
+  .label SongLength=$1c66
+  .label Bounce=$1cbe
+  .label JumperMove=$1cba
+  .label StartSound=$1cd2
+}
+.label PET_RIGHT_1=$2f
+.label PET_RIGHT_2=$44
+.label TITLE_LOADER=$18d2 {
+  .label Column=$18d6
+  .label DrawMap=$18dc {
+  }
+  .label Columns=$18d8
+  .label Initialise=$18db {
+  }
+  .label Row=$18d7
+  .label TileSize=$18da
+  .label TileScreenLocations=$18d2
+  .label Rows=$18d9
+}
+.label KeyPressed=$16dc
+.label PET_RIGHT_3=$1d
+.label CHAR_DRAWING=$1dbf {
+  .label BUFFER_ADDRESS=$14
+  .label ClearAll=$1e24 {
+    .label Loop=$1e26
+    .label Finish=$1e3a
+  }
+  .label TotalObjects=$20
+  .label GameScreenRowLSB=$1dc1
+  .label ObjectID=$2
+  .label GetColour=$1e3b {
+  }
+  .label StartAddress=$e
+  .label ColourObject=$1e46 {
+    .label Hide=$1e59
+    .label Loop=$1e74
+    .label ColourRequest=$5
+    .label Finish=$1e99
+    .label ColourObject=$1e5e
+  }
+  .label Colour=$1dc0
+  .label BytesToRead=$3
+  .label COLOR_ADDRESS=$18
+  .label CalculateAddresses=$1df3 {
+    .label RowOffset=$8
+  }
+  .label Column=$5
+  .label SCREEN_ADDRESS=$16
+  .label Row=$4
+  .label GameScreenRowMSB=$1dda
+  .label ByteID=$6
+  .label BlankCharacter=$0
+  .label LoopID=$1dbf
+}
+.label SCREEN_DATA=$1e9e {
+  .label Game=$3000
+  .label Title=$33e8
+}
+.label TED_CONTROL=$ff11
+.label PET_UP_1=$91
+.label Channel1_LSB=$ff0e
+.label PET_UP_3=$57
+.label PET_UP_2=$3a
+.label VIC20=$16c0 {
+  .label Memory_Setup_Register=$9005
+  .label ConvertTitleSet=$16cd {
+  }
+  .label Channel=$16c9
+  .label ConvertCharacterSet=$16cc {
+  }
+  .label Channel3=$900c
+  .label Channels=$16c3
+  .label Channel4=$900d
+  .label Channel1=$900a
+  .label Channel2=$900b
+  .label PlayNote=$16ca {
+  }
+  .label StopNote=$16cb {
+  }
+  .label Countdown=$16c0
+}
+.label PET_Raster_Mask=$20
+.label PET_FIRE_1=$20
+.label PET=$179f {
+  .label SoundOnOff=$e84b
+  .label PlayNote=$179f {
+  }
+  .label Octave=$e84a
+  .label Frequency=$e848
+  .label StopNote=$17a0 {
+  }
+}

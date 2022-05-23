@@ -1,0 +1,18 @@
+parsing
+Got 10 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/common/utility.asm 7:7) Error: Unknown symbol 'PROCESSOR_PORT'
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/common/utility.asm 10:7) Error: Unknown symbol 'PROCESSOR_PORT'
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/common/utility.asm 22:8) Error: Unknown symbol 'SCREEN_RAM'
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/common/utility.asm 23:8) Error: Unknown symbol 'SCREEN_RAM'
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/common/utility.asm 24:8) Error: Unknown symbol 'SCREEN_RAM'
+  ...
+
+
+ BankOutKernalAndBasic:{
+
+  lda PROCESSOR_PORT
+      ^
+
+Error: Unknown symbol 'PROCESSOR_PORT'
+
+

@@ -1,0 +1,32 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Bestri/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0026 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$10e5 IRQ
+  $10e6-$1103 Utility
+  $1104-$1114 Input
+  $1115-$1189 Joystick
+  $118a-$1282 Maploader
+  $1283-$12b0 -Plot
+  $12b1-$12c4 -Random
+  $12c5-$13d1 Score
+  $13d2-$148c Main
+  $2000-$2408 SFX
+  $7000-$7103 Game Map
+  $7104-$717b Game Tiles
+  $717c-$71e1 Game Colours
+  $c400-$cf7f Sprites
+  $f000-$f32f Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Bestri/Scripts/bin/main.vs
+Writing Symbol file: main.sym

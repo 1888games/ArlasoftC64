@@ -1,0 +1,19 @@
+parsing
+Got 22 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/common/plot.asm 6:25) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/common/plot.asm 7:26) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/common/plot.asm 13:7) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/common/plot.asm 25:7) Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/BerserkC64/Scripts/common/plot.asm 31:7) Unknown symbol 'ZP'
+  ...
+
+
+ *=* "-Plot"
+
+ .label COLOR_ADDRESS = ZP.ColourAddress
+                        ^
+
+Error: Unknown symbol 'ZP'
+at line 6, column 25 in plot.asm
+
+

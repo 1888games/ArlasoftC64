@@ -1,0 +1,19 @@
+parsing
+Got 134 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/settings.asm 57:7) Unknown symbol 'MAIN'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/settings.asm 58:7) Unknown symbol 'DRAW'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/settings.asm 61:7) Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/settings.asm 64:7) Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/settings.asm 67:7) Unknown symbol 'VIC'
+  ...
+
+  sta PreviousOption
+  sta ControlTimer
+
+  jsr MAIN.SetupVIC
+      ^
+
+Error: Unknown symbol 'MAIN'
+at line 57, column 7 in settings.asm
+
+

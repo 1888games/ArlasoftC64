@@ -1,0 +1,18 @@
+parsing
+Got 9 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Asteroids/Scripts/game/gameplay/asteroid.asm 5:15) Error: Unknown symbol 'GetRandNum'
+  (/Users/nick/Dropbox/C64/Projects/Asteroids/Scripts/game/gameplay/asteroid.asm 12:15) Error: Unknown symbol 'AstXSpeed'
+  (/Users/nick/Dropbox/C64/Projects/Asteroids/Scripts/game/gameplay/asteroid.asm 15:15) Error: Unknown symbol 'AstXSpeed'
+  (/Users/nick/Dropbox/C64/Projects/Asteroids/Scripts/game/gameplay/asteroid.asm 17:15) Error: Unknown symbol 'GetRandNum'
+  (/Users/nick/Dropbox/C64/Projects/Asteroids/Scripts/game/gameplay/asteroid.asm 18:15) Error: Unknown symbol 'GetRandNum'
+  ...
+
+
+ SetAstVel: {
+
+  L7203:  jsr GetRandNum          //($77B5)Get a random number.
+              ^
+
+Error: Unknown symbol 'GetRandNum'
+
+

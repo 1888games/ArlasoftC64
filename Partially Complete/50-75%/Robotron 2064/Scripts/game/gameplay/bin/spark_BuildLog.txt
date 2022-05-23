@@ -1,0 +1,18 @@
+parsing
+Got 74 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/spark.asm 72:7) Error: Unknown symbol 'RANDOM'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/spark.asm 79:7) Error: Unknown symbol 'RANDOM'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/spark.asm 84:7) Error: Unknown symbol 'PLAYER'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/spark.asm 93:7) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/spark.asm 95:7) Error: Unknown symbol 'SpriteX'
+  ...
+
+
+ CalcXDelta: {
+
+  jsr RANDOM.Get
+      ^
+
+Error: Unknown symbol 'RANDOM'
+
+

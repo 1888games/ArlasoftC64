@@ -1,0 +1,19 @@
+parsing
+Got 63 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/scoring.asm 62:8) Unknown symbol 'ZERO'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/scoring.asm 78:7) Unknown symbol 'PLAYER'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/scoring.asm 111:8) Unknown symbol 'PLAYER'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/scoring.asm 114:8) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/scoring.asm 128:8) Unknown symbol 'ZP'
+  ...
+
+
+ Reset:{
+
+  lda #ZERO
+       ^
+
+Error: Unknown symbol 'ZERO'
+at line 62, column 8 in scoring.asm
+
+

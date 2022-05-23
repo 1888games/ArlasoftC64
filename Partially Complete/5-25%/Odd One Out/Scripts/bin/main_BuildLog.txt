@@ -1,0 +1,36 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Odd One Out/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0027 Temp vars zero page
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$1111 IRQ
+  $1112-$1140 Utility
+  $1141-$115d Input
+  $115e-$11f9 Joystick
+  $3000-$335e sid
+  $335f-$349a Maploader
+  $349b-$3553 -Plot
+  $3554-$35ae -Random
+  $35af-$36c5 ---String Data
+  $36c6-$3c7c ---Text
+  $7000-$7103 Game Map
+  $7104-$71c7 Game Tiles
+  $7300-$73ff Game Colours
+  $9000-$8fff Unnamed
+  $9000-$91f7 -Sound
+  $91f8-$92ea Main
+  $a000-$acff Sprites
+  $d000-$dcff Sprites
+  $f000-$f7ff Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Odd One Out/Scripts/bin/main.vs
+Writing Symbol file: main.sym

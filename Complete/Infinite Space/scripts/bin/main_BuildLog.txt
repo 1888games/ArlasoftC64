@@ -1,0 +1,25 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: C:\Users\Nick\Dropbox\C64\Projects\Future\Backburner\LD46\scripts\bin\main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0025 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $1000-$1925 Modules
+  $1926-$19be Enemies
+  $19bf-$1f5a EnemyCount
+  $3000-$397e sid
+  $8000-$8103 Game Map
+  $8105-$8114 Game Tiles
+  $8200-$832f Game Colours
+  $c400-$cb7f Sprites
+  $f000-$f97f Charset
+
+Writing Vice symbol file: C:\Users\Nick\Dropbox\C64\Projects\Future\Backburner\LD46\scripts\bin\main.vs
+Writing Symbol file: main.sym

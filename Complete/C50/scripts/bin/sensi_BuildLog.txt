@@ -1,0 +1,33 @@
+parsing
+flex pass 1
+flex pass 2
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/C50/scripts/bin/sensi.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0041 Temp vars zero page
+  $0042-$0041 -Macros
+  $0042-$0041 VIC
+  $0120-$0181 Startup
+  $0182-$01e7 Game Start
+  $01ed-$01ec Variables
+  $01f8-$01f9 System - override return
+  $01fa-$0231 Unnamed
+  $0232-$0301 Bits of code
+  $0302-$0305 Random
+  $0314-$0329 System - IRQ/NMI
+  $032a-$0329 Game
+  $032a-$03f8 Game
+  *$0400-$03ff Screen Ram
+  $0400-$07e7 Hard-coded Screen
+  $07e8-$07f7 Unnamed
+  $0801-$0cfd Game code
+  $0d00-$0e3f Sprites
+  $0e40-$0e3f Unnamed
+  $0e40-$0fff Partial Charset
+  *$0fff-$0fff End Of Memory
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/C50/scripts/bin/sensi.vs
+Writing Symbol file: sensi.sym

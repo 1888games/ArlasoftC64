@@ -1,0 +1,81 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/KingBalloon/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0025 Temp vars zero page
+  *$0026-$003d LPAX
+  *$003e-$0054 SpriteX
+  *$0055-$00c7 SpriteY
+  *$00c8-$00e2 SpriteCopyY
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $0810-$0836 Hi score_Data
+  $0880-$08c1 Modules
+  $08c2-$09c9 IRQ
+  $09ca-$0a14 Utility
+  $0a15-$0a33 Input
+  $0a34-$0ad4 Joystick
+  $0ad5-$0e92 SHIP
+  $0e93-$0f64 CheckDead
+  $0f65-$1244 Bullets
+  $1245-$12ff Formation
+  $1300-$133b Alive
+  $133c-$1421 Enemies Left
+  $1422-$1475 Type
+  $1476-$1964 Offset
+  $1965-$1e26 Hmm
+  $1e27-$21ff Maploader
+  $2200-$2297 VicSpriteTable
+  $2298-$2589 IRQ
+  $258a-$2612 Enemy
+  $2613-$2642 Enemy Variables
+  $2643-$2652 Plan
+  $2653-$26e4 Extra
+  $26e5-$26e6 Enemies In Wave
+  $26e7-$26ed Enemy Ship ID
+  $26ee-$2858 Enemies
+  $2859-$2872 Spawn
+  $2873-$2873 Pathfinding
+  $2874-$295f Stage
+  $2960-$29ce Check Complete
+  $29cf-$2bc7 ---String Data
+  $2bc8-$2cfd ---Text
+  $2cfe-$2db3 Enemy Data
+  $2db4-$2e5d Title
+  $2e5e-$3009 Check Left Finish
+  $300a-$30e7 Demo
+  $30e8-$3112 High Scores
+  $3113-$37fa Position
+  $37fb-$3af2 Score
+  $3af3-$3cdf Bombs
+  $3ce0-$3fb8 Lives
+  $3fb9-$4244 Pre-Stage
+  $4245-$4296 -Random
+  $4297-$433e -Plot
+  $433f-$45aa STATS
+  $45ab-$45ac GAME OVER
+  $45ad-$45ce 
+  $45cf-$47a9 DisplayGameOver
+  $47aa-$4ec3 -Sound
+  $4ec4-$4eea Chargers
+  $4eeb-$533b Have Alien
+  $533c-$5422 Flight
+  $5423-$5702 Main
+  $5900-$5a03 Demo Map
+  $5a04-$5b07 Game Map
+  $5b08-$5d47 Game Tiles
+  $5d50-$5e4f Game Colours
+  $5f00-$5f37 Logo
+  $c400-$d3bf Sprites
+  $e000-$e1ff Game ZP Backup
+  $f000-$f7ff Charset
+  $fd00-$feff SpriteCharLookup
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/KingBalloon/Scripts/bin/main.vs
+Writing Symbol file: main.sym

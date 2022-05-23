@@ -1,0 +1,16 @@
+parsing
+Got 3 errors while executing:
+  (C:\C64\Caveman C64\vic20\vic20.asm 37:9) Can't open file: ../lookups/labels.asm
+  (C:\C64\Caveman C64\vic20\vic20.asm 64:8) Unknown symbol 'ZERO'
+  (C:\C64\Caveman C64\vic20\vic20.asm 83:9) Unknown symbol 'ZERO'
+
+
+
+BASICStub(8,"Hello")
+#import "../lookups/labels.asm"
+        ^
+
+Error: Can't open file: ../lookups/labels.asm
+at line 37, column 9 in vic20.asm
+
+

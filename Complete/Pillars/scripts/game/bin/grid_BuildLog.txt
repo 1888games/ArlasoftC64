@@ -1,0 +1,18 @@
+parsing
+Got 192 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/grid.asm 52:30) Error: Unknown symbol 'GRID_VISUALS'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/grid.asm 110:7) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/grid.asm 134:7) Error: Unknown symbol 'MAIN'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/grid.asm 137:7) Error: Unknown symbol 'MENU'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/grid.asm 138:8) Error: Unknown symbol 'PLAY_MODE_PRACTICE'
+  ...
+
+ BottomRightIDs: .byte 71, 143
+
+ BackgroundCharIDs: .byte 158, 159, 160, 161, 158, 159
+ BackgroundColours: .fill 6, GRID_VISUALS.GRID_COLOUR
+                             ^
+
+Error: Unknown symbol 'GRID_VISUALS'
+
+

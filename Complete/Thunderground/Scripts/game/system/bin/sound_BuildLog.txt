@@ -1,0 +1,12 @@
+parsing
+flex pass 1
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Thunderground/Scripts/game/system/bin/sound.prg
+
+Memory Map
+----------
+Default-segment:
+  $2000-$202d Sound
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Thunderground/Scripts/game/system/bin/sound.vs
+Writing Symbol file: sound.sym

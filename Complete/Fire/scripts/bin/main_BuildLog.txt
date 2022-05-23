@@ -1,0 +1,20 @@
+parsing
+flex pass 1
+flex pass 2
+Output pass
+Writing prg file: C:\Users\Nick\Dropbox\C64\Projects\FireLionel\scripts\bin\main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$001e Temp vars zero page
+  $0800-$0822 BASIC Stub
+  $0823-$0b77 Entry
+  $1400-$1e9d Lionel
+  $3000-$3c65 Screen Buffer
+  $8500-$8c7a Level Data
+  $f000-$f6ff Charset
+  $f800-$ff57 Title Charset
+
+Writing Vice symbol file: C:\Users\Nick\Dropbox\C64\Projects\FireLionel\scripts\bin\main.vs
+Writing Symbol file: main.sym

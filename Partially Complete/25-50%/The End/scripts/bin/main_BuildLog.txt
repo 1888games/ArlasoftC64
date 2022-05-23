@@ -1,0 +1,42 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/The End/scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$003d Temp vars zero page
+  *$0400-$040a Local Temp Variables
+  $0801-$080c Basic
+  $080d-$080c Modules
+  $080d-$0a86 VIC
+  $080e-$080d Basic End
+  $0a87-$0c0d -IRQ
+  $0c0e-$0cd5 -Input
+  $0cd6-$0cd6 -Macros
+  $0cd7-$0e20 -Maploader
+  $0e21-$10a4 -Plot
+  $10a5-$10ff -Random
+  $1100-$1176 -Sound
+  $1177-$11c7 -Control
+  $11c8-$12f3 -Draw
+  $12f4-$13b6 ---String Data
+  $13b7-$185c ---Text
+  $185d-$1929 Mothership
+  $192a-$1a0f Player
+  $1a10-$20cf Enemies
+  $20d0-$2386 Blocks
+  $3000-$335e sid
+  $8000-$8103 Game Map
+  $8104-$8268 Game Colours
+  $8269-$82e4 Game Tiles
+  $c000-$c3ff Screen Ram
+  $c400-$d97f Sprites
+  $f000-$fb27 Charset
+  $ffff-$fffe End Of Memory
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/The End/scripts/bin/main.vs
+Writing Symbol file: main.sym

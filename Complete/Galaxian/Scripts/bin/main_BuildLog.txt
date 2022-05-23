@@ -1,0 +1,83 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/Galaxian/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0024 Temp vars zero page
+  *$0025-$003c LPAX
+  *$003d-$0053 SpriteX
+  *$0054-$00c6 SpriteY
+  *$00c7-$00e1 SpriteCopyY
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $0810-$0836 Hi score_Data
+  $0880-$08c1 Modules
+  $08c2-$09cc IRQ
+  $09cd-$0a17 Utility
+  $0a18-$0a36 Input
+  $0a37-$0ad7 Joystick
+  $0ad8-$0e75 SHIP
+  $0e76-$0f28 CheckDead
+  $0f29-$1243 Bullets
+  $1244-$1306 Formation
+  $1307-$1342 Alive
+  $1343-$144e Enemies Left
+  $144f-$19c8 Offset
+  $19c9-$1e66 Hmm
+  $1e67-$21ff Maploader
+  $2200-$2297 VicSpriteTable
+  $2298-$2589 IRQ
+  $258a-$2612 Enemy
+  $2613-$2642 Enemy Variables
+  $2643-$2652 Plan
+  $2653-$26ec Extra
+  $26ed-$26ee Enemies In Wave
+  $26ef-$26f5 Enemy Ship ID
+  $26f6-$2860 Enemies
+  $2861-$287a Spawn
+  $287b-$2931 Pathfinding
+  $2932-$2a36 Stage
+  $2a37-$2aa5 Check Complete
+  $2aa6-$2c9e ---String Data
+  $2c9f-$2dd4 ---Text
+  $2dd5-$328a Enemy Data
+  $328b-$3337 Title
+  $3338-$34e9 Check Left Finish
+  $34ea-$35e7 Demo
+  $35e8-$3612 High Scores
+  $3613-$3ba2 Position
+  $5900-$5a03 Demo Map
+  $6000-$6be9 sid
+  $6c00-$6f08 Main
+  $7400-$7503 Game Map
+  $7504-$7687 Game Tiles
+  $7800-$78ff Game Colours
+  $7900-$7937 Logo
+  $8000-$8157 Unnamed
+  $8158-$844f Score
+  $8450-$863c Bombs
+  $863d-$8918 Lives
+  $8919-$8baa Pre-Stage
+  $8bab-$8bfc -Random
+  $8bfd-$8ca6 -Plot
+  $8ca7-$8f12 STATS
+  $8f13-$8f14 GAME OVER
+  $8f15-$8f36 
+  $8f37-$9111 DisplayGameOver
+  $9112-$9834 -Sound
+  $9835-$985b Chargers
+  $985c-$9cbc Have Alien
+  $9cbd-$a37d Flight
+  $a500-$a6ff Game ZP Backup
+  $c400-$d3bf Sprites
+  $f000-$f7ff Charset
+  $f800-$f7ff Unnamed
+  $fd00-$feff SpriteCharLookup
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/Galaxian/Scripts/bin/main.vs
+Writing Symbol file: main.sym

@@ -1,0 +1,104 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+  63872
+  VIEWPORT QUARTER = 6
+  VIEWPORT Q CHARS = 240
+  LAST_QUARTER_ROWS = 4
+  LAST_QUARTER_CHARS = 160
+  MAP_TOP_ADDRESS = 47128
+  CLR_TOP_ADDRESS = 48152
+  MAP_BOT_ADDRESS = 47800
+  CLR_BOT_ADDRESS = 48824
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/Pacman/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0056 Temp vars zero page
+  *$0057-$0066 SpriteX
+  *$0067-$0096 SpriteY
+  *$0097-$00b6 SpriteOrder
+  *$00b7-$00d6 SpriteCopyY
+  *$00d7-$00f0 PointerCopy
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $080e-$084f Modules
+  $0850-$09cc IRQ
+  $09cd-$0a36 Utility
+  $0a37-$0a58 Input
+  $0a59-$0b31 Joystick
+  $0b32-$0bea -Plot
+  $0beb-$0c4b -Random
+  $0c4c-$0c51 Hi score_Data
+  $0c52-$0c93 Hi score_End
+  $0c94-$0e65 Chars
+  $0e66-$1035 -Sound
+  $1036-$1035 ----------
+  $1036-$128c SCROLLER
+  $128d-$22bc -Down
+  $22bd-$236d -Up
+  $236e-$2409 C1
+  $240a-$2abd C2
+  $2abe-$2ac0 C3
+  $2ac1-$30d8 C4
+  $30d9-$3502 C5
+  $3503-$3502 ---------
+  $3503-$3502 ACTOR
+  $3503-$3520 -Data
+  $3521-$3548 -TileX
+  $3549-$3566 PixelY
+  $3567-$3584 In Tunnel
+  $3585-$36a4 -Code
+  $36a5-$36cc -Lookup
+  $36cd-$36df -Ghost
+  $36e0-$3e4d Mode
+  $3e4e-$3f34 -Commander
+  $3f35-$40b8 -Sprite
+  $40b9-$4215 -Move
+  $4216-$43ea -Lookup
+  $43eb-$45bd -AI
+  $45be-$4800 Pinky AI
+  $4801-$4a2b -Player
+  $4a2c-$4b28 --Collision
+  $4b29-$4be2 --Sprite
+  $4be3-$4c4b --Control
+  $4c4c-$4e7f --Move
+  $4e80-$4f78 --Sound
+  $4f79-$4f78 ---------
+  $4f79-$5138 ENERGIZER
+  $5139-$5161 GAME
+  $5162-$5161 ---------
+  $5162-$5246 GAME
+  $5247-$527d FRUIT
+  $527e-$54ff FruitScore
+  $5500-$556c VicSpriteTable
+  $556d-$5d93 IRQ
+  $5d94-$6189 TITLE
+  $618a-$6241 READY
+  $6242-$681f INTERMISSION
+  $7000-$7408 SFX
+  $7500-$74ff Unnamed
+  $7500-$7591 COMPLETE
+  $7592-$7702 RandCode
+  $7703-$7725 -Direction
+  $7726-$7abc Main
+  $7b00-$7eb7 -Kill Map
+  $8000-$9fff RandomTurns
+  $a000-$a6ce sid
+  $b000-$afff ----------
+  $b000-$b210 Title
+  $b211-$b36f PushStart
+  $b600-$b5ff -----------
+  $b600-$b5ff MAP DATA
+  $b600-$b682 -Game Colours
+  $b700-$bab7 -Maze Map
+  $bb00-$beff -Maze Colours
+  $d000-$ecff SPRITES
+  $ed00-$eeff Game ZP Backup
+  $f800-$fc17 CHARSET
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/Pacman/Scripts/bin/main.vs
+Writing Symbol file: main.sym

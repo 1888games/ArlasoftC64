@@ -1,0 +1,22 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/KingBalloon/Scripts/bin/test.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0025 Temp vars zero page
+  *$0026-$003d LPAX
+  *$003e-$0054 SpriteX
+  *$0055-$00c7 SpriteY
+  *$00c8-$00e2 SpriteCopyY
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $0880-$0891 Modules
+  $4000-$539a sid
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/KingBalloon/Scripts/bin/test.vs
+Writing Symbol file: test.sym

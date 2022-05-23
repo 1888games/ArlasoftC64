@@ -1,0 +1,37 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Jack/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0034 Temp vars zero page
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$10bf IRQ
+  $10c0-$10ee Utility
+  $10ef-$110b Input
+  $110c-$11ac Joystick
+  $11ad-$12e8 Maploader
+  $12e9-$13a1 -Plot
+  $13a2-$13fc -Random
+  $13fd-$1775 Score
+  $2000-$23a4 Unnamed
+  $3000-$335e sid
+  $7000-$7103 Game Map
+  $7104-$729b Game Tiles
+  $7300-$744b Game Colours
+  $7500-$74ff Full Map
+  $7700-$76ff Title Map
+  $8000-$7fff Unnamed
+  $8000-$8126 -Sound
+  $8127-$8486 Main
+  $c400-$daff Sprites
+  $f000-$fa5f Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Jack/Scripts/bin/main.vs
+Writing Symbol file: main.sym

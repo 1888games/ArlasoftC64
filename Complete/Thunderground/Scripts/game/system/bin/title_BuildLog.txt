@@ -1,0 +1,18 @@
+parsing
+Got 9 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Thunderground/Scripts/game/system/title.asm 33:8) Error: Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Thunderground/Scripts/game/system/title.asm 42:8) Error: Unknown symbol 'IRQ'
+  (/Users/nick/Dropbox/C64/Projects/Thunderground/Scripts/game/system/title.asm 43:9) Error: Unknown symbol 'IRQ'
+  (/Users/nick/Dropbox/C64/Projects/Thunderground/Scripts/game/system/title.asm 44:9) Error: Unknown symbol 'IRQ'
+  (/Users/nick/Dropbox/C64/Projects/Thunderground/Scripts/game/system/title.asm 45:7) Error: Unknown symbol 'IRQ'
+  ...
+
+
+  ldx CurrentID
+  lda Colours, x
+   sta VIC.BACKGROUND_COLOR
+       ^
+
+Error: Unknown symbol 'VIC'
+
+

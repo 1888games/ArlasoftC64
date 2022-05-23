@@ -1,0 +1,18 @@
+parsing
+Got 165 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/menu.asm 57:7) Error: Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/menu.asm 58:7) Error: Unknown symbol 'IRQ'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/menu.asm 59:7) Error: Unknown symbol 'SCORING'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/menu.asm 60:7) Error: Unknown symbol 'SCORING'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/menu.asm 61:7) Error: Unknown symbol 'SCORING'
+  ...
+
+  sta SelectedOption
+  sta PreviousOption
+  sta ControlTimer
+  sta VIC.SPRITE_ENABLE
+      ^
+
+Error: Unknown symbol 'VIC'
+
+

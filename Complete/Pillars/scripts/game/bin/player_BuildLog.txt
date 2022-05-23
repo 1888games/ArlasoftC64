@@ -1,0 +1,18 @@
+parsing
+Got 370 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/player.asm 1542:1) Error: Missing start token
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/player.asm 147:7) Error: Unknown symbol 'INPUT'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/player.asm 155:8) Error: Unknown symbol 'GRID'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/player.asm 156:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/player.asm 180:8) Error: Unknown symbol 'GRID'
+  ...
+
+
+
+
+}
+^
+
+Error: Missing start token
+
+

@@ -1,0 +1,75 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/BerserkC64/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$003a Temp vars zero page
+  *$003b-$004e SpriteX
+  *$004f-$0062 SpriteY
+  *$0063-$0076 SpriteColor
+  *$0077-$008a SpritePointer
+  *$008b-$009e SpriteOrder
+  *$009f-$00b2 SpriteCopyX
+  *$00b3-$00c6 SpriteCopyY
+  *$00c7-$00da SpriteColorCopy
+  *$00db-$00f2 PointerCopy
+  $0519-$07f9 Speech Code
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $0810-$083f Hi score_Data
+  $0840-$083f EndScore
+  $0843-$0852 Modules
+  $0853-$0884 What?
+  $0885-$090f IRQ
+  $0910-$0959 Utility
+  $095a-$0978 Input
+  $0979-$0a19 Joystick
+  $0a1a-$0bff Maploader
+  $0c00-$0c80 VicSpriteTable
+  $0c81-$115c IRQ
+  $115d-$14d9 Title
+  $14da-$1649 Score
+  $164a-$16b8 Lives
+  $16b9-$170a -Random
+  $170b-$175d -Plot
+  $175e-$175d -Map
+  $175e-$1b55 --Generate
+  $1b56-$24dc --Scroll
+  $24dd-$26b2 Wall Data
+  $26b3-$3376 Player
+  $3377-$33d0 Horse
+  $33d1-$35e9 Horse
+  $35ea-$3650 FirePlayer
+  $3651-$3666 Robot Data
+  $3667-$3687 Robot Data
+  $3688-$369d OffsetX
+  $369e-$36be CharX
+  $36bf-$3700 State
+  $3701-$3742 SpriteID
+  $3743-$3842 BlockUp
+  $3843-$3fda Robot Colour
+  $3fdb-$41fe NMI's
+  $41ff-$42a7 Hi_Score
+  $42a8-$44a3 Hi_ScoreCode
+  $44a4-$48ab Progression
+  $48ac-$4b25 Main
+  $4d00-$4eff Game ZP Backup
+  $5000-$5103 Title Map
+  $5104-$51d3 Game Map
+  $5208-$52f7 Game Tiles
+  $5308-$53de Game Colours
+  $5400-$be4e 8-bit sample data
+  $c000-$c3e7 Screen RAM
+  $c3ff-$c3fe Pointer
+  $c400-$c830 Die
+  $ca00-$d7ff Sprites
+  $d800-$deb7 Charset
+  $e000-$fb7e More Samples
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/BerserkC64/Scripts/bin/main.vs
+Writing Symbol file: main.sym

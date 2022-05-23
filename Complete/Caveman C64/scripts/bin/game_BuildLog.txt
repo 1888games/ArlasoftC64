@@ -1,0 +1,25 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: C:\Users\Nick\Dropbox\C64\Projects\Complete\Caveman C64\scripts\bin\game.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0043 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$209a Basic End
+  $3000-$3404 StartGame
+  $3500-$38f7 LoseLife
+  $3a00-$3e0a GameOver
+  $6000-$70ec Title Music
+  $7500-$77a7 Instructions data
+  $8000-$8423 Title data
+  $8500-$88d3 Screen data
+  $d000-$e5ff Sprites
+  $f000-$f7ff Charset
+  $f800-$ffff ~TitleChars
+
+Writing Vice symbol file: C:\Users\Nick\Dropbox\C64\Projects\Complete\Caveman C64\scripts\bin\game.vs

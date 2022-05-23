@@ -1,0 +1,19 @@
+parsing
+Got 81 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/bullets.asm 40:7) Unknown symbol 'FORMATION'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/bullets.asm 48:8) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/bullets.asm 80:8) Unknown symbol 'SFX_FIRE'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/bullets.asm 80:4) Macro command 'sfx' not defined
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/bullets.asm 85:9) Unknown symbol 'SHIP'
+  ...
+
+ 
+ Fire2: {
+
+  lda FORMATION.EnemiesLeftInStage
+      ^
+
+Error: Unknown symbol 'FORMATION'
+at line 40, column 7 in bullets.asm
+
+

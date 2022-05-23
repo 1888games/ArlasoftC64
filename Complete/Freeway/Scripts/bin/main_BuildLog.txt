@@ -1,0 +1,19 @@
+parsing
+Got 9 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Complete/Freeway/Scripts/game/gameplay/chicken.asm 316:8) Unknown symbol 'SOUND'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Freeway/Scripts/game/gameplay/chicken.asm 443:9) Unknown symbol 'SOUND'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Freeway/Scripts/game/gameplay/chicken.asm 647:8) Unknown symbol 'SOUND'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Freeway/Scripts/game/gameplay/chicken.asm 665:8) Unknown symbol 'SOUND'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Freeway/Scripts/game/gameplay/chicken.asm 692:8) Unknown symbol 'SOUND'
+  ...
+
+
+   inc Score, x
+
+   jsr SOUND.Tick
+       ^
+
+Error: Unknown symbol 'SOUND'
+at line 316, column 8 in game/gameplay/chicken.asm
+
+

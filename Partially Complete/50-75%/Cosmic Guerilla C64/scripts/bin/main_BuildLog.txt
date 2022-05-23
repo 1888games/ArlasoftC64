@@ -1,0 +1,40 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Cosmic Guerilla C64/scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$003a Temp vars zero page
+  *$0400-$040a Local Temp Variables
+  $0801-$080c Basic
+  $080d-$080c Modules
+  $080d-$0a7c VIC
+  $080e-$080d Basic End
+  $0a7d-$0afe -IRQ
+  $0aff-$0bc6 -Input
+  $0bc7-$0bc7 -Macros
+  $0bc8-$0d11 -Maploader
+  $0d12-$0f83 -Plot
+  $0f84-$0fde -Random
+  $0fdf-$1055 -Sound
+  $1056-$10e7 -Control
+  $10e8-$1213 -Draw
+  $1214-$12d6 ---String Data
+  $12d7-$172f ---Text
+  $1730-$1adf -Enemies
+  $1ae0-$20aa -Bombs
+  $3000-$335e sid
+  $8000-$8103 Game Map
+  $8104-$8203 Game Colours
+  $8204-$829f Game Tiles
+  $c000-$c3ff Screen Ram
+  $c400-$c7ff Sprites
+  $f000-$f7ff Charset
+  $ffff-$fffe End Of Memory
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Cosmic Guerilla C64/scripts/bin/main.vs
+Writing Symbol file: main.sym

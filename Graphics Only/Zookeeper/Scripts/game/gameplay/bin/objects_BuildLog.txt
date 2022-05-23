@@ -1,0 +1,18 @@
+parsing
+Got 33 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/game/gameplay/objects.asm 26:19) Error: Syntax error
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/game/gameplay/objects.asm 28:19) Error: Syntax error
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/game/gameplay/objects.asm 11:16) Error: Unknown symbol 'TAZ'
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/game/gameplay/objects.asm 12:16) Error: Unknown symbol 'TAZ'
+  (/Users/nick/Dropbox/C64/Projects/Taz/Scripts/game/gameplay/objects.asm 86:8) Error: Unknown symbol 'OBJ_FOOD'
+  ...
+
+ Cooldown:  .fill ROWS + LIVES, 0
+
+ Pointer:  .fill ROWS, 0
+     .fill LIVES, #18
+                  ^
+
+Error: Syntax error
+
+

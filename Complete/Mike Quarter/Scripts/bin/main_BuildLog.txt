@@ -1,0 +1,32 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/Mike Quarter/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0026 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$1106 IRQ
+  $1107-$1124 Utility
+  $1125-$1135 Input
+  $1136-$11aa Joystick
+  $11ab-$12a3 Maploader
+  $12a4-$12d1 -Plot
+  $12d2-$12e5 -Random
+  $12e6-$1c3c Score
+  $1c3d-$1d16 Main
+  $2000-$2408 SFX
+  $7000-$7103 Game Map
+  $7104-$717b Game Tiles
+  $717c-$71e1 Game Colours
+  $c400-$c7bf Sprites
+  $f000-$f32f Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/Mike Quarter/Scripts/bin/main.vs
+Writing Symbol file: main.sym

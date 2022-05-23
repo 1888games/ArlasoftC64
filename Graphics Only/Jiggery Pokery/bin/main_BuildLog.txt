@@ -1,0 +1,13 @@
+parsing
+flex pass 1
+.import binary "../../Assets/sfx/bear.snd"
+
+chick:
+.import binary ".../../Assets/sfx/double_high_tink.sfx"
+^
+
+Error: Can't open file '.../../Assets/sfx/double_high_tink.sfx'
+at line 233, column 1 in ./scripts/common/sfx.asm
+called at line 17, column 10 in /Users/nick/Dropbox/C64/Projects/Backburner/Jiggery Pokery/main.asm
+
+

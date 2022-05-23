@@ -1,0 +1,16 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Poker/scripts/bin/col53.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0030 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$1a09 Basic End
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Poker/scripts/bin/col53.vs
+Writing Symbol file: col53.sym

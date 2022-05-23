@@ -1,0 +1,18 @@
+parsing
+Got 32 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Complete/Columns C64/scripts/game/disk2.asm 30:17) Error: Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Columns C64/scripts/game/disk2.asm 31:17) Error: Unknown symbol 'IRQ'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Columns C64/scripts/game/disk2.asm 33:17) Error: Unknown symbol 'MAIN'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Columns C64/scripts/game/disk2.asm 36:17) Error: Unknown symbol 'MAIN'
+  (/Users/nick/Dropbox/C64/Projects/Complete/Columns C64/scripts/game/disk2.asm 86:17) Error: Unknown symbol 'MAIN'
+  ...
+
+
+
+            lda #0
+            sta VIC.SPRITE_ENABLE
+                ^
+
+Error: Unknown symbol 'VIC'
+
+

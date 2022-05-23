@@ -1,0 +1,13 @@
+parsing
+Got 2 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/data/vic.asm 3:25) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/data/vic.asm 4:26) Error: Unknown symbol 'ZP'
+
+ VIC: {
+
+ .label COLOR_ADDRESS = ZP.ColourAddress
+                        ^
+
+Error: Unknown symbol 'ZP'
+
+

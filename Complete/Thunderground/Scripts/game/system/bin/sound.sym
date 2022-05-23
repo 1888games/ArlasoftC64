@@ -1,0 +1,21 @@
+.label SOUND=$2000 {
+  .label SFX_EAT=$3
+  .label Pickle=$2019 {
+  }
+  .label GameOver=$201f {
+  }
+  .label SoundCooldown=$2000
+  .label Fatter=$2007 {
+  }
+  .label SFX_SCORE=$2
+  .label SFX_FATTER=$1
+  .label SFX_PICKLE=$4
+  .label Score=$2010 {
+  }
+  .label SFX_TICK=$5
+  .label SFX_GAME_OVER=$7
+  .label Eat=$2001 {
+  }
+  .label Tick=$2028 {
+  }
+}

@@ -1,0 +1,19 @@
+parsing
+Got 1540 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/rel.asm 4:41) Syntax error
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/rel.asm 5:41) Syntax error
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/rel.asm 6:41) Syntax error
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/rel.asm 7:41) Syntax error
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/rel.asm 8:41) Syntax error
+  ...
+
+
+
+
+SOUND_VOL                           EQU $41C0         // Bit 0 and 1 are written to !SOUND Vol of F1 and !SOUND Vol of F2 respectively. See $1712
+                                        ^
+
+Error: Syntax error
+at line 4, column 41 in rel.asm
+
+

@@ -1,0 +1,18 @@
+parsing
+Got 140 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/grunt.asm 7:16) Error: Unknown symbol 'MAX_GRUNTS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/grunt.asm 8:16) Error: Unknown symbol 'MAX_GRUNTS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/grunt.asm 9:16) Error: Unknown symbol 'MAX_GRUNTS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/grunt.asm 10:16) Error: Unknown symbol 'MAX_GRUNTS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/grunt.asm 15:27) Error: Unknown symbol 'MAX_GRUNTS'
+  ...
+
+
+ * = * "Grunt"
+
+ CharX:  .fill MAX_GRUNTS, 254
+               ^
+
+Error: Unknown symbol 'MAX_GRUNTS'
+
+

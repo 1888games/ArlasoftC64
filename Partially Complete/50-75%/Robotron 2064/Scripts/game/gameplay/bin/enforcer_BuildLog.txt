@@ -1,0 +1,18 @@
+parsing
+Got 82 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/enforcer.asm 53:7) Error: Unknown symbol 'HUMANS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/enforcer.asm 55:7) Error: Unknown symbol 'HULK'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/enforcer.asm 57:7) Error: Unknown symbol 'SPHEROID'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/enforcer.asm 82:7) Error: Unknown symbol 'RANDOM'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/enforcer.asm 87:7) Error: Unknown symbol 'PLAYER'
+  ...
+
+
+ Initialise: {
+
+  lda HUMANS.NumberToGenerate
+      ^
+
+Error: Unknown symbol 'HUMANS'
+
+

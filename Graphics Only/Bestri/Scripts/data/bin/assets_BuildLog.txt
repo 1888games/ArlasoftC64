@@ -1,0 +1,12 @@
+parsing
+flex pass 1
+
+* = $2000 "SFX"
+
+SFX: .import binary "../assets/sfx2.prg"   
+     ^
+
+Error: Can't open file '../assets/sfx2.prg'
+at line 8, column 6 in assets.asm
+
+

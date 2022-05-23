@@ -1,0 +1,10 @@
+parsing
+flex pass 1
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Columns C64/scripts/lookups/bin/zeropage.prg
+
+Memory Map
+----------
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Columns C64/scripts/lookups/bin/zeropage.vs
+Writing Symbol file: zeropage.sym

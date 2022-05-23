@@ -1,0 +1,539 @@
+.label ZERO=$0
+.label DOWN=$1
+.label INPUT=$1141 {
+  .label PortToRead=$1143
+  .label joyLeftMask=$4
+  .label JOY_FIRE_NOW=$1156
+  .label joyRightMask=$8
+  .label JOY_LEFT_LAST=$1146
+  .label ReadC64Joystick=$115a {
+    .label StoreReading=$1167
+    .label PortOne=$1164
+  }
+  .label JOY_DOWN_NOW=$1152
+  .label JOY_FIRE_LAST=$114c
+  .label JOY_LEFT_NOW=$1150
+  .label joyFireMask=$10
+  .label joyDownMask=$2
+  .label JOY_UP_NOW=$1154
+  .label JOY_READING=$1141
+  .label JOY_RIGHT_NOW=$114e
+  .label ReadJoystick=$11c0 {
+  }
+  .label FIRE_UP_THIS_FRAME=$1158
+  .label CalculateButtons=$116b {
+    .label DownUp=$11b0
+    .label CheckFire=$116e
+    .label CheckUp=$1192
+    .label CheckRight=$11b0
+    .label CheckFireUp=$117d
+    .label CheckDown=$11a1
+    .label LeftUp=$1192
+    .label Finish=$11bf
+    .label UpUp=$11a1
+    .label CheckLeft=$1183
+    .label RightUp=$11bf
+  }
+  .label JOY_RIGHT_LAST=$1144
+  .label JOY_UP_LAST=$114a
+  .label JOY_DOWN_LAST=$1148
+  .label joyUpMask=$1
+}
+.label channel=$9001
+.label SFX_CH3=$8
+.label TEXT=$35af {
+  .label LineBreak=$2f
+  .label Res=$368e
+  .label Scr=$35f8
+  .label GAME_OVER=$c
+  .label Stg=$365c
+  .label TITLE_SCORE=$1
+  .label ONE_UP=$a
+  .label Str=$3656
+  .label Shf=$3698
+  .label Bank2=$35e0
+  .label Bank1=$35ba
+  .label DrawWordInDigits=$36d1 {
+  }
+  .label Space=$20
+  .label READY=$9
+  .label DrawText=$379c {
+    .label Loop=$379e
+    .label Write=$37bd
+    .label Okay=$37b1
+    .label NotSpace=$37ba
+    .label NextRow=$37a8
+    .label EndLoop=$37cb
+    .label Finish=$37d1
+  }
+  .label DrawByteInDigits=$36c6 {
+  }
+  .label DOT=$11
+  .label Gmo=$3684
+  .label Dot=$36c2
+  .label SHOTS=$e
+  .label Two=$361a
+  .label CHALLENGING_STAGE=$8
+  .label Twu=$367f
+  .label Top=$35e0
+  .label SpaceAscii=$20
+  .label Arl=$363f
+  .label TITLE_GALAGA=$0
+  .label WordToDigits=$3708 {
+    .label Print=$373f
+    .label Next=$3748
+    .label Loop2=$3715
+    .label Loop1=$3712
+  }
+  .label DrawCustom=$3796 {
+  }
+  .label DrawDigits=$374d {
+    .label Loop=$3757
+    .label IsZero=$375e
+    .label Draw=$3773
+    .label NotBlank=$3770
+    .label SkipDraw=$3781
+    .label EndLoop=$3783
+    .label NonZero=$3767
+    .label Finish=$3795
+    .label HadAValue=$7
+    .label NotLast=$378d
+  }
+  .label ZeroInCharSet=$30
+  .label Pct=$36c4
+  .label PERC=$12
+  .label Draw=$37d2 {
+    .label FromBank1=$37eb
+    .label FromBank2=$37d8
+    .label DrawNow=$37f8
+  }
+  .label One=$360f
+  .label TWO_UP=$b
+  .label RATIO=$10
+  .label PrDec16Tens=$36fe
+  .label CharacterSetStart=$0
+  .label Onu=$367a
+  .label HITS=$f
+  .label Cst=$3662
+  .label STAGE=$7
+  .label Nmh=$36a4
+  .label Text=$35af {
+    .label Pad=$35b6
+    .label Digit=$35b7
+    .label Word=$35b8
+    .label Digits=$35af
+  }
+  .label Hmr=$36b3
+  .label ByteToDigits=$36e0 {
+    .label Dec100=$36e3
+    .label Dec10=$36f0
+  }
+  .label Rea=$3674
+  .label Tmn=$3626
+  .label MonthStart=$0
+  .label START=$6
+  .label RESULT=$d
+}
+.label GREEN_MULT=$d
+.label SFX_CH1=$6
+.label StopChannel0=$9047 {
+}
+.label SFX_CH2=$7
+.label GAME_MODE_OVER=$4
+.label SFX_HIT_2=$3
+.label CHAR_SET=$f000
+.label MAPLOADER=$335f {
+  .label CurrentColours=$3369
+  .label Maps=$336b
+  .label Column=$3363
+  .label CurrentTiles=$3367
+  .label Colours=$3377
+  .label DrawMap=$3381 {
+    .label Screen=$3419
+    .label TileColumnLoop=$33e4
+    .label TileLookup=$3413
+    .label NextRow=$3473
+    .label GetMapAddress=$33c2
+    .label TileRowLoop=$33df
+    .label Tile=$33ee
+    .label NextColumn=$343a
+    .label LoadColour=$341d
+    .label Colour=$3423
+  }
+  .label CurrentMap=$3365
+  .label Row=$3364
+  .label CurrentMapID=$3380
+  .label TileScreenLocations=$335f
+  .label MapTiles=$3371
+  .label Offset=$337d
+}
+.label SFX_HIT_1=$2
+.label MAIN=$2000 {
+  .label Loop=$92ad {
+  }
+  .label PerformFrameCodeFlag=$91f9
+  .label MachineType=$91fb
+  .label ShowTitleScreen=$921a {
+  }
+  .label ResetGame=$922b {
+  }
+  .label GameActive=$91f8
+  .label GameMode=$91fc
+  .label Entry=$91fd {
+  }
+  .label FrameCode=$92b5 {
+    .label Playing=$92df
+    .label GameOver=$92e5
+    .label GamePaused=$92e8
+    .label PreStage=$92e2
+    .label TitleScreen=$92d5
+  }
+  .label SetGameColours=$9290 {
+  }
+  .label LoadScreen=$925b {
+  }
+  .label InitialiseGame=$9255 {
+  }
+  .label GameIsOver=$91fa
+  .label SetupVIC=$9264 {
+    .label SwitchOnMulticolourMode=$9285
+  }
+}
+.label UP=$0
+.label IRQControlRegister2=$dd0d
+.label COLOUR=$7
+.label IRQControlRegister1=$dc0d
+.label TextColumn=$27
+.label play_no_music=$9020 {
+  .label times7=$9038
+}
+.label sfx_fire=$91c2
+.label LEFT=$0
+.label RED_MULT=$a
+.label TRUE=$1
+.label GAME_MAP=$0
+.label SFX_FIRE=$5
+.label SPRITE_POINTERS=$c3f8
+.label NUM_NOSES=$8
+.label NUM_MOUTHS=$8
+.label MAP_TILES=$7104
+.label NTSC=$1
+.label GAME_MODE_PRE_STAGE=$1
+.label NUM_COLOURS=$8
+.label channels=$904d
+.label WHITE_MULT=$9
+.label ZP=$2 {
+  .label StoredYReg=$c
+  .label RowOffset=$5
+  .label EyesAddress=$18
+  .label Colour=$8
+  .label CurrentID=$d
+  .label Counter=$2
+  .label CharOffset=$12
+  .label Column=$4
+  .label TextAddress=$13
+  .label HatAddress=$16
+  .label ScreenAddress=$e
+  .label SpriteAddress=$22
+  .label EarsAddress=$1a
+  .label StoredXReg=$9
+  .label Amount=$b
+  .label EndID=$a
+  .label ColourAddress=$10
+  .label NoseAddress=$1c
+  .label HeadAddress=$20
+  .label CharID=$6
+  .label Temp1=$7
+  .label SoundFX=$15
+  .label MouthAddress=$1e
+  .label Row=$3
+  .label DataAddress=$24
+}
+.label SCREEN_RAM=$c000
+.label GAME_MODE_PLAY=$3
+.label sfx_play=$901d {
+  .label sfx_routine=$901d
+}
+.label set_sfx_routine=$9002 {
+}
+.label UTILITY=$1112 {
+  .label ClearScreen=$111b {
+    .label Loop=$111f
+  }
+  .label DeleteText=$112f {
+    .label Loop=$1138
+  }
+  .label BankOutKernalAndBasic=$1112 {
+  }
+}
+.label CHAR_COLORS=$7300
+.label MAP=$7000
+.label NUM_HATS=$8
+.label HEAD=$6
+.label EYES=$1
+.label YELLOW_MULT=$f
+.label PLOT=$349b {
+  .label PlotStar=$34bd {
+    .label Okay=$34d0
+    .label CheckCanOverwrite=$34c2
+    .label Finish=$34d9
+  }
+  .label ColorCharacterOnly=$3539 {
+  }
+  .label COLOR_ADDRESS=$10
+  .label GetColor=$34ea {
+  }
+  .label CalculateAddresses=$349b {
+  }
+  .label PlotCharacterWithAddress=$34fc {
+    .label Finish=$3504
+  }
+  .label SCREEN_ADDRESS=$e
+  .label GetCharacter=$34da {
+  }
+  .label PlotCharacter=$351f {
+    .label Finish=$3538
+  }
+  .label PlotText=$3505 {
+  }
+  .label ColorCharacter=$354f {
+    .label Finish=$3553
+  }
+}
+.label GAME_MODE_SWITCH_TITLE=$5
+.label MOUTH=$5
+.label ONE=$1
+.label INTERRUPT_VECTOR=$fffe
+.label PURPLE_MULT=$c
+.label IRQ=$1042 {
+  .label DisableCIA=$1042 {
+  }
+  .label SetupInterrupts=$104b {
+  }
+  .label OpenBorderIRQLine=$f9
+  .label MultiplexerIRQLine=$14
+  .label SetNextInterrupt=$1062 {
+  }
+  .label SetLowInterrupt=$1074 {
+  }
+  .label SpriteIRQ=$1086 {
+    .label Okay=$10b3
+    .label NoSprites=$1098
+    .label SpritesDone=$10a2
+    .label Finish=$10bf
+  }
+  .label MainIRQLine=$ff
+  .label ResetBorderIRQLine=$0
+  .label MainIRQ=$10d2 {
+    .label NoSprites=$10f5
+    .label Finish=$10f5
+  }
+}
+.label PADDING=$5
+.label JOY_PORT_2=$dc00
+.label NUM_HEADS=$4
+.label ShowDebug=$1140
+.label GAME_MODE_TITLE=$0
+.label GAME_MODE_ATTRACT=$2
+.label CYAN_MULT=$b
+.label NUM_EYES=$10
+.label wavetable_l=$91e4
+.label RIGHT=$1
+.label NUM_EARS=$8
+.label ALL_ON=$ff
+.label SPRITES=$3c53 {
+  .label ShowTrait=$3c5b {
+    .label Finish=$3c7c
+  }
+  .label TraitRows=$3c57
+  .label CurrentPlexor=$3c5a
+  .label MultiplexorRows=$3c53
+}
+.label PROCESSOR_PORT=$1
+.label RANDOM=$3554 {
+  .label RandomAdd=$3554
+  .label init=$359e
+  .label Get=$3555 {
+  }
+  .label init2=$3561 {
+  }
+  .label Change=$3595 {
+  }
+  .label Get2=$357e {
+    .label seed=$3594
+    .label noEor=$3590
+    .label doEor=$3588
+  }
+}
+.label MAX_SPRITES=$14
+.label sfx_hit4=$90a3
+.label sfx_hit3=$9090
+.label SFX_BADGE=$9
+.label sfx_hit2=$9075
+.label sfx_hit1=$9057
+.label wavetable_h=$91ee
+.label sfx_ch1=$911a
+.label VIC=$1000 {
+  .label SPRITE_BG_COLLISION=$d01f
+  .label BORDER_COLOR=$d020
+  .label SPRITE_MULTICOLOR=$d01c
+  .label SPRITE_1_X=$d002
+  .label SPRITE_1_Y=$d003
+  .label SPRITE_3_Y=$d007
+  .label SPRITE_3_X=$d006
+  .label SPRITE_5_Y=$d00b
+  .label SCREEN_CONTROL=$d011
+  .label SPRITE_5_X=$d00a
+  .label SPRITE_7_Y=$d00f
+  .label SPRITE_7_X=$d00e
+  .label EXTENDED_BG_COLOR_1=$d022
+  .label EXTENDED_BG_COLOR_2=$d023
+  .label SPRITE_PRIORITY=$d01b
+  .label SPRITE_MSB=$d010
+  .label ScreenRowMSB=$1029
+  .label BACKGROUND_COLOR=$d021
+  .label BANK_SELECT=$dd00
+  .label INTERRUPT_CONTROL=$d01a
+  .label SPRITE_COLOR_7=$d02e
+  .label SPRITE_COLOR_6=$d02d
+  .label COLOR_RAM=$d800
+  .label SPRITE_MULTICOLOR_2=$d026
+  .label SPRITE_MULTICOLOR_1=$d025
+  .label INTERRUPT_STATUS=$d019
+  .label SPRITE_0_X=$d000
+  .label SPRITE_COLOR_5=$d02c
+  .label SPRITE_COLOR_4=$d02b
+  .label SPRITE_COLOR_3=$d02a
+  .label SPRITE_COLOR_2=$d029
+  .label SPRITE_COLOR_1=$d028
+  .label SPRITE_COLOR_0=$d027
+  .label COLOR_ADDRESS=$10
+  .label SPRITE_ENABLE=$d015
+  .label MSB_On=$1000
+  .label SCREEN_ADDRESS=$e
+  .label SPRITE_0_Y=$d001
+  .label SPRITE_2_X=$d004
+  .label SPRITE_4_X=$d008
+  .label SPRITE_2_Y=$d005
+  .label MSB_Off=$1008
+  .label SPRITE_6_X=$d00c
+  .label SPRITE_4_Y=$d009
+  .label MEMORY_SETUP=$d018
+  .label SPRITE_6_Y=$d00d
+  .label RASTER_Y=$d012
+  .label ScreenRowLSB=$1010
+  .label SCREEN_CONTROL_2=$d016
+}
+.label sfx_ch2=$9152
+.label play_with_music=$903b {
+}
+.label SFX_DIVE=$4
+.label music_on=$9000
+.label sfx_ch3=$918a
+.label NOSE=$4
+.label TextRow=$26
+.label BLUE_MULT=$e
+.label sfx_badge=$91d6
+.label FALSE=$0
+.label PAL=$0
+.label HAT=$0
+.label GENERATE=$37fc {
+  .label PeepColours=$3981
+  .label MatchingClues=$39a2
+  .label PosX=$386c
+  .label PosY=$387c
+  .label NewLevel=$39da {
+  }
+  .label ColourLookup=$3979
+  .label AndByType=$389c
+  .label CluePersonDone=$39a1
+  .label HatData=$38c9
+  .label MouthData=$3919
+  .label UseClueChance=$dc
+  .label MaxByType=$3895
+  .label SpriteAddressLookups=$38a9
+  .label ClueIDs=$388f
+  .label Mouths=$383c
+  .label Heads=$384c
+  .label Colours=$385c
+  .label HeadData=$3929
+  .label Ears=$381c
+  .label Noses=$382c
+  .label NoseData=$3909
+  .label CluePointers=$3892
+  .label Eyes=$380c
+  .label EyeData=$38d9
+  .label Composite=$3931
+  .label CreateNewPeep=$3a54 {
+    .label UseRandomNose=$3b8e
+    .label EarLoop=$3b61
+    .label UseSpecificHat=$3ac6
+    .label EyesIsClue=$3af7
+    .label HeadIsClue=$3a7b
+    .label UseSpecificNose=$3b86
+    .label Colour=$3c38
+    .label UseRandomMouth=$3bcd
+    .label CompositeLoop=$3bef
+    .label EarsIsClue=$3b37
+    .label NoThirdPair=$3c11
+    .label Nose=$3b6e
+    .label Mouth=$3bae
+    .label NoseLoop=$3ba1
+    .label NoseIsClue=$3b77
+    .label NoFourthPair=$3c00
+    .label Ears=$3b2e
+    .label ClearLoop=$3a5b
+    .label Loop=$3aa5
+    .label UseRandomHat=$3ace
+    .label Head=$3a72
+    .label Eyes=$3aee
+    .label UseSpecificMouth=$3bc6
+    .label UseSpecificHead=$3a8a
+    .label UseSpecificEyes=$3b06
+    .label GetEarsData=$3b55
+    .label UseSpecificEars=$3b46
+    .label MouthLoop=$3be0
+    .label NoFirstPair=$3c33
+    .label EyeLoop=$3b21
+    .label HatLoop=$3ae1
+    .label NoSecondPair=$3c22
+    .label UseRandomHead=$3a92
+    .label HatIsClue=$3ab7
+    .label UseRandomEyes=$3b0e
+    .label MouthIsClue=$3bb7
+    .label GetNoseData=$3b95
+    .label GetMouthData=$3bd4
+    .label GetEyesData=$3b15
+    .label Hat=$3aae
+    .label GetHeadData=$3a99
+    .label GetHatData=$3ad5
+    .label UseRandomEars=$3b4e
+  }
+  .label SpriteX=$3991
+  .label Initialise=$39a3 {
+    .label Loop=$39bb
+  }
+  .label NextPeepID=$3978
+  .label DecideMainTraits=$39e3 {
+    .label Loop=$3a18
+    .label GetRandom2=$39ef
+    .label GetRandom3=$3a00
+    .label GetRandom=$39e3
+  }
+  .label TypeSpriteStart=$38a3
+  .label SpriteY=$3999
+  .label CheckIfClue=$3a32 {
+    .label NotClue1=$3a40
+    .label NotClue2=$3a4a
+    .label NotClue3=$3a53
+    .label Clue2=$3a45
+    .label Clue1=$3a3b
+  }
+  .label MAX_PEEPS=$10
+  .label ClueTypes=$388c
+  .label Hats=$37fc
+  .label EarData=$38f9
+  .label OptionsByType=$3971
+}
+.label sfx_dive=$90c4
+.label EARS=$2

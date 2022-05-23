@@ -1,0 +1,13 @@
+parsing
+flex pass 1
+flex pass 2
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Pacman/Scripts/others/bin/asteroid.prg
+
+Memory Map
+----------
+Default-segment:
+  $0801-$51e5 Base Address
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Pacman/Scripts/others/bin/asteroid.vs
+Writing Symbol file: asteroid.sym

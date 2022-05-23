@@ -1,0 +1,17 @@
+parsing
+Got 8 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Complete/Oyup Oyup/scripts/common/sfx.asm 3:3) Error: Macro command 'StoreState' not defined
+  (/Users/nick/Dropbox/C64/Projects/Complete/Oyup Oyup/scripts/common/sfx.asm 8:3) Error: Macro command 'RestoreState' not defined
+  (/Users/nick/Dropbox/C64/Projects/Complete/Oyup Oyup/scripts/common/sfx.asm 36:3) Error: Macro command 'StoreState' not defined
+  (/Users/nick/Dropbox/C64/Projects/Complete/Oyup Oyup/scripts/common/sfx.asm 40:3) Error: Macro command 'RestoreState' not defined
+  (/Users/nick/Dropbox/C64/Projects/Complete/Oyup Oyup/scripts/common/sfx.asm 96:6) Error: Unknown symbol 'sid'
+  ...
+
+.macro sfx(sfx_id)
+{  
+  :StoreState()
+  ^
+
+Error: Macro command 'StoreState' not defined
+
+

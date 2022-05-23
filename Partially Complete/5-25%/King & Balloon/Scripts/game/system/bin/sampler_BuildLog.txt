@@ -1,0 +1,15 @@
+parsing
+Got 2 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/KingBalloon/Scripts/game/system/sampler.asm 134:8) Unknown symbol 'SamplerTemp'
+  (/Users/nick/Dropbox/C64/Projects/KingBalloon/Scripts/game/system/sampler.asm 142:8) Unknown symbol 'SamplerTemp'
+
+  PlayNow:
+   lda $d418
+   and #$f0
+   sta SamplerTemp
+       ^
+
+Error: Unknown symbol 'SamplerTemp'
+at line 134, column 8 in sampler.asm
+
+

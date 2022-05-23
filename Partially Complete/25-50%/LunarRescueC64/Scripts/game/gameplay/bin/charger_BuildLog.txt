@@ -1,0 +1,19 @@
+parsing
+Got 73 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/charger.asm 154:3) Macro command 'SetDebugBorder' not defined
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/charger.asm 157:7) Unknown symbol 'MAIN'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/charger.asm 158:8) Unknown symbol 'GAME_MODE_PLAY'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/charger.asm 185:8) Unknown symbol 'IRQ'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Galaxian/Scripts/game/gameplay/charger.asm 187:8) Unknown symbol 'MAIN'
+  ...
+
+
+ FrameUpdate: {
+
+  SetDebugBorder(6)
+  ^
+
+Error: Macro command 'SetDebugBorder' not defined
+at line 154, column 3 in charger.asm
+
+

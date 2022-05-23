@@ -1,0 +1,19 @@
+parsing
+Got 162 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Pacman/Scripts/system/map/scroll_up.asm 34:9) Syntax error
+  (/Users/nick/Dropbox/C64/Projects/Pacman/Scripts/system/map/scroll_up.asm 20:8) Unknown symbol 'ACTOR'
+  (/Users/nick/Dropbox/C64/Projects/Pacman/Scripts/system/map/scroll_up.asm 21:9) Unknown symbol 'DIR_UP'
+  (/Users/nick/Dropbox/C64/Projects/Pacman/Scripts/system/map/scroll_up.asm 25:8) Unknown symbol 'BufferedUp'
+  (/Users/nick/Dropbox/C64/Projects/Pacman/Scripts/system/map/scroll_up.asm 29:8) Unknown symbol 'YScroll'
+  ...
+
+   adc ZP.PixelsThisFrame
+   clc
+   adc BufferingUp
+   cmp #
+        ^
+
+Error: Syntax error
+at line 34, column 9 in scroll_up.asm
+
+

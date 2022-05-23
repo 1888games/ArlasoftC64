@@ -1,0 +1,15 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Got 11 errors while executing:
+  In segment 'Default' the memoryblock 'Pre-Stage' ($3fbf-$424a) overlaps 'sid' ($4000-$5424)
+  In segment 'Default' the memoryblock 'sid' ($4000-$5424) overlaps '-Random' ($424b-$429c)
+  In segment 'Default' the memoryblock 'sid' ($4000-$5424) overlaps '-Plot' ($429d-$4344)
+  In segment 'Default' the memoryblock 'sid' ($4000-$5424) overlaps 'STATS' ($4345-$45b0)
+  In segment 'Default' the memoryblock 'sid' ($4000-$5424) overlaps 'GAME OVER' ($45b1-$45b2)
+  ...
+
+Error: In segment 'Default' the memoryblock 'Pre-Stage' ($3fbf-$424a) overlaps 'sid' ($4000-$5424)
+

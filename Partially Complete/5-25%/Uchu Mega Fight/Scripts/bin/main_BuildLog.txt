@@ -1,0 +1,37 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/Fight/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$002f Temp vars zero page
+  *$0030-$003f SpriteX
+  *$0040-$008f SpriteY
+  *$0090-$00a1 SpriteCopyY
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$10e1 IRQ
+  $10e2-$10ff Utility
+  $1100-$1110 Input
+  $1111-$1185 Joystick
+  $1186-$127e Maploader
+  $127f-$12ac -Plot
+  $12ad-$12ff -Random
+  $1300-$1374 VicSpriteTable
+  $1375-$1a52 IRQ
+  $1a53-$1b1a Main
+  $2000-$2408 SFX
+  $7000-$7103 Game Map
+  $7104-$7177 Game Tiles
+  $7190-$718f Unnamed
+  $7190-$71a3 Game Colours
+  $c400-$c73f Sprites
+  $f000-$f0ef Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/4K/Fight/Scripts/bin/main.vs
+Writing Symbol file: main.sym

@@ -1,0 +1,465 @@
+.label ZERO=$0
+.label INPUT=$e25 {
+  .label PortToRead=$e27
+  .label joyLeftMask=$4
+  .label JOY_FIRE_NOW=$e3a
+  .label joyRightMask=$8
+  .label JOY_LEFT_LAST=$e2a
+  .label JOY_DOWN_NOW=$e36
+  .label JOY_FIRE_LAST=$e30
+  .label JOY_LEFT_NOW=$e34
+  .label joyFireMask=$10
+  .label joyDownMask=$2
+  .label JOY_UP_NOW=$e38
+  .label JOY_READING=$e25
+  .label JOY_RIGHT_NOW=$e32
+  .label ReadJoystick=$ea2 {
+  }
+  .label FIRE_UP_THIS_FRAME=$e3c
+  .label CalculateButtons=$e3e {
+    .label DownUp=$e8f
+    .label CheckFire=$e41
+    .label CheckUp=$e6b
+    .label CheckRight=$e8f
+    .label CheckFireUp=$e53
+    .label CheckDown=$e7d
+    .label LeftUp=$e6b
+    .label Finish=$ea1
+    .label UpUp=$e7d
+    .label CheckLeft=$e59
+    .label RightUp=$ea1
+  }
+  .label JOY_RIGHT_LAST=$e28
+  .label JOY_UP_LAST=$e2e
+  .label JOY_DOWN_LAST=$e2c
+  .label joyUpMask=$1
+}
+.label JOY_FIRE_LAST=$1e
+.label JOY_DOWN=$2
+.label MAPLOADER=$edf {
+  .label Column=$ee3
+  .label DrawMap=$ee5 {
+    .label Screen=$f40
+    .label TileColumnLoop=$f0d
+    .label TileLookup=$f3a
+    .label NextRow=$f9a
+    .label TileRowLoop=$f08
+    .label Tile=$f17
+    .label NextColumn=$f61
+    .label Colour=$f4a
+  }
+  .label Row=$ee4
+  .label TileScreenLocations=$edf
+}
+.label CHAR_SET=$f000
+.label MAIN=$2000 {
+  .label RandomAdd=$1246
+  .label Loop=$126a
+  .label Entry=$1247
+  .label GameOver=$1284 {
+  }
+  .label Random=$1294 {
+    .label init=$129b
+  }
+  .label GameOverTimeOut=$b4
+  .label GameOverTimer=$1244
+  .label ResetGame=$126d {
+  }
+  .label GameActive=$1245
+}
+.label TEMP1=$2
+.label JOY_DOWN_LAST=$1c
+.label TEMP2=$3
+.label TEMP3=$4
+.label TEMP4=$5
+.label JOY_RIGHT=$8
+.label TEMP5=$6
+.label JOY_FIRE_NOW=$23
+.label TEMP6=$7
+.label VECTOR2=$e
+.label TEMP7=$8
+.label VECTOR1=$c
+.label JOY_LEFT_LAST=$1b
+.label TEMP8=$9
+.label TEMP9=$a
+.label JOY_LEFT_NOW=$20
+.label SPRITE_POINTERS=$c3f8
+.label MAP_TILES=$8000
+.label JOY_RIGHT_NOW=$1f
+.label TEMP10=$b
+.label SCREEN_RAM=$c000
+.label SPRITE_DATA=$d000
+.label VECTOR4=$12
+.label VECTOR3=$10
+.label CHAR_COLORS=$8068
+.label MAP=$80af
+.label VECTOR6=$16
+.label VECTOR5=$14
+.label JOY_FIRE=$10
+.label SCORE=$10d4 {
+  .label ScorePoints=$10fc {
+  }
+  .label Add=$1110 {
+    .label BetterOrEqualHigh=$1135
+    .label SetNewBest=$1152
+    .label CheckMiddle=$113a
+    .label BetterOrEqualMiddle=$1145
+    .label CheckLow=$114a
+    .label NoNewBest=$1167
+  }
+  .label DrawBest=$116e {
+    .label ScoreLoop=$1172
+    .label PlotDigit=$1189 {
+    }
+  }
+  .label CharacterSetStart=$3d
+  .label CheckScoreToAdd=$1102 {
+    .label Finish=$110f
+  }
+  .label Draw=$1191 {
+    .label ScoreLoop=$1195
+    .label PlotDigit=$11ac {
+    }
+  }
+  .label Amount=$2
+  .label Value=$10d4
+  .label ScoreToAdd=$10da
+  .label AddToScore=$10f2 {
+  }
+  .label Best=$10d7
+  .label Reset=$10db {
+  }
+}
+.label PLOT=$fc2 {
+  .label COLOR_ADDRESS=$16
+  .label CalculateAddresses=$fc2 {
+    .label RowOffset=$8
+  }
+  .label Column=$5
+  .label SCREEN_ADDRESS=$14
+  .label PlotCharacter=$fe4 {
+  }
+  .label Row=$4
+  .label CharID=$3
+}
+.label SNOUT=$8fb {
+  .label MoveSpeed=$921
+  .label NoseRowOffset=$90d
+  .label MaxNosePosition=$26
+  .label DrawBridge=$a08 {
+    .label Loop=$a0b
+    .label ThisNosePosition=$9
+    .label Finish=$a34
+  }
+  .label NosePosition=$91f
+  .label SniffTime=$c
+  .label ToothChar=$9
+  .label TopCharID=$4
+  .label SniffCharIDs=$904
+  .label DrawSnout=$9c0 {
+    .label Loop=$9c2
+    .label ThisCol=$9
+    .label DrawChar=$9fa
+    .label ThisCharID=$7
+    .label NotTeeth=$9f8
+    .label GetPosition=$9d6
+    .label CharIndex=$6
+    .label ThisRow=$8
+    .label NormalNose=$9d1
+    .label Finish=$a07
+  }
+  .label PrevNosePosition=$920
+  .label Update=$932 {
+    .label CheckFire=$992
+    .label CheckRight=$934
+    .label StartedRight=$93e
+    .label StillSniffing=$9b1
+    .label StartedLeft=$96d
+    .label HoldingLeft=$977
+    .label Finish=$9bf
+    .label HoldingRight=$948
+    .label CheckLeft=$963
+  }
+  .label NoseCharIDs=$8fb
+  .label NoseYPosition=$12
+  .label ClearBridge=$a35 {
+    .label Loop=$a3f
+    .label ThisNosePosition=$9
+    .label MaxNosePosition=$a
+    .label Finish=$a69
+  }
+  .label NoseColOffset=$916
+  .label CurrentMove=$922
+  .label BottomCharID=$a
+  .label MinNosePosition=$3
+  .label MoveNose=$a6a {
+    .label NoseExtending=$a89
+    .label NoseRetracting=$a7a
+    .label Finish=$a92
+  }
+  .label SniffTimeRemaining=$923
+  .label Reset=$924 {
+  }
+}
+.label ONE=$1
+.label IRQ=$887 {
+  .label DisableCIA=$887 {
+  }
+  .label SetupInterrupts=$890 {
+  }
+  .label SetNextInterrupt=$8a7 {
+  }
+  .label IRQControlRegister2=$dd0d
+  .label IRQControlRegister1=$dc0d
+  .label MainIRQ=$8b9 {
+    .label CheckFireButton=$8e8
+    .label Finish=$8f2
+    .label GameActive=$8c8
+    .label Paused=$8da
+  }
+}
+.label JOY_UP_NOW=$22
+.label JOY_UP=$1
+.label REGISTERS=$87e {
+  .label RASTER_INTERRUPT_VECTOR=$fffe
+  .label PROCESSOR_PORT=$1
+  .label JOY_PORT_2=$dc00
+  .label BankOutKernalAndBasic=$87e {
+  }
+}
+.label JOY_LEFT=$4
+.label SOUND=$11b5 {
+  .label VOICE_1_FREQUENCY=$d400
+  .label SuccessfulSniff=$122f {
+  }
+  .label VOICE_1_ATTDEC=$d405
+  .label SniffSound=$11eb {
+  }
+  .label HitSound=$1200 {
+  }
+  .label VOICE_2_FREQUENCY=$d407
+  .label Initialise=$11b5 {
+    .label clearsidloop=$11b9
+  }
+  .label VOLUME_FILTER=$d418
+  .label VOICE_1_PULSE_WIDTH=$d402
+  .label VOICE_1_CONTROL=$d404
+  .label VOICE_2_PULSE_WIDTH=$d409
+  .label VOICE_1_SUSTAIN=$d406
+  .label ScoreSound=$11dd {
+  }
+  .label VOICE_2_CONTROL=$d40b
+  .label PlayChannel_1=$1215 {
+  }
+  .label VOICE_2_SUSTAIN=$d40d
+  .label VOICE_2_ATTDEC=$d40c
+}
+.label JOY_UP_LAST=$1d
+.label JOY_ZP1=$18
+.label JOY_ZP2=$19
+.label ALL_ON=$ff
+.label SPRITES=$a99 {
+  .label Frame=$ac1
+  .label UpdateSpritePointer=$b48 {
+    .label FrameID=$4
+  }
+  .label SniffRange=$d04 {
+    .label Points=$5
+    .label Finish=$d37
+    .label NoMultiple=$d2c
+  }
+  .label StartOfSmells=$0
+  .label ObjectID=$ab9
+  .label XPosLSB=$a99
+  .label FramesPerFrame=$4
+  .label MaxChanceOfSprite=$6
+  .label Cooldown=$af3
+  .label MaxYSpeed=$1
+  .label YSpeed=$ac9
+  .label Update=$c16 {
+    .label Okay=$c25
+    .label NoSprite=$c38
+  }
+  .label ChanceOfNewSprite=$af2
+  .label ChanceOfPowerup=$f5
+  .label ObjectType=$ab1
+  .label MSBFlagsOn=$ad9
+  .label YPos=$aa1
+  .label StartOfPowerups=$4
+  .label ChanceOfSmell=$78
+  .label HitSnout=$d38 {
+    .label NotDead=$d43
+  }
+  .label Reset=$af4 {
+    .label Loop=$b0b
+    .label SpriteIndex=$2
+    .label Finish=$b2a
+  }
+  .label StartChanceOfSprite=$5
+  .label CooldownSet=$a
+  .label CheckHitSnout=$cb7 {
+    .label GetColumn=$cce
+    .label NoSniff1=$ce9
+    .label Column=$7
+    .label NoMSB=$ccc
+    .label NoSniff2=$cf1
+    .label NoHit=$d03
+    .label Finish=$d03
+    .label CheckHit=$cf9
+  }
+  .label ObjectColours=$aee
+  .label FrameCounter=$ae9
+  .label ObjectTypes=$aea
+  .label GetFirstAvailableSprite=$b36 {
+    .label Loop=$b38
+    .label Finish=$b47
+  }
+  .label UpdatePositions=$c3c {
+    .label Loop=$c4d
+    .label SpriteID=$2
+    .label NoWrap=$c88
+    .label ReduceCounter=$ca2
+    .label CheckWrap=$c7c
+    .label EndLoop=$cab
+    .label DontResetCounter=$c4b
+    .label DontUpdateFrame=$c6b
+    .label DontReset=$c65
+    .label Finish=$cb6
+    .label YToAdd=$3
+  }
+  .label FramesPerSpeed=$50
+  .label XPosMSB=$aa9
+  .label DecideWhatToDrop=$b5d {
+    .label SpriteID=$6
+    .label ChooseType=$bbd
+    .label Sock=$be6
+    .label NoMSB=$bb0
+    .label FlagOff=$3
+    .label Cheese=$bf0
+    .label NormalSpeed=$b84
+    .label GenerateEnemy=$bc8
+    .label GeneratePowerup=$bfb
+    .label GenerateSmell=$bd6
+    .label DontFinish=$b66
+    .label NoSprite=$c15
+    .label FlagOn=$3
+    .label Fish=$beb
+    .label GetObject=$bf2
+    .label MSB=$ba0
+    .label Finish=$c06
+  }
+  .label YCounter=$ad1
+  .label MSBFlagsOff=$ae1
+  .label StartOfEnemies=$4
+}
+.label JOY_DOWN_NOW=$21
+.label VIC=$810 {
+  .label SPRITE_MULTICOLOR_2=$d026
+  .label SPRITE_MULTICOLOR_1=$d025
+  .label INTERRUPT_STATUS=$d019
+  .label BORDER_COLOR=$d020
+  .label SPRITE_0_X=$d000
+  .label SPRITE_COLOR_5=$d02c
+  .label SetupRegisters=$842 {
+  }
+  .label SPRITE_COLOR_4=$d02b
+  .label SPRITE_COLOR_3=$d02a
+  .label VIC_BANK_SELECT=$dd00
+  .label SPRITE_COLOR_2=$d029
+  .label SPRITE_MULTICOLOR=$d01c
+  .label SPRITE_COLOR_1=$d028
+  .label SPRITE_COLOR_0=$d027
+  .label SPRITE_ENABLE=$d015
+  .label SPRITE_0_Y=$d001
+  .label SPRITE_1_X=$d002
+  .label SPRITE_2_X=$d004
+  .label SPRITE_1_Y=$d003
+  .label SPRITE_3_Y=$d007
+  .label SPRITE_4_X=$d008
+  .label SPRITE_2_Y=$d005
+  .label SPRITE_3_X=$d006
+  .label SPRITE_5_Y=$d00b
+  .label SPRITE_6_X=$d00c
+  .label SCREEN_CONTROL=$d011
+  .label SPRITE_4_Y=$d009
+  .label SPRITE_5_X=$d00a
+  .label SPRITE_7_Y=$d00f
+  .label MEMORY_SETUP=$d018
+  .label SPRITE_6_Y=$d00d
+  .label SPRITE_7_X=$d00e
+  .label RASTER_Y=$d012
+  .label EXTENDED_BG_COLOR_1=$d022
+  .label EXTENDED_BG_COLOR_2=$d023
+  .label SPRITE_PRIORITY=$d01b
+  .label SPRITE_MSB=$d010
+  .label ScreenRowMSB=$829
+  .label ScreenRowLSB=$810
+  .label BACKGROUND_COLOR=$d021
+  .label INTERRUPT_CONTROL=$d01a
+  .label SCREEN_CONTROL_2=$d016
+  .label SPRITE_COLOR_7=$d02e
+  .label SPRITE_COLOR_6=$d02d
+  .label COLOR_RAM=$d800
+  .label SetupColours=$869
+}
+.label CLOUDS=$ffa {
+  .label TopRow=$0
+  .label Update=$1011 {
+    .label DontMove2=$103d
+    .label DontMove=$1024
+    .label Cloud2=$102a
+    .label Finish=$1043
+  }
+  .label TopRight=$21
+  .label BottomRight=$23
+  .label CurrentColumn=$ffa
+  .label Counter=$ffe
+  .label BottomRow=$3
+  .label BottomLeft=$22
+  .label MoveCloud=$1044 {
+    .label NoWrap=$1092
+    .label CloudID=$a
+  }
+  .label MaxCounter=$1000
+  .label SkyCharacter=$10
+  .label Row=$ffc
+  .label Reset=$1002 {
+  }
+  .label TopLeft=$24
+}
+.label BLINK=$d44 {
+  .label TopRightFrames=$d48
+  .label CheckWhetherToBlinkOrGlance=$d6a {
+    .label Glance=$d96
+    .label NotCoolingDown=$d75
+    .label Blink=$d83
+    .label Finish=$da3
+  }
+  .label Position=$d5c
+  .label ChanceOfGlancing=$fe
+  .label TimeForGlance=$2d
+  .label ChanceOfBlinking=$4
+  .label TimePerFrameBlink=$5
+  .label Update=$da4 {
+    .label NextFrame=$db1
+    .label NotGlancing=$dec
+    .label Glancing=$de1
+    .label IsBlinking=$da9
+    .label ResetEyes=$dc7
+    .label NotBlinking=$dda
+    .label Finish=$def
+  }
+  .label DrawEyes=$df0 {
+  }
+  .label TopLeftFrames=$d44
+  .label BottomRightFrames=$d50
+  .label Cols=$d58
+  .label MinimumGap=$1e
+  .label Timer=$d5e
+  .label BottomLeftFrames=$d4c
+  .label Reset=$d5f {
+  }
+  .label Blinking=$d5d
+  .label Rows=$d54
+}
+.label JOY_RIGHT_LAST=$1a

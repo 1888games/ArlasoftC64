@@ -1,0 +1,18 @@
+parsing
+Got 39 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Roundabout/Scripts/game/gameplay/game.asm 66:2) Error: Pseudo command 'BottomLeftY' not defined
+  (/Users/nick/Dropbox/C64/Projects/Roundabout/Scripts/game/gameplay/game.asm 146:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Roundabout/Scripts/game/gameplay/game.asm 149:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Roundabout/Scripts/game/gameplay/game.asm 156:8) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Roundabout/Scripts/game/gameplay/game.asm 170:8) Error: Unknown symbol 'ZP'
+  ...
+
+ TopLeftX:  .byte 1, 2
+ TopRightY:  .byte 1, 2
+ BottomRightX: .byte -1, -2
+ BottomLeftY; .byte -1, -2
+ ^
+
+Error: Pseudo command 'BottomLeftY' not defined
+
+

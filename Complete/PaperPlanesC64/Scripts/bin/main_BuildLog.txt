@@ -1,0 +1,40 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/PaperPlanesC64/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0025 Temp vars zero page
+  *$0026-$003d LPAX
+  *$003e-$0054 SpriteX
+  *$0055-$00b0 SpriteY
+  *$00b1-$00cb SpriteCopyY
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $0880-$08c1 Modules
+  $08c2-$096a IRQ
+  $096b-$097c Utility
+  $097d-$099b Input
+  $099c-$0a3c Joystick
+  $0a3d-$0bff Maploader
+  $0c00-$0c8f VicSpriteTable
+  $0c90-$1029 IRQ
+  $102a-$107b -Random
+  $107c-$10d0 -Plot
+  $10d1-$1448 -Sound
+  $1449-$2360 Lookup Data
+  $2361-$24a3 Main
+  $3000-$335e sid
+  $5a04-$5b07 Game Map
+  $5b08-$5b8b Game Tiles
+  $5d50-$5db1 Game Colours
+  $a000-$9fff Turn History
+  $c400-$cc3f Sprites
+  $f000-$f30f Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/PaperPlanesC64/Scripts/bin/main.vs
+Writing Symbol file: main.sym

@@ -1,0 +1,36 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Fast Food/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0029 Temp vars zero page
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$1136 IRQ
+  $1137-$1165 Utility
+  $1166-$1182 Input
+  $1183-$121e Joystick
+  $121f-$135a Maploader
+  $135b-$1413 -Plot
+  $1414-$146e -Random
+  $146f-$1776 Score
+  $1777-$190b Sound
+  $2000-$2674 Unnamed
+  $3000-$3408 SFX
+  $7000-$7103 Game Map
+  $7104-$7147 Game Tiles
+  $7300-$734a Game Colours
+  $9000-$8fff Unnamed
+  $9000-$91f7 -Sound
+  $91f8-$937f Main
+  $c400-$d1ff Sprites
+  $f000-$f257 Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Fast Food/Scripts/bin/main.vs
+Writing Symbol file: main.sym

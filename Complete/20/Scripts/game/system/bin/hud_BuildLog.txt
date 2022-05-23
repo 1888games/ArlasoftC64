@@ -1,0 +1,19 @@
+parsing
+Got 43 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/20/Scripts/game/system/hud.asm 4:19) Unknown symbol 'NUM_COLS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/20/Scripts/game/system/hud.asm 4:30) Unknown symbol 'NUM_ROWS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/20/Scripts/game/system/hud.asm 26:7) Unknown symbol 'MAIN'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/20/Scripts/game/system/hud.asm 44:8) Unknown symbol 'SCREEN_RAM'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/20/Scripts/game/system/hud.asm 47:8) Unknown symbol 'SCREEN_RAM'
+  ...
+
+HUD: {
+
+
+ .label ScoreID = NUM_COLS * NUM_ROWS + 0
+                  ^
+
+Error: Unknown symbol 'NUM_COLS'
+at line 4, column 19 in hud.asm
+
+

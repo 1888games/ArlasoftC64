@@ -1,0 +1,19 @@
+parsing
+Got 16 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/instructions.asm 19:7) Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/instructions.asm 22:7) Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/instructions.asm 25:7) Unknown symbol 'DRAW'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/instructions.asm 46:8) Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Columns C64/scripts/game/instructions.asm 51:7) Unknown symbol 'INPUT'
+  ...
+
+
+
+  lda #0
+  sta VIC.SPRITE_ENABLE
+      ^
+
+Error: Unknown symbol 'VIC'
+at line 19, column 7 in instructions.asm
+
+

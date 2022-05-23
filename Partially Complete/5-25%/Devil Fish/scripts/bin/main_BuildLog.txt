@@ -1,0 +1,22 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Devil Fish/scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0043 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $0810-$0ee1 Modules
+  $8000-$805f Screen data
+  $8400-$84ef Level 1 Map
+  $8500-$8657 Level 1 Tiles
+  $d000-$dfbf Sprites
+  $f000-$f2ff Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Devil Fish/scripts/bin/main.vs
+Writing Symbol file: main.sym

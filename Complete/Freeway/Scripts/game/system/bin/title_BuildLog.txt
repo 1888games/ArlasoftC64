@@ -1,0 +1,18 @@
+parsing
+Got 28 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Odd One Out/Scripts/game/system/title.asm 46:7) Error: Unknown symbol 'INPUT'
+  (/Users/nick/Dropbox/C64/Projects/Odd One Out/Scripts/game/system/title.asm 49:7) Error: Unknown symbol 'MAIN'
+  (/Users/nick/Dropbox/C64/Projects/Odd One Out/Scripts/game/system/title.asm 62:7) Error: Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Odd One Out/Scripts/game/system/title.asm 90:7) Error: Unknown symbol 'STARS'
+  (/Users/nick/Dropbox/C64/Projects/Odd One Out/Scripts/game/system/title.asm 91:7) Error: Unknown symbol 'PRE_STAGE'
+  ...
+
+ Controls: {
+
+  ldy #1
+  lda INPUT.FIRE_UP_THIS_FRAME, y
+      ^
+
+Error: Unknown symbol 'INPUT'
+
+

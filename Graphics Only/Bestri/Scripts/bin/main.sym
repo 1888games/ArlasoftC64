@@ -1,0 +1,296 @@
+.label ZERO=$0
+.label INPUT=$1104 {
+  .label PortToRead=$1106
+  .label joyLeftMask=$4
+  .label JOY_FIRE_NOW=$110f
+  .label joyRightMask=$8
+  .label ReadC64Joystick=$1111 {
+    .label StoreReading=$111e
+    .label PortOne=$111b
+  }
+  .label JOY_DOWN_NOW=$110b
+  .label JOY_LEFT_NOW=$1109
+  .label joyFireMask=$10
+  .label joyDownMask=$2
+  .label JOY_UP_NOW=$110d
+  .label JOY_READING=$1104
+  .label JOY_RIGHT_NOW=$1107
+  .label ReadJoystick=$116e {
+  }
+  .label CalculateButtons=$1122 {
+    .label DownUp=$115e
+    .label CheckFire=$1125
+    .label CheckUp=$1140
+    .label CheckRight=$115e
+    .label CheckDown=$114f
+    .label LeftUp=$1140
+    .label Finish=$116d
+    .label UpUp=$114f
+    .label CheckLeft=$1131
+    .label RightUp=$116d
+  }
+  .label joyUpMask=$1
+}
+.label LEFT_MASK=$1
+.label DOWN_MASK=$4
+.label GREEN_MULT=$d
+.label GAME_MODE_OVER=$3
+.label SFX_CATCH=$2
+.label MAPLOADER=$118a {
+  .label CurrentColours=$1194
+  .label Column=$118e
+  .label CurrentTiles=$1192
+  .label DrawMap=$1196 {
+    .label Screen=$1201
+    .label TileColumnLoop=$11cc
+    .label TileLookup=$11fb
+    .label NextRow=$125b
+    .label GetMapAddress=$11aa
+    .label TileRowLoop=$11c7
+    .label Tile=$11d6
+    .label NextColumn=$1222
+    .label LoadColour=$1205
+    .label Colour=$120b
+  }
+  .label CurrentMap=$1190
+  .label Row=$118f
+  .label TileScreenLocations=$118a
+}
+.label CHAR_SET=$f000
+.label MAIN=$2000 {
+  .label Loop=$144f {
+    .label NoFire=$1484
+    .label NoFlash=$146f
+    .label Playing=$1487
+    .label GameOver=$148a
+    .label GamePaused=$148a
+    .label ReadyTitle=$147a
+    .label HandleDead=$1469
+  }
+  .label PerformFrameCodeFlag=$13d2
+  .label GameOverTimer=$13d7
+  .label MachineType=$13d5
+  .label PlayChannel2=$13f0 {
+  }
+  .label ResetGame=$13fa {
+  }
+  .label GameActive=$13d4
+  .label PlayConveyor=$13f4 {
+  }
+  .label GameMode=$13d6
+  .label Entry=$13d8 {
+  }
+  .label SetGameColours=$1436 {
+  }
+  .label GameIsOver=$13d3
+  .label SetupVIC=$141e {
+    .label SwitchOnMulticolourMode=$142b
+  }
+}
+.label IRQControlRegister2=$dd0d
+.label GAME_MODE_DEAD=$1
+.label IRQControlRegister1=$dc0d
+.label SFX_BUTTON=$1
+.label TextColumn=$26
+.label RED_MULT=$a
+.label SFX_THROW=$3
+.label TRUE=$1
+.label GAME_MAP=$0
+.label SPRITE_POINTERS=$c3f8
+.label MAP_TILES=$7104
+.label NTSC=$1
+.label WHITE_MULT=$9
+.label ZP=$2 {
+  .label StoredYReg=$f
+  .label RowOffset=$5
+  .label CharX=$17
+  .label CharY=$18
+  .label Temp4=$a
+  .label Colour=$b
+  .label CurrentID=$10
+  .label DishID=$1a
+  .label Counter=$2
+  .label CharOffset=$21
+  .label Column=$4
+  .label TextAddress=$22
+  .label X=$15
+  .label ScreenAddress=$1d
+  .label Y=$16
+  .label StoredXReg=$c
+  .label Amount=$e
+  .label BeltID=$19
+  .label SpriteX=$13
+  .label EndID=$d
+  .label ColourAddress=$1f
+  .label CharDataAddress=$1b
+  .label CharID=$6
+  .label SpriteY=$14
+  .label Temp3=$9
+  .label Temp2=$8
+  .label Temp1=$7
+  .label SoundFX=$24
+  .label Row=$3
+  .label SpriteX_MSB=$12
+  .label StartID=$11
+}
+.label SCREEN_RAM=$c000
+.label GAME_MODE_PLAY=$2
+.label RIGHT_MASK=$2
+.label UTILITY=$10e6 {
+  .label ClearScreen=$10ef {
+    .label Loop=$10f3
+  }
+  .label BankOutKernalAndBasic=$10e6 {
+  }
+}
+.label MAP=$7000
+.label CHAR_COLORS=$717c
+.label SFX_WRONG=$5
+.label YELLOW_MULT=$f
+.label SCORE=$12c5 {
+  .label DrawBest=$13a9 {
+    .label ScoreLoop=$13ad
+    .label PlotDigit=$13c4 {
+    }
+  }
+  .label AddScore=$12e5 {
+    .label SecondDigit=$1306
+    .label FirstDigit=$12ec
+    .label NowDraw=$1331
+    .label ThirdDigit=$1318
+    .label NoHigh=$1339
+    .label Finish=$131f
+  }
+  .label CharacterSetStart=$31
+  .label ScoreM=$12ce
+  .label ScoreL=$12cf
+  .label Value=$12c5
+  .label DrawP1=$1385 {
+    .label ScoreLoop=$1389
+    .label PlotDigit=$13a0 {
+    }
+  }
+  .label Best=$12c9
+  .label Reset=$12d0 {
+    .label Finish=$12e4
+  }
+  .label CheckHighScore=$133a {
+    .label Check4=$1361
+    .label IsHigh=$1369
+    .label Check3=$1354
+    .label Check2=$1347
+    .label NoHigh=$1384
+  }
+  .label ScoreH=$12cd
+}
+.label UP_MASK=$8
+.label PLOT=$1283 {
+  .label COLOR_ADDRESS=$1f
+  .label CalculateAddresses=$1283 {
+  }
+  .label SCREEN_ADDRESS=$1d
+  .label GetCharacter=$12a5 {
+  }
+}
+.label ONE=$1
+.label INTERRUPT_VECTOR=$fffe
+.label PURPLE_MULT=$c
+.label IRQ=$1042 {
+  .label DisableCIA=$1042 {
+  }
+  .label SetupInterrupts=$104b {
+  }
+  .label OpenBorderIRQLine=$f9
+  .label MultiplexerIRQLine=$14
+  .label SetNextInterrupt=$1062 {
+  }
+  .label SpriteIRQ=$1074 {
+    .label Finish=$1082
+    .label BackToMain=$1079
+  }
+  .label MainIRQLine=$ff
+  .label ResetBorderIRQLine=$0
+  .label MainIRQ=$108b {
+    .label NoIRQs=$10d3
+    .label DoneIRQ=$10d3
+    .label Finish=$10ae
+    .label DoIRQs=$10bc
+  }
+}
+.label PADDING=$5
+.label JOY_PORT_2=$dc00
+.label ShowDebug=$1103
+.label GAME_MODE_TITLE=$0
+.label GAME_TITLE=$1
+.label SFX_CONVEYOR=$6
+.label CYAN_MULT=$b
+.label SFX_CHANNEL_2=$2a9
+.label SFX_CHANNEL_1=$2a8
+.label ALL_ON=$ff
+.label PROCESSOR_PORT=$1
+.label SFX=$2000
+.label RANDOM=$12b1 {
+  .label init=$12b7
+  .label Get=$12b1 {
+  }
+}
+.label MAX_SPRITES=$14
+.label SFX_ALARM=$8
+.label NIL=$0
+.label VIC=$1000 {
+  .label SPRITE_BG_COLLISION=$d01f
+  .label BORDER_COLOR=$d020
+  .label SPRITE_MULTICOLOR=$d01c
+  .label SPRITE_1_X=$d002
+  .label SPRITE_1_Y=$d003
+  .label SPRITE_3_Y=$d007
+  .label SPRITE_3_X=$d006
+  .label SPRITE_5_Y=$d00b
+  .label SCREEN_CONTROL=$d011
+  .label SPRITE_5_X=$d00a
+  .label SPRITE_7_Y=$d00f
+  .label SPRITE_7_X=$d00e
+  .label EXTENDED_BG_COLOR_1=$d022
+  .label EXTENDED_BG_COLOR_2=$d023
+  .label SPRITE_PRIORITY=$d01b
+  .label SPRITE_MSB=$d010
+  .label ScreenRowMSB=$1029
+  .label BACKGROUND_COLOR=$d021
+  .label BANK_SELECT=$dd00
+  .label INTERRUPT_CONTROL=$d01a
+  .label SPRITE_COLOR_7=$d02e
+  .label SPRITE_COLOR_6=$d02d
+  .label COLOR_RAM=$d800
+  .label SPRITE_MULTICOLOR_2=$d026
+  .label SPRITE_MULTICOLOR_1=$d025
+  .label INTERRUPT_STATUS=$d019
+  .label SPRITE_0_X=$d000
+  .label SPRITE_COLOR_5=$d02c
+  .label SPRITE_COLOR_4=$d02b
+  .label SPRITE_COLOR_3=$d02a
+  .label SPRITE_COLOR_2=$d029
+  .label SPRITE_COLOR_1=$d028
+  .label SPRITE_COLOR_0=$d027
+  .label COLOR_ADDRESS=$1f
+  .label SPRITE_ENABLE=$d015
+  .label MSB_On=$1000
+  .label SCREEN_ADDRESS=$1d
+  .label SPRITE_0_Y=$d001
+  .label SPRITE_2_X=$d004
+  .label SPRITE_4_X=$d008
+  .label SPRITE_2_Y=$d005
+  .label MSB_Off=$1008
+  .label SPRITE_6_X=$d00c
+  .label SPRITE_4_Y=$d009
+  .label MEMORY_SETUP=$d018
+  .label SPRITE_6_Y=$d00d
+  .label RASTER_Y=$d012
+  .label ScreenRowLSB=$1010
+  .label SCREEN_CONTROL_2=$d016
+}
+.label SFX_CRASH=$4
+.label TextRow=$25
+.label BLUE_MULT=$e
+.label FALSE=$0
+.label PAL=$0
+.label SFX_CORRECT=$7

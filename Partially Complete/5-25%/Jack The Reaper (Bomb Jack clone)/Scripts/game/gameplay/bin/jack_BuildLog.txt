@@ -1,0 +1,19 @@
+parsing
+Got 33 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Jack/Scripts/game/gameplay/jack.asm 64:7) Unknown symbol 'SPRITE_POINTERS'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Jack/Scripts/game/gameplay/jack.asm 83:7) Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Jack/Scripts/game/gameplay/jack.asm 129:8) Unknown symbol 'INPUT'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Jack/Scripts/game/gameplay/jack.asm 132:9) Unknown symbol 'FACING_LEFT'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Jack/Scripts/game/gameplay/jack.asm 179:8) Unknown symbol 'INPUT'
+  ...
+
+ Initialise: {
+
+  lda #17
+  sta SPRITE_POINTERS
+      ^
+
+Error: Unknown symbol 'SPRITE_POINTERS'
+at line 64, column 7 in jack.asm
+
+

@@ -1,0 +1,22 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: C:\Users\Nick\Dropbox\C64\Projects\Poker\scripts\bin\main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0030 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $1000-$2925 Modules
+  $8000-$80ef Game Map
+  $8100-$82bb Game Tiles
+  $8300-$83dc Game Colours
+  $c400-$d57f Sprites
+  $f000-$f6e7 Charset
+
+Writing Vice symbol file: C:\Users\Nick\Dropbox\C64\Projects\Poker\scripts\bin\main.vs
+Writing Symbol file: main.sym

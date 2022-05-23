@@ -1,0 +1,27 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/_Abandoned/Stack Jump/scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0038 Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $1000-$27e9 Modules
+  $3000-$3890 sid
+  $8000-$80ef Game Map
+  $8100-$813b Game Tiles
+  $8200-$8259 Game Colours
+  $8300-$83ef Title Map
+  $8400-$858b Title Tiles
+  $8600-$86fe Title Colours
+  $c400-$cbff Sprites
+  $f000-$f2cf Charset
+  $f800-$fff7 Title Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/_Abandoned/Stack Jump/scripts/bin/main.vs
+Writing Symbol file: main.sym

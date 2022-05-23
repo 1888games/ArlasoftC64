@@ -1,0 +1,19 @@
+parsing
+Got 49 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/4K/Sky Jinks/Scripts/game/system/score.asm 58:8) Unknown symbol 'ZERO'
+  (/Users/nick/Dropbox/C64/Projects/4K/Sky Jinks/Scripts/game/system/score.asm 106:7) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/4K/Sky Jinks/Scripts/game/system/score.asm 127:8) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/4K/Sky Jinks/Scripts/game/system/score.asm 129:8) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/4K/Sky Jinks/Scripts/game/system/score.asm 139:8) Unknown symbol 'ZP'
+  ...
+
+
+ Reset:{
+
+  lda #ZERO
+       ^
+
+Error: Unknown symbol 'ZERO'
+at line 58, column 8 in score.asm
+
+

@@ -1,0 +1,32 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/20/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$002b Temp vars zero page
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$10e5 IRQ
+  $10e6-$1103 Utility
+  $1104-$1114 Input
+  $1115-$1189 Joystick
+  $118a-$1282 Maploader
+  $1283-$12b0 -Plot
+  $12b1-$1e46 -Random
+  $1e47-$1e53 Sound
+  $1e54-$1f57 Main
+  $2000-$2408 SFX
+  $7000-$7103 Game Map
+  $7104-$71ab Game Tiles
+  $71ac-$71fc Game Colours
+  $c400-$c7bf Sprites
+  $f000-$f287 Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/20/Scripts/bin/main.vs
+Writing Symbol file: main.sym

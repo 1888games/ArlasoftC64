@@ -1,0 +1,19 @@
+parsing
+Got 30 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/Jawbreaker/Scripts/game/gameplay/head.asm 14:19) Unknown symbol 'RIGHT'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/Jawbreaker/Scripts/game/gameplay/head.asm 14:26) Unknown symbol 'LEFT'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/Jawbreaker/Scripts/game/gameplay/head.asm 14:32) Unknown symbol 'RIGHT'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/Jawbreaker/Scripts/game/gameplay/head.asm 14:39) Unknown symbol 'LEFT'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/4K/Jawbreaker/Scripts/game/gameplay/head.asm 26:26) Unknown symbol 'RIGHT'
+  ...
+
+ PosX_LSB: .fill NUM_HEADS, 0
+ PosX_Frac: .fill NUM_HEADS, 0
+ Row:  .fill NUM_HEADS, 0
+ Direction: .byte RIGHT, LEFT, RIGHT, LEFT
+                  ^
+
+Error: Unknown symbol 'RIGHT'
+at line 14, column 19 in head.asm
+
+

@@ -1,0 +1,372 @@
+.label SFX_PLACE=$1
+.label cancel=$e54
+.label SFX_FIX=$8
+.label TITLE_POINTERS=$63f8
+.label Temp4=$18
+.label fix=$eb3
+.label TextAddress=$3c
+.label SFX_CLEAN=$7
+.label KeyboardScan=$bca {
+  .label Buffer=$dd0
+  .label TooManyNewKeys=$d81
+  .label Return=$d6c
+  .label BufferQuantity=$dd4
+  .label SimultaneousAlphanumericKeysFlag=$dd5
+  .label KeyInRow=$bd2
+  .label NoActivityDetected=$c22
+  .label BufferEmpty=$d6a
+  .label Exist=$d4d
+  .label KeyFound=$c0a
+  .label ControlPort=$c34
+  .label KeyTable=$d8d
+  .label BufferOld=$dcd
+  .label Main=$c38
+  .label OverFlow=$c1a
+}
+.label GAME_MODE_MENU=$0
+.label play_no_music=$df5 {
+  .label channel=$e10
+  .label times7=$e11
+}
+.label Data_2_Address=$46
+.label ScreenColumn=$21
+.label MapCharAddress=$36
+.label CharID=$2
+.label click=$e8d
+.label MAP_TILES=$8200
+.label CurrentMapStart=$32
+.label SFX_BUILD=$4
+.label COMMON=$8af {
+}
+.label set_sfx_routine=$dd7 {
+}
+.label MAP=$8000
+.label CHAR_COLORS=$8105
+.label ShopID=$22
+.label MapAddress=$2c
+.label StoredYReg=$1b
+.label ONE=$1
+.label ScreenRow=$20
+.label IRQ=$f26 {
+  .label DisableCIA=$f27 {
+  }
+  .label SetupInterrupts=$f30 {
+    .label ReenableInterrupts=$f42
+    .label SetDefaultIRQ=$f39
+  }
+  .label FrameIRQ=$f59 {
+    .label CheckIfPaused=$f5e
+    .label Finish=$f6b
+    .label GameActive=$f63
+    .label Paused=$f6b
+  }
+  .label Mode=$f26
+  .label FrameIRQLine=$d2
+  .label SetNextInterrupt=$f47 {
+  }
+  .label IRQControlRegister2=$dd0d
+  .label IRQControlRegister1=$dc0d
+}
+.label ShowDebug=$8af
+.label KEYBOARD=$edf {
+  .label KeysToCheck=$edf
+  .label CooldownTime=$2
+  .label Runstop=$f25 {
+  }
+  .label Check=$ef8 {
+    .label Okay=$f0d
+    .label NoRunStop=$f1e
+    .label Finish=$f24
+  }
+  .label HudXMatch=$eeb
+  .label CooldownTimer=$ef7
+}
+.label Colour=$6
+.label bulldoze=$e20
+.label ScreenAddress=$2e
+.label place=$e34
+.label Width=$11
+.label ALL_ON=$ff
+.label select_hud=$e46
+.label RANDOM=$987 {
+  .label RandomAdd=$987
+  .label init=$9c9
+  .label Get=$988 {
+  }
+  .label init2=$992 {
+  }
+  .label Change=$9c0 {
+  }
+  .label Get2=$9af {
+    .label seed=$9bf
+    .label noEor=$9bb
+    .label doEor=$9b9
+  }
+}
+.label Amount=$5
+.label SFX_BULLDOZE=$0
+.label ColourAddress=$30
+.label TrueResult=$19
+.label Temp3=$17
+.label Temp2=$10
+.label Temp1=$f
+.label play_with_music=$e14 {
+}
+.label music_on=$dd6
+.label CurrentChar=$b
+.label SFX_ERROR=$6
+.label MENU=$40b {
+  .label ProcessNumber=$1009 {
+  }
+  .label Show=$1000 {
+  }
+}
+.label ZERO=$0
+.label INPUT=$8b0 {
+  .label PortToRead=$8b2
+  .label joyLeftMask=$4
+  .label JOY_FIRE_NOW=$8c5
+  .label joyRightMask=$8
+  .label JOY_LEFT_LAST=$8b5
+  .label JOY_DOWN_NOW=$8c1
+  .label JOY_FIRE_LAST=$8bb
+  .label JOY_LEFT_NOW=$8bf
+  .label joyFireMask=$10
+  .label joyDownMask=$2
+  .label JOY_UP_NOW=$8c3
+  .label JOY_READING=$8b0
+  .label JOY_RIGHT_NOW=$8bd
+  .label ReadJoystick=$93e {
+  }
+  .label FIRE_UP_THIS_FRAME=$8c7
+  .label CalculateButtons=$8da {
+    .label DownUp=$92b
+    .label CheckFire=$8dd
+    .label CheckUp=$907
+    .label CheckRight=$92b
+    .label CheckFireUp=$8ef
+    .label CheckDown=$919
+    .label LeftUp=$907
+    .label Finish=$93d
+    .label UpUp=$919
+    .label CheckLeft=$8f5
+    .label RightUp=$93d
+  }
+  .label JOY_RIGHT_LAST=$8b3
+  .label JOY_UP_LAST=$8b9
+  .label JOY_DOWN_LAST=$8b7
+  .label joyUpMask=$1
+  .label Readc64Joystick=$8c9 {
+    .label StoreReading=$8d6
+    .label PortOne=$8d3
+  }
+}
+.label ObjectID=$16
+.label FunctionAddress=$38
+.label EndOfText=$a
+.label CurrentID=$d
+.label MAP_MENU=$0
+.label CurrentMapEnd=$34
+.label MAPLOADER=$9da {
+  .label CurrentColours=$9e4
+  .label Maps=$9e6
+  .label Column=$9de
+  .label CurrentTiles=$9e2
+  .label Colours=$9f2
+  .label DrawMap=$9fc {
+    .label Screen=$a94
+    .label TileColumnLoop=$a5f
+    .label TileLookup=$a8e
+    .label NextRow=$aee
+    .label GetMapAddress=$a3d
+    .label TileRowLoop=$a5a
+    .label Tile=$a69
+    .label NextColumn=$ab5
+    .label LoadColour=$a98
+    .label Colour=$a9e
+  }
+  .label CurrentMap=$9e0
+  .label Row=$9df
+  .label CurrentMapID=$9fb
+  .label TileScreenLocations=$9da
+  .label MapTiles=$9ec
+  .label Offset=$9f8
+}
+.label CHAR_SET=$f000
+.label MAIN=$2000 {
+  .label Loop=$62a {
+  }
+  .label GameMode=$603
+  .label PerformFrameCodeFlag=$800
+  .label Entry=$606 {
+    .label Finish=$61e
+  }
+  .label StartGame=$621 {
+  }
+  .label MachineType=$600
+  .label FrameTimer=$601
+  .label GameLoaded=$605
+  .label Setup=$640 {
+  }
+  .label GameActive=$80d
+  .label CharSetReversed=$604
+}
+.label MaxAmount_2=$1d
+.label MaxAmount_1=$1c
+.label TextColumn=$14
+.label SCREEN_RAM_2=$c400
+.label StoredXReg=$1a
+.label VECTOR2=$2a
+.label VECTOR1=$28
+.label TITLE_RAM=$6000
+.label SPRITE_POINTERS=$c3f8
+.label WillMove=$7
+.label TempColour=$24
+.label SCREEN_RAM=$c000
+.label sfx_play=$df2 {
+  .label sfx_routine=$df2
+}
+.label Row=$3
+.label CallbackAddress=$42
+.label LOOKUPS=$80e {
+  .label TimesBy3=$8a0
+}
+.label MouseMapX=$1e
+.label RowOffset=$9
+.label MouseMapY=$1f
+.label PLOT=$b16 {
+  .label ColorCharacterOnly=$b9f {
+  }
+  .label PlotCharacterMap=$b7d {
+    .label Finish=$b84
+  }
+  .label COLOR_ADDRESS=$28
+  .label GetColor=$b48 {
+  }
+  .label CalculateAddresses=$b16 {
+  }
+  .label PlotCharacterWithAddress=$b5a {
+    .label Finish=$b62
+  }
+  .label SCREEN_ADDRESS=$2a
+  .label GetCharacter=$b38 {
+  }
+  .label PlotCharacter=$b85 {
+    .label Finish=$b9e
+  }
+  .label ColorCharacterMap=$bb5 {
+    .label Finish=$bbc
+  }
+  .label PlotText=$b63 {
+  }
+  .label ColorCharacter=$bbd {
+    .label Finish=$bc9
+  }
+}
+.label error=$e62
+.label KeyPressed=$e
+.label REGISTERS=$877 {
+  .label RASTER_INTERRUPT_VECTOR=$fffe
+  .label BankInKernal=$880 {
+  }
+  .label DetectMachine=$889 {
+    .label NTSC=$89c
+    .label w0=$889
+    .label w1=$88c
+    .label PAL=$89f
+    .label Finish=$89f
+  }
+  .label PROCESSOR_PORT=$1
+  .label JOY_PORT_2=$dc00
+  .label BankOutKernalandBasic=$877 {
+  }
+}
+.label CharOffset=$8
+.label Column=$4
+.label RideID=$25
+.label wavetable_l=$ecd
+.label SFX_CLICK=$5
+.label DigitID=$26
+.label Height=$12
+.label SFX_SELECT_HUD=$2
+.label SourceAddress=$40
+.label MENU_MAP=$8400
+.label EndRow=$23
+.label EndID=$c
+.label TileAddress=$48
+.label Material=$27
+.label wavetable_h=$ed6
+.label clean=$e99
+.label ObjectLookupAddress=$3a
+.label VIC=$80e {
+  .label SPRITE_BG_COLLISION=$d01f
+  .label BORDER_COLOR=$d020
+  .label SetupRegisters=$850 {
+  }
+  .label VIC_BANK_SELECT=$dd00
+  .label SPRITE_MULTICOLOR=$d01c
+  .label SPRITE_1_X=$d002
+  .label SPRITE_1_Y=$d003
+  .label SPRITE_3_Y=$d007
+  .label SPRITE_3_X=$d006
+  .label SPRITE_5_Y=$d00b
+  .label SCREEN_CONTROL=$d011
+  .label SPRITE_5_X=$d00a
+  .label SPRITE_7_Y=$d00f
+  .label SPRITE_7_X=$d00e
+  .label EXTENDED_BG_COLOR_1=$d022
+  .label EXTENDED_BG_COLOR_2=$d023
+  .label SPRITE_PRIORITY=$d01b
+  .label SPRITE_MSB=$d010
+  .label ScreenRowMSB=$837
+  .label BACKGROUND_COLOR=$d021
+  .label INTERRUPT_CONTROL=$d01a
+  .label SPRITE_COLOR_7=$d02e
+  .label SPRITE_COLOR_6=$d02d
+  .label COLOR_RAM=$d800
+  .label SPRITE_MULTICOLOR_2=$d026
+  .label SPRITE_MULTICOLOR_1=$d025
+  .label INTERRUPT_STATUS=$d019
+  .label SPRITE_0_X=$d000
+  .label SPRITE_COLOR_5=$d02c
+  .label SPRITE_COLOR_4=$d02b
+  .label SPRITE_COLOR_3=$d02a
+  .label SPRITE_COLOR_2=$d029
+  .label SPRITE_COLOR_1=$d028
+  .label SPRITE_COLOR_0=$d027
+  .label COLOR_ADDRESS=$28
+  .label SPRITE_ENABLE=$d015
+  .label MSB_On=$80e
+  .label SCREEN_ADDRESS=$2a
+  .label SPRITE_0_Y=$d001
+  .label SPRITE_2_X=$d004
+  .label SPRITE_4_X=$d008
+  .label SPRITE_2_Y=$d005
+  .label MSB_Off=$816
+  .label SPRITE_6_X=$d00c
+  .label SPRITE_4_Y=$d009
+  .label MEMORY_SETUP=$d018
+  .label SPRITE_6_Y=$d00d
+  .label RASTER_Y=$d012
+  .label ScreenRowLSB=$81e
+  .label SCREEN_CONTROL_2=$d016
+}
+.label Mouse=$400 {
+  .label MoveSpeed=$408
+  .label CharX=$400
+  .label PosX_MSB=$406
+  .label CharY=$401
+  .label PosX_LSB=$405
+  .label PosY=$407
+  .label IsReal=$404
+  .label DoubleClicked=$409
+  .label Mode=$403
+  .label DoubleClickTimer=$40a
+  .label AnyMove=$402
+}
+.label build=$e6e
+.label TextRow=$15
+.label StartID=$13
+.label ObjectAddress=$3e
+.label Data_1_Address=$44
+.label SFX_CANCEL=$3

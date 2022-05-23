@@ -1,0 +1,78 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Complete/Oyup Oyup/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0037 Temp vars zero page
+  $0700-$075d Hi score_Data
+  $0800-$0800 Upstart
+  $0801-$080d Basic
+  $080d-$080c End Of Basic
+  $080e-$080d Basic End
+  $080e-$0953 -Macros
+  $0954-$0ad6 IRQ
+  $0ad7-$0f1b Draw
+  $0f1c-$0fe5 -Input
+  $0fe6-$1105 Grid Data
+  $1106-$16af CurrentType
+  $16b0-$1daf Grid
+  $1db0-$1e0a -Random
+  $1e0b-$1f52 Explosions
+  $1f53-$1f5f Rocks
+  $1f60-$2689 Queue
+  $268a-$26d9 Panel
+  $26da-$2985 Queue Data
+  $2986-$3189 Player
+  $318a-$32f1 Title
+  $32f2-$3810 Campaign
+  $3811-$3a33 Grid Visuals
+  $3c58-$3d77 Difficulty Map
+  $3e00-$3dff Unnamed
+  $3e00-$3f5e Main
+  $4000-$5f3f Bitmap Data
+  $6000-$63e7 Bitmap Screen RAM
+  $6400-$63ff Bitmap Color Data
+  $6400-$67e7 Bitmap Color RAM
+  $6800-$68bf ---Sprites Title
+  $6900-$68ff RoundOver
+  $6900-$7682 Round Over
+  $7700-$76ff Assets
+  $7700-$77ff Game Colours
+  $7800-$7be7 Game Map
+  $7be8-$7fcf Tower Map
+  $7fd0-$83b7 Menu Map
+  $83b8-$879f Settings Map
+  $87a0-$8b87 Instructions Map
+  $8b88-$8f6f Score Map
+  $9000-$9c63 sid
+  $9d00-$9e2c Disk
+  $a000-$9fff Unnamed
+  $a000-$a0b3 Opponent Data
+  $a0b4-$a113 AI
+  $a114-$a133 Scores
+  $a134-$a16a Lookup
+  $a16b-$a180 Rotations
+  $a181-$a42e Lookups
+  $a42f-$a6cf Text
+  $a6d0-$ab71 Settings
+  $ab72-$aee3 Scoring
+  $b000-$b45c Gypsy Data
+  $b800-$b7ff Unnamed
+  $b800-$bcbb Win
+  $c000-$c3e7 Screen Ram
+  $c400-$d27f Sprites
+  $d280-$d87f Gyspy Sprites
+  $e000-$eac0 Gypsy Code
+  $eb00-$efe9 Menu
+  $f000-$f7ff Charset
+  $f800-$f967 Gypsy Charset
+  $fa00-$fd6f Hi score_Code
+  $ffff-$fffe End Of Memory
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Complete/Oyup Oyup/bin/main.vs
+Writing Symbol file: main.sym

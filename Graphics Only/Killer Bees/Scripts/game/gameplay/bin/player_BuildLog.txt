@@ -1,0 +1,18 @@
+parsing
+Got 6 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Killer Bees/Scripts/game/gameplay/player.asm 18:15) Error: Unknown symbol 'SIDE_TOP'
+  (/Users/nick/Dropbox/C64/Projects/Killer Bees/Scripts/game/gameplay/player.asm 19:19) Error: Unknown symbol 'DIR_LEFT'
+  (/Users/nick/Dropbox/C64/Projects/Killer Bees/Scripts/game/gameplay/player.asm 45:7) Error: Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Killer Bees/Scripts/game/gameplay/player.asm 57:7) Error: Unknown symbol 'VIC'
+  (/Users/nick/Dropbox/C64/Projects/Killer Bees/Scripts/game/gameplay/player.asm 60:7) Error: Unknown symbol 'VIC'
+  ...
+
+
+ Frame:   .byte 0
+
+ Side:  .byte SIDE_TOP
+              ^
+
+Error: Unknown symbol 'SIDE_TOP'
+
+

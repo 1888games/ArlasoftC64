@@ -1,0 +1,27 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/Mr Driller/scripts/bin/game.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$003b Temp vars zero page
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $3000-$3890 sid
+  $5000-$7fd7 Modules
+  $8000-$80ef Game Map
+  $8100-$81e7 Game Tiles
+  $8300-$8394 Game Colours
+  $8400-$84ef Title Map
+  $8600-$878b Title Tiles
+  $8800-$88fe Title Colours
+  $c400-$eebf Sprites
+  $f000-$f4a7 Charset
+  $f800-$fff7 Title Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/Mr Driller/scripts/bin/game.vs
+Writing Symbol file: game.sym

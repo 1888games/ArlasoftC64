@@ -1,0 +1,38 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Roundabout/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0034 Temp vars zero page
+  $0801-$080d Basic
+  $080e-$080d Basic End
+  $1000-$1041 Modules
+  $1042-$10bf IRQ
+  $10c0-$10ee Utility
+  $10ef-$110b Input
+  $110c-$11a7 Joystick
+  $11a8-$12e3 Maploader
+  $12e4-$139c -Plot
+  $139d-$13f7 -Random
+  $13f8-$167c Score
+  $2000-$2183 Unnamed
+  $2184-$2846 Order
+  $3000-$335e sid
+  $7000-$7103 Game Map
+  $7104-$71ab Game Tiles
+  $7300-$7394 Game Colours
+  $7500-$74ff Full Map
+  $7700-$76ff Title Map
+  $8000-$7fff Unnamed
+  $8000-$8126 -Sound
+  $8127-$82ae Main
+  $c400-$c47f Sprites
+  $f000-$f4a7 Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Roundabout/Scripts/bin/main.vs
+Writing Symbol file: main.sym

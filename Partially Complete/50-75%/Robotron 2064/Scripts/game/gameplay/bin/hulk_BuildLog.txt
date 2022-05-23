@@ -1,0 +1,19 @@
+parsing
+Got 84 errors while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/hulk.asm 38:7) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/hulk.asm 47:8) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/hulk.asm 49:8) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/hulk.asm 54:9) Unknown symbol 'ZP'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/game/gameplay/hulk.asm 55:9) Unknown symbol 'ZP'
+  ...
+
+ Initialise: {
+
+  ldx #0
+  stx ZP.Amount
+      ^
+
+Error: Unknown symbol 'ZP'
+at line 38, column 7 in hulk.asm
+
+

@@ -1,0 +1,15 @@
+parsing
+Got 3 errors and 0 warnings while executing:
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/data/assets.asm 39:8) Error: Unknown symbol 'sid'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/data/assets.asm 40:8) Error: Unknown symbol 'sid'
+  (/Users/nick/Dropbox/C64/Projects/Backburner/Robotron 2064/Scripts/data/assets.asm 40:18) Error: Unknown symbol 'sid'
+
+
+
+
+ .pc = sid.location "sid"
+       ^
+
+Error: Unknown symbol 'sid'
+
+

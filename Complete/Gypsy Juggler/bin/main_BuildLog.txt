@@ -1,0 +1,37 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: V:\C64\Projects\Complete\Gypsy Juggler\bin\main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0037 Temp vars zero page
+  $0800-$0800 Upstart
+  $0801-$080d Basic
+  $080d-$080c End Of Basic
+  $080e-$080d Basic End
+  $080e-$0973 -Macros
+  $0974-$0a2e IRQ
+  $0a2f-$0b49 Draw
+  $0b4a-$0c02 -Input
+  $0c03-$0c5d -Random
+  $3000-$335e sid
+  $3e00-$3dff Unnamed
+  $3e00-$3e69 Main
+  $6800-$67ff ---Sprites Title
+  $6900-$68ff RoundOver
+  $9d00-$9cff Disk
+  $a000-$9fff Unnamed
+  $a000-$a002 Text
+  $b000-$b45c Gypsy Data
+  $c000-$c3e7 Screen Ram
+  $c400-$d27f Sprites
+  $d280-$d87f Gyspy Sprites
+  $e000-$eac0 Gypsy Code
+  $f800-$f967 Gypsy Charset
+  $ffff-$fffe End Of Memory
+
+Writing Vice symbol file: V:\C64\Projects\Complete\Gypsy Juggler\bin\main.vs

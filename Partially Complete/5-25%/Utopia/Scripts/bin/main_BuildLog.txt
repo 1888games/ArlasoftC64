@@ -1,0 +1,41 @@
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: /Users/nick/Dropbox/C64/Projects/Backburner/_IDEAS/Utopia/Scripts/bin/main.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0002-$0049 Temp vars zero page
+  *$0400-$040a Local Temp Variables
+  $0600-$067d Main
+  $0800-$0800 Upstart
+  $0801-$080c Basic
+  $080d-$080d End Of Basic
+  $080e-$080d ---Labels
+  $080e-$080d Basic End
+  $080e-$080d LOOKUPS
+  $080e-$0876 ---VIC
+  $0877-$08ae ---Registers
+  $08af-$08ae  
+  $08af-$08ae COMMON
+  $08af-$08af ---Macros
+  $08b0-$0986 ---Input
+  $0987-$0b15 ---Random
+  $0b16-$0bc9 ---Plot
+  $0bca-$0dd5 ---Keyboard Scan
+  $0dd6-$0f25 ---Sound
+  $0f26-$0f7d ---IRQ
+  $1000-$100b Menu
+  $8000-$8103 Game Map
+  $8105-$819e Game Colours
+  $8200-$831f Game Tiles
+  $8400-$8503 Menu Map
+  $b100-$b45e sid
+  $c400-$caff Sprites
+  $f000-$f4cf Charset
+
+Writing Vice symbol file: /Users/nick/Dropbox/C64/Projects/Backburner/_IDEAS/Utopia/Scripts/bin/main.vs
+Writing Symbol file: main.sym
