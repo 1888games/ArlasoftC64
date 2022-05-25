@@ -16,5 +16,6 @@ I am though perfectly fine for any of the WIP projects to be completed and relea
 
 -----------------
 
-EDIT: I didn't hold out much hope, and true to form the morally bankrupt 'cracker' groups, who clearly have nothing going on in their lives beside their silly little league tables, managed to find the F8 key and released barely playable previews of Robotron and Cosmic Guerilla. Therefore I won't be finishing these games, hopefully someone else will take on the mantle.
+EDIT: I didn't hold out much hope, and true to form the morally bankrupt 'cracker' groups, who clearly have nothing going on in their lives besides their silly little league tables, managed to find the F8 key and released barely playable previews of Robotron and Cosmic Guerilla. Therefore I won't be finishing these games, hopefully someone else will take on the mantle.
+
 
