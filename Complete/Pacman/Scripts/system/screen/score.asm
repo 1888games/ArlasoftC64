@@ -59,20 +59,18 @@ SCORE:{
 
 	Reset:{
 
-		ldx #0
-		stx ScoreChanged
-		stx GotHighScore
-		stx HadExtra
-
 		lda #0
+		sta ScoreChanged
+		sta GotHighScore
+		sta HadExtra
+
+		ldx #5
 
 		Loop:
 
-			
 			sta P1, x
-			inx 
-			cpx #12
-			bcc Loop
+			dex
+			bpl Loop
 
 		sta CurrentExtra 
 		sta CurrentExtra + 1
@@ -83,14 +81,11 @@ SCORE:{
 		sta NextExtra
 		sta NextExtra + 1
 
-
-
 		jsr DrawP1_Digits
-
 	
 		Finish:
 
-		rts
+			rts
 
 	}
 
@@ -116,6 +111,9 @@ SCORE:{
 
 		DoCheck:
 
+			lda ZP.Temp1
+			bne NotHigh
+
 			lda P1, y
 			cmp High, y
 			beq Skip
@@ -125,6 +123,7 @@ SCORE:{
 		IsHigh:
 
 			inc GotHighScore
+			jmp NoCheck
 
 		NotHigh:
 
@@ -162,8 +161,6 @@ SCORE:{
 			cpy #6
 			bcc Loop
 
-		
-
 		rts
 	}
 
@@ -181,7 +178,6 @@ SCORE:{
 
 			lda High, x
 			tax
-
 
 			lda ZP.Amount
 			bne AlreadyIncreased
