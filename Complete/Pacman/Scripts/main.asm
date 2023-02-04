@@ -1,6 +1,6 @@
 //exomizer sfx sys -t 64 -x "inc $d020" -o pacman_FH.prg main.prg 
 
-.var sid = LoadSid("../assets/sfx/pac2.sid")
+.var sid = LoadSid("../Assets/sfx/pac2.sid")
 .var game = "Plus"
 
 MAIN: {
