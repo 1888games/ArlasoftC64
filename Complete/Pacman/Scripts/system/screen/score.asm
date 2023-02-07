@@ -54,6 +54,7 @@ SCORE:{
 	ScoreChanged:	.byte 0
 	DrawHighScore:	.byte 0
 	GotHighScore:	.byte 0
+	NoHighScore:	.byte 0
 
 	.label ScoreTime = 15
 
@@ -96,7 +97,7 @@ SCORE:{
 
 		ldy #0
 		sty ZP.Amount
-		sty ZP.Temp1
+		sty NoHighScore
 
 		Loop:
 
@@ -111,7 +112,7 @@ SCORE:{
 
 		DoCheck:
 
-			lda ZP.Temp1
+			lda NoHighScore
 			bne NotHigh
 
 			lda P1, y
@@ -127,7 +128,7 @@ SCORE:{
 
 		NotHigh:
 
-			inc ZP.Temp1
+			inc NoHighScore
 
 		NoCheck:
 
