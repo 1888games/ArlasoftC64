@@ -31,7 +31,7 @@ COMPLETE: {
 		sta Flashes
 		sta PelletsCleared
 
-		lda #7
+		lda #6
 		ldx #0
 		jsr UTILITY.BlockBorders
 
