@@ -269,31 +269,14 @@
 		rts
 	}
 
-	ColourSides: {
-
-		lda #BLACK
-
-		.for(var i=0; i<25; i++) {
-			
-			sta VIC.COLOR_RAM + (i * 40) + 6
-			sta VIC.COLOR_RAM + (i * 40) + 34 
-
-		}
-		
-
-		rts
-	}
-
-
 	DisplayInitialScreen: {
 
 		
 		jsr UTILITY.ClearScreen
 
-		lda #7
+		lda #6
 		ldx #29
 		jsr UTILITY.BlockBorders
-	//	jsr ColourSides
 
 		lda GAME.KillScreen
 		beq NormalMap

@@ -4,7 +4,7 @@ SRCDIR := Scripts
 PRG1 := $(OBJDIR)/main.prg
 PRG2 := $(OBJDIR)/pacman.prg
 D64 := $(OBJDIR)/pacman_FH.d64
-PAK := exomizer sfx sys -t 64
+PAK := exomizer sfx systrim
 
 # Commands
 MKPRG2 = $(PAK) -o $(PRG2) $(PRG1)
